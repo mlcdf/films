@@ -19,7 +19,7 @@
             {% endif %}
             <tr>
                 <td>{{ entrie.title }}</td>
-                <td>{{ entrie.year | default(value="no year") }}</td>
+                <td>{{ entrie.year | default(value="??") }}</td>
                 <td>{{ entrie.authors | join(sep=", ") }}</td>
                 {% if entrie.rating is defined %}
                     <td>{{ macros::rating(rating=entrie.rating) }}</td>

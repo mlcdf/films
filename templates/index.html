@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav>
-        <a href="/" class="nav-link">All</a>
+        <a href="/" class="nav-link">Tous</a>
         {% set cinema = get_section(path="cinema/_index.md") %}
         <a href="{{ cinema.permalink }}" class="nav-link">{{ cinema.title }}</a>
 
@@ -37,7 +37,7 @@
                 {% for entrie in data.entries %}
                     <tr>
                         <td>{{ entrie.title }}</td>
-                        <td>{{ entrie.year | default(value="no year") }}</td>
+                        <td>{{ entrie.year | default(value="??") }}</td>
                         <td>{{ entrie.authors | join(sep=", ") }}</td>
                         {% if entrie.rating is defined %}
                             <td>{{ macros::rating(rating=entrie.rating) }}</td>
