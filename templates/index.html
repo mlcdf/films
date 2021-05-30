@@ -41,6 +41,8 @@
                         <td>{{ entrie.authors | join(sep=", ") }}</td>
                         {% if entrie.rating is defined %}
                             <td>{{ macros::rating(rating=entrie.rating) }}</td>
+                        {% else %}
+                            <td>🤷‍♂️</td>
                         {% endif %}
                     </tr>
                 {% endfor %}
