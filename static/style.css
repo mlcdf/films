@@ -2,3 +2,7 @@ body {
     margin: 0rem;
     padding: 1rem;
 }
+
+th {
+    text-align: left;
+}
