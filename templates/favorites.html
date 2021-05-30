@@ -10,20 +10,16 @@
             <th>Titre</th>
             <th>Année</th>
             <th>Réalisateurice(s)</th>
-            <th>Note</th>
         </thead>
         <tbody>
-        {% for entrie in data.entries %}
-            {% if entrie.rating is not defined or entrie.rating < 8 %}
+        {% for entrie in data.entries | filter(attribute="rating") | sort(attribute="rating") | reverse %}
+            {% if entrie.rating < 8 or entrie.rating == 8 and not entrie.favorite %}
                 {% continue %}
             {% endif %}
             <tr>
                 <td>{{ entrie.title }}</td>
                 <td>{{ entrie.year | default(value="??") }}</td>
                 <td>{{ entrie.authors | join(sep=", ") }}</td>
-                {% if entrie.rating is defined %}
-                    <td>{{ macros::rating(rating=entrie.rating) }}</td>
-                {% endif %}
             </tr>
         {% endfor %}
         </tbody>
