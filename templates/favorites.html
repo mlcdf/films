@@ -1,0 +1,31 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
+{% block content %}
+
+{% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/sc-backup/backup/mlcdf/films-done.json", format="json") %}
+    <table>
+        <thead>
+            <th>Titre</th>
+            <th>Année</th>
+            <th>Réalisateurice(s)</th>
+            <th>Note</th>
+        </thead>
+        <tbody>
+        {% for entrie in data.entries %}
+            {% if entrie.rating is not defined or entrie.rating < 8 %}
+                {% continue %}
+            {% endif %}
+            <tr>
+                <td>{{ entrie.title }}</td>
+                <td>{{ entrie.year | default(value="no year") }}</td>
+                <td>{{ entrie.authors | join(sep=", ") }}</td>
+                {% if entrie.rating is defined %}
+                    <td>{{ macros::rating(rating=entrie.rating) }}</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

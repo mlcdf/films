@@ -1,0 +1,52 @@
+{% import "macros.html" as macros %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <title>{% block title %}{{ config.title }} &mdash; {{ config.extra.author}} {% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}">
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-link">All</a>
+        {% set cinema = get_section(path="cinema/_index.md") %}
+        <a href="{{ cinema.permalink }}" class="nav-link">{{ cinema.title }}</a>
+
+        {% set favorites = get_section(path="favorites/_index.md") %}
+        <a href="{{ favorites.permalink }}" class="nav-link">{{ favorites.title }}</a>
+    </nav>
+
+    <main>
+        {% block content %}
+
+        {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/sc-backup/backup/mlcdf/films-done.json", format="json") %}
+            <table>
+                <thead>
+                    <th>Titre</th>
+                    <th>Année</th>
+                    <th>Réalisateurice(s)</th>
+                    <th>Note</th>
+                </thead>
+                <tbody>
+                {% for entrie in data.entries %}
+                    <tr>
+                        <td>{{ entrie.title }}</td>
+                        <td>{{ entrie.year | default(value="no year") }}</td>
+                        <td>{{ entrie.authors | join(sep=", ") }}</td>
+                        {% if entrie.rating is defined %}
+                            <td>{{ macros::rating(rating=entrie.rating) }}</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endblock content %}
+    </main>
+</body>
+</html>

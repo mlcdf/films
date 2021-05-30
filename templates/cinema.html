@@ -1,0 +1,26 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
+{% block content %}
+
+{% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/sc-backup/backup/vu-au-cinema.json", format="json") %}
+    <table>
+        <thead>
+            <th>Titre</th>
+            <th>Année</th>
+            <th>Réalisateurice(s)</th>
+            <th>Note</th>
+        </thead>
+        <tbody>
+        {% for entrie in data.entries %}
+            <tr>
+                <td>{{ entrie.title }}</td>
+                <td>{{ entrie.year }}</td>
+                <td>{{ entrie.authors | join(sep=", ") }}</td>
+                <td>{{ macros::rating(rating=entrie.rating) }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
