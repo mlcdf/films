@@ -1,7 +1,7 @@
 [build]
 # This assumes that the Zola site is in a docs folder. If it isn't, you don't need
 # to have a `base` variable but you do need the `publish` and `command` variables.
-command = "zola build"
+command = "./build.sh"
 publish = "public"
 
 [build.environment]

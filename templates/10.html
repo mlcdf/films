@@ -1,0 +1,20 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
+{% block content %}
+    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/top-10-films-selon-max.json", format="json") %}
+        <div class="w100 flex items-center flex-column f4 lh-copy">
+            <div>
+                {{ section.content | safe }}
+                <ol class="pl0">
+                    {% for movie in data.entries %}
+                    <li class="pb3 mw7">
+                        <span class="i">{{ macros::title(movie=movie) }}</span><span class="black-70"> &mdash; {{ movie.authors | join(sep=" et ") }}, {{ movie.year }}</span>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </table>
+{% endblock content %}
