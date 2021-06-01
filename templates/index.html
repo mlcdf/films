@@ -47,7 +47,7 @@
             {% for movie in data.entries | sort(attribute="title") %}
                 <tr>
                     <td class="pv3 pr3 bt b--black-10 f4">{{ macros::title(movie=movie) }}</td>
-                    <td class="pv3 pr3 bt b--black-10 f4">{{ movie.year | default(value="??") }}</td>
+                    <td class="pv3 pr5 bt b--black-10 f4">{{ movie.year | default(value="??") }}</td>
                     <td class="pv3 pr3 bt b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
                     <td class="pv3 pr3 bt b--black-10 f4">
                         {% if movie.rating is defined %}
