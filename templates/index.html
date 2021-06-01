@@ -35,6 +35,12 @@
         {% block content %}
 
         {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/mlcdf/films-done.json", format="json") %}
+
+        <div class="pt4 pb5 measure lh-copy">
+            <div class="f1 fw6 mbO lh-solid">{{ data.entries | length }}</div>
+            <p class="mt0 fw6">{{ section.content | striptags }}</p>
+        </div>
+
         <table cellspacing="0" class="w-100">
             <thead>
                 <th class="pb3 pr3">Titre</th>

@@ -4,11 +4,13 @@
 {% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
 
 {% block content %}
-    <div class="pb5 measure lh-copy">
-        {{ section.content | safe }}
+    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/vu-au-cinema.json", format="json") %}
+
+    <div class="pt4 pb5 measure lh-copy">
+        <div class="f1 fw6 mbO lh-solid">{{ data.entries | length }}</div>
+        <p class="mt0 fw6">{{ section.content | striptags }}</p>
     </div>
 
-    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/vu-au-cinema.json", format="json") %}
     <table cellspacing="0" class="w-100">
         <thead>
             <th class="pb3 pr3">Titre</th>
