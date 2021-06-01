@@ -6,8 +6,9 @@
     {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/top-10-films-selon-max.json", format="json") %}
         <div class="w100 flex items-center flex-column f4 lh-copy">
             <div>
-                <h2 class="mv0 pv3 lh-title bb bw1">{{ section.content | striptags | trim }}</h2>
-                <ol class="pl0 pt3">
+                <h2 class="mv0 pv3 lh-title bb b--black-10">{{ section.content | striptags | trim }}</h2>
+                <label class="dib pointer pt2 pb2 f5"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
+                <ul class="list pl0 pt3">
                     {% for movie in data.entries %}
                     <li class="pb3">
                         <span class="fw6">{{ macros::title(movie=movie) }}</span><span class="black-70"> &mdash; {{ movie.authors | join(sep=" et ") }}, {{ movie.year }}</span>

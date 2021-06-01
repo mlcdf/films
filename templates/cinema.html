@@ -6,13 +6,14 @@
 {% block content %}
     {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/vu-au-cinema.json", format="json") %}
 
-    <div class="pb5 mb3 flex w-100 justify-center">
-        <div class="bt pt3 mr4 bw1 measure-narrow w-100 lh-copy">
+    <div class="pb5 mb3">
+        <div class="bb b--black-10 mr4 measure w-100 lh-copy">
             <div class="f-subheadline fw6 mb1 lh-solid">{{ data.entries | length }}</div>
             <p class="mt0 fw6">{{ section.content | striptags }}</p>
         </div>
-        <div class="bt pt3 ml4 bw1 measure-narrow w-100 lh-copy fw6">
-            Dans l'ordre du plus récent au plus ancien.
+        <label class="dib pointer pt2 pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
+        <div class="measure-narrow lh-copy">
+            Du plus récent au plus ancien
         </div>
     </div>
 
@@ -27,7 +28,7 @@
         <tbody>
         {% for movie in data.entries | reverse %}
             <tr>
-                <td class="pv3 pr3 bt b--black-10 f4">{{ macros::title(movie=movie) }}</td>
+                <td class="pv3 pr3 bt b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
                 <td class="pv3 pr5 bt b--black-10 f4">{{ movie.year }}</td>
                 <td class="pv3 pr3 bt b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
                 <td class="pv3 pr3 bt b--black-10 f4">{{ macros::rating(rating=movie.rating) }}</td>
