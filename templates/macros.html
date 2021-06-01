@@ -11,10 +11,10 @@
 
 {% macro title(movie) %}
     {% if movie.original_title is defined %}
-        <span class="js-title">{{ movie.title }}</span>
-        <span class="js-original-title dn">{{ movie.original_title }}</span>
+        <span class="js-title" title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span>
+        <span class="js-original-title dn" title="{{ movie.original_title }}">{{ movie.original_title | truncate(length=50) }}</span>
     {% else %}
-        <span>{{ movie.title }}</span>
+        <span title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span>
     {% endif %}
 
 {% endmacro title %}
