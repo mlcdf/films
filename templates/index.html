@@ -34,21 +34,21 @@
 </head>
 <body class="bg-washed-red near-black relative h-100 pa0">
     {% block header %}
-    <header class="pb5 flex justify-between pt3 ph3">
-        <div>
+    <header class="pb5 flex justify-start justify-between-l flex-column flex-row-l pt3 ph3">
+        <div class="pb3 pb0-l">
             <a class="dib near-black link" href="/"><h1 class="db f5 ma0 ba b--dashed bw1 pa2 dim">films.mlcdf.fr</h1></a>
             {% set info = get_section(path="info/_index.md") %}
             <a href="{{ info.permalink }}" class="ml3 dib dim near-black link">{{ info.title }}</a>
         </div>
         <nav class="db">
             {% set all = get_section(path="_index.md") %}
-            <a href="{{ all.permalink }}" class="dib pa2 ba br-50 link bw1 near-black dim">{{ all.title | replace(from="🗒", to=" <span aria-hidden='true'>🗒</span>") | safe }}</a>
+            <a href="{{ all.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ all.title | replace(from="🗒", to=" <span aria-hidden='true'>🗒</span>") | safe }}</a>
 
             {% set cinema = get_section(path="cinema/_index.md") %}
-            <a href="{{ cinema.permalink }}" class="dib pa2 ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to=" <span aria-hidden='true'>​📽️</span>") | safe}}</a>
+            <a href="{{ cinema.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to=" <span aria-hidden='true'>​📽️</span>") | safe}}</a>
 
             {% set top10 = get_section(path="10/_index.md") %}
-            <a href="{{ top10.permalink }}" class="dib pa2 ba br-50 link bw1 near-black dim">{{ top10.title | replace(from="🥇", to=" <span aria-hidden='true'>🥇</span>") | safe }}</a>
+            <a href="{{ top10.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ top10.title | replace(from="🥇", to=" <span aria-hidden='true'>🥇</span>") | safe }}</a>
         </nav>
     </header>
     {% endblock header %}
