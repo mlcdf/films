@@ -17,7 +17,7 @@
     <header class="pb4 flex justify-between pt3 ph3">
         <div>
             <a class="near-black link" href="/"><h1 class="db f5 ma0 ba b--dashed bw1 pa2 dim">films.mlcdf.fr</h1></a>
-            <label><input class="mt3 js-toggle-title" type="checkbox" checked> Titres en 🇫🇷</label>
+            <label class="pointer"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en 🇫🇷</label>
         </div>
         <nav class="db">
             {% set all = get_section(path="_index.md") %}
@@ -78,18 +78,14 @@
         </div>
     </footer>
     <script>
-        const toggleTitleBtn = document.querySelector(".js-toggle-title");
+        const showFrenchTitle = document.querySelector(".js-show-french-title");
 
-        toggleTitleBtn.addEventListener("click", function(event) {
-            const state = toggleTitleBtn.getAttribute("data-state");
-            console.log(state);
+        showFrenchTitle.addEventListener("click", function(event) {
 
-            if (state === "original") {
-                showTitle();
-                toggleTitleBtn.setAttribute("data-state", "title");
-            } else {
+            if (showFrenchTitle.checked) {
                 showOriginalTitle();
-                toggleTitleBtn.setAttribute("data-state", "original");
+            } else {
+                showTitle();
             }
 
             function showOriginalTitle() {
