@@ -30,6 +30,12 @@
         th {
             text-align: left;
         }
+
+        @media screen and (min-width:60em) {
+            .d-thg-l {
+                display: table-header-group;
+            }
+        }
     </style>
 </head>
 <body class="bg-washed-red near-black relative h-100 pa0">
@@ -42,13 +48,13 @@
         </div>
         <nav class="db">
             {% set all = get_section(path="_index.md") %}
-            <a href="{{ all.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ all.title | replace(from="🗒", to=" <span aria-hidden='true'>🗒</span>") | safe }}</a>
+            <a href="{{ all.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ all.title | replace(from="🗒", to="<span aria-hidden='true'>🗒</span>") | safe }}</a>
 
             {% set cinema = get_section(path="cinema/_index.md") %}
-            <a href="{{ cinema.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to=" <span aria-hidden='true'>​📽️</span>") | safe}}</a>
+            <a href="{{ cinema.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to="<span aria-hidden='true'>​📽️</span>") | safe}}</a>
 
             {% set top10 = get_section(path="10/_index.md") %}
-            <a href="{{ top10.permalink }}" class="dib pa2 mb3 mb0-ns ba br-50 link bw1 near-black dim">{{ top10.title | replace(from="🥇", to=" <span aria-hidden='true'>🥇</span>") | safe }}</a>
+            <a href="{{ top10.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ top10.title | replace(from="🥇", to="<span aria-hidden='true'>🥇</span>") | safe }}</a>
         </nav>
     </header>
     {% endblock header %}
@@ -67,7 +73,7 @@
         </div>
 
         <table cellspacing="0" class="w-100">
-            <thead>
+            <thead class="d-thg-l dn">
                 <th class="pb3 pr3">Titre</th>
                 <th class="pb3 pr3">Année</th>
                 <th class="pb3 pr3">Réalisateur/trice(s)</th>
@@ -75,11 +81,11 @@
             </thead>
             <tbody>
             {% for movie in data.entries | sort(attribute="title") %}
-                <tr>
-                    <td class="pv3 pr3 bt b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
-                    <td class="pv3 pr5 bt b--black-10 f4">{{ movie.year | default(value="??") }}</td>
-                    <td class="pv3 pr3 bt b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
-                    <td class="pv3 pr3 bt b--black-10 f4">
+                <tr class="db dt-row-l bn-l pv3 pv0-l bt b--black-90">
+                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
+                    <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f4">{{ movie.year | default(value="??") }}</td>
+                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
+                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4">
                         {% if movie.rating is defined %}
                             {{ macros::rating(rating=movie.rating) }}
                         {% else %}

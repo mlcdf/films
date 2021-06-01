@@ -18,7 +18,7 @@
     </div>
 
     <table cellspacing="0" class="w-100">
-        <thead>
+        <thead class="d-thg-l dn">
             <th class="pb3 pr3">Titre</th>
             <th class="pb3 pr3">Année</th>
             <th class="pb3 pr3">Réalisateur/trice(s)</th>
@@ -27,13 +27,13 @@
         </thead>
         <tbody>
         {% for movie in data.entries | reverse %}
-            <tr>
-                <td class="pv3 pr3 bt b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
-                <td class="pv3 pr5 bt b--black-10 f4">{{ movie.year }}</td>
-                <td class="pv3 pr3 bt b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
-                <td class="pv3 pr3 bt b--black-10 f4">{{ macros::rating(rating=movie.rating) }}</td>
+            <tr class="db dt-row-l bn-l pv3 pv0-l bt b--black-90">
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
+                <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">{{ movie.authors | join(sep=", ") }}</td>
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">{{ macros::rating(rating=movie.rating) }}</td>
                 {% set x = movie.comment | default(value="") | split(pat=" ") %}
-                <td class="pv3 pr3 bt b--black-10 f4">
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">
                     {% if x[0] | trim != "" %}
                         <div class="dib ph2 br2 ba b--dark-red dark-red" title="vu {{ x[0] | replace(from="x", to="") }} fois au cinéma">{{ x[0] | trim }}</div>
                     {% endif %}
