@@ -9,7 +9,7 @@
                 {{ section.content | safe }}
                 <ol class="pl0">
                     {% for movie in data.entries %}
-                    <li class="pb3 mw7">
+                    <li class="pb3">
                         <span class="i">{{ macros::title(movie=movie) }}</span><span class="black-70"> &mdash; {{ movie.authors | join(sep=" et ") }}, {{ movie.year }}</span>
                     </li>
                     {% endfor %}
