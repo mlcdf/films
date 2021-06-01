@@ -58,26 +58,12 @@
 
         {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/mlcdf/films-done.json", format="json") %}
 
-        <div class="pb4 mb3 flex w-100 justify-center">
-            <div class="bt pt3 mr4 bw1 measure-narrow w-100 lh-copy">
+        <div class="pb5 mb3">
+            <div class="bb b--black-10 mr4 measure w-100 lh-copy">
                 <div class="f-subheadline fw6 mb1 lh-solid">{{ data.entries | length }}</div>
                 <p class="mt0 fw6">Films vus</p>
             </div>
-            <div class="bt pt3 ml4 bw1 measure-narrow w-100 lh-copy">
-                {% set x = data.entries | map(attribute="authors") %}
-
-                {% set_global authors = [] %}
-                {% for _authors in x %}
-                    {% set_global authors = authors | concat(with=_authors) %}
-                {% endfor %}
-
-                <div class="f-subheadline fw6 mb1 lh-solid">{{ authors | unique | length }}</div>
-                <p class="mt0 fw6">Réalisateur/trices différentes</p>
-            </div>
-        </div>
-
-        <div class="w-100 flex justify-end pb4">
-            <label class="db pointer pb3"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
+            <label class="dib pointer pt2 pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
         </div>
 
         <table cellspacing="0" class="w-100">
