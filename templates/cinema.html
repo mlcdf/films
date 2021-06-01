@@ -6,17 +6,22 @@
 {% block content %}
     {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/vu-au-cinema.json", format="json") %}
 
-    <div class="pt4 pb5 measure lh-copy">
-        <div class="f1 fw6 mbO lh-solid">{{ data.entries | length }}</div>
-        <p class="mt0 fw6">{{ section.content | striptags }}</p>
+    <div class="pb5 mb3 flex w-100 justify-center">
+        <div class="bt pt3 mr4 bw1 measure-narrow w-100 lh-copy">
+            <div class="f-subheadline fw6 mb1 lh-solid">{{ data.entries | length }}</div>
+            <p class="mt0 fw6">{{ section.content | striptags }}</p>
+        </div>
+        <div class="bt pt3 ml4 bw1 measure-narrow w-100 lh-copy fw6">
+            Dans l'ordre du plus récent au plus ancien.
+        </div>
     </div>
 
     <table cellspacing="0" class="w-100">
         <thead>
             <th class="pb3 pr3">Titre</th>
             <th class="pb3 pr3">Année</th>
-            <th class="pb3 pr3">Réalisateurice(s)</th>
-            <th class="pb3 pr3">Note</th>
+            <th class="pb3 pr3">Réalisateur/trice(s)</th>
+            <th class="pb3 pr3">Appréciation</th>
             <th class="pb3 pr3"></th>
         </thead>
         <tbody>
