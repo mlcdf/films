@@ -18,7 +18,8 @@
     <header class="pb4 flex justify-between pt3 ph3">
         <div>
             <a class="dib near-black link" href="/"><h1 class="db f5 ma0 ba b--dashed bw1 pa2 dim">films.mlcdf.fr</h1></a>
-            <a href="/info" class="ml3 dib">Info</a>
+            {% set info = get_section(path="info/_index.md") %}
+            <a href="{{ info.permalink }}" class="ml3 dib">{{ info.title }}</a>
             <label class="db pointer"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en 🇫🇷</label>
         </div>
         <nav class="db">
@@ -61,9 +62,8 @@
             <thead>
                 <th class="pb3 pr3">Titre</th>
                 <th class="pb3 pr3">Année</th>
-            <th class="pb3 pr3">Réalisateur/trice(s)</th>
-            <th class="pb3 pr3">Appréciation</th>
-                <th class="pb3 pr3"></th>
+                <th class="pb3 pr3">Réalisateur/trice(s)</th>
+                <th class="pb3 pr3">Appréciation</th>
             </thead>
             <tbody>
             {% for movie in data.entries | sort(attribute="title") %}
@@ -76,12 +76,6 @@
                             {{ macros::rating(rating=movie.rating) }}
                         {% else %}
                             🤷‍♂️
-                        {% endif %}
-                    </td>
-                    {% set x = movie.comment | default(value="") | split(pat=" ") %}
-                    <td class="pv3 pr3 bt b--black-10 f4">
-                        {% if x[0] | trim != "" %}
-                            <div class="dib ph2 br2 ba b--dark-red dark-red">{{ x[0] | trim }}</div>
                         {% endif %}
                     </td>
                 </tr>
