@@ -27,7 +27,7 @@
                 {% set x = movie.comment | default(value="") | split(pat=" ") %}
                 <td class="pv3 pr3 bt b--black-10 f4">
                     {% if x[0] | trim != "" %}
-                        <div class="dib ph2 br2 ba b--dark-red dark-red">{{ x[0] | trim }}</div>
+                        <div class="dib ph2 br2 ba b--dark-red dark-red" title="vu {{ x[0] | replace(from="x", to="") }} fois au cinéma">{{ x[0] | trim }}</div>
                     {% endif %}
                 </td>
             </tr>
