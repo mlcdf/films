@@ -70,12 +70,12 @@
             <label class="dib pointer pt2 pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
         </div>
 
-        <table cellspacing="0" class="w-100">
+        <table cellspacing="0" class="w-100 js-sort-table">
             <thead class="d-thg-l dn">
-                <th class="pb3 pr3">Titre</th>
-                <th class="pb3 pr3">Année</th>
-                <th class="pb3 pr3">Réalisateur/trice(s)</th>
-                <th class="pb3 pr3">Appréciation</th>
+                <th class="pb3 pr3 pointer">Titre</th>
+                <th class="pb3 pr3 pointer">Année</th>
+                <th class="pb3 pr3 pointer">Réalisateur/trice(s)</th>
+                <th class="pb3 pr3 pointer">Appréciation</th>
             </thead>
             <tbody>
             {% for movie in data.entries | sort(attribute="title") %}
@@ -83,7 +83,7 @@
                     <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
                     <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f4">{{ movie.year | default(value="??") }}</td>
                     <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
-                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4">
+                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4" data-rating='{{ movie.rating | default(value="")}}'>
                         {% if movie.rating is defined %}
                             {{ macros::rating(rating=movie.rating) }}
                         {% else %}
@@ -96,39 +96,6 @@
         </table>
         {% endblock content %}
     </main>
-    <script>
-        const showFrenchTitle = document.querySelector(".js-show-french-title");
-
-        showFrenchTitle.addEventListener("click", function(event) {
-
-            if (showFrenchTitle.checked) {
-                showOriginalTitle();
-            } else {
-                showTitle();
-            }
-
-            function showOriginalTitle() {
-                document.querySelectorAll(".js-original-title").forEach(function(el) {
-                    el.style.display = "none"
-                });
-
-                document.querySelectorAll(".js-title").forEach(function(el) {
-                    el.style.display = "inline"
-                });
-            }
-
-            function showTitle() {
-                document.querySelectorAll(".js-original-title").forEach(function(el) {
-                    el.style.display = "inline"
-                });
-
-                document.querySelectorAll(".js-title").forEach(function(el) {
-                    el.style.display = "none"
-                });
-            }
-        })
-
-    </script>
-
+    <script src="/script.js"></script>
 </body>
 </html>
