@@ -60,3 +60,6 @@ jobs:
           branch: data
           force: true
           directory: output
+
+      - name: trigger Netlify build hook
+        run: curl -s "${NETLIFY_BUILD_HOOK}"
