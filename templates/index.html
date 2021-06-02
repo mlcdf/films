@@ -80,15 +80,21 @@
             <tbody>
             {% for movie in data.entries | sort(attribute="title") %}
                 <tr class="db dt-row-l bn-l pv3 pv0-l bt b--black-90">
-                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
-                    <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f4">{{ movie.year | default(value="??") }}</td>
-                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4">{{ movie.authors | join(sep=", ") }}</td>
-                    <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f4" data-rating='{{ movie.rating | default(value="")}}'>
-                        {% if movie.rating is defined %}
-                            {{ macros::rating(rating=movie.rating) }}
-                        {% else %}
-                            🤷‍♂️
-                        {% endif %}
+                    <td class="db dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f4 lh-copy">{{ macros::title(movie=movie) }}</td>
+                    <td class="dib dtc-l pv1 pv3-l pr5-l bn bt-l b--black-10 f4">{{ movie.year | default(value="??") }}</td>
+                    <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f4"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
+
+                    {% if movie.rating is defined %}
+                        {% set html = macros::rating(rating=movie.rating) %}
+                        {% set value = movie.rating / 2  %}
+                        {% set value = value ~ "/5" %}
+                    {% else %}
+                        {% set html = "🤷‍♂️" %}
+                        {% set value = "??" %}
+                    {% endif %}
+
+                    <td class="db dtc-l pt2 pb1 pv3-l pr3-l bn bt-l b--black-10 f4" title="{{ value }}" data-sort-value='{{ movie.rating | default(value="")}}'>
+                        {{ html | safe }}
                     </td>
                 </tr>
             {% endfor %}

@@ -30,8 +30,21 @@
             <tr class="db dt-row-l bn-l pv3 pv0-l bt b--black-90">
                 <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
                 <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
-                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">{{ movie.authors | join(sep=", ") }}</td>
-                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns" data-rating='{{ movie.rating | default(value="")}}'>{{ macros::rating(rating=movie.rating) }}</td>
+                <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f4"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
+
+                {% if movie.rating is defined %}
+                    {% set html = macros::rating(rating=movie.rating) %}
+                    {% set value = movie.rating / 2  %}
+                    {% set value = value ~ "/5" %}
+                {% else %}
+                    {% set html = "🤷‍♂️" %}
+                    {% set value = "??" %}
+                {% endif %}
+
+                <td class="db dtc-l pt2 pb1 pv3-l pr3-l bn bt-l b--black-10 f4" title="{{ value }}" data-sort-value='{{ movie.rating | default(value="")}}'>
+                    {{ html | safe }}
+                </td>
+
                 {% set x = movie.comment | default(value="") | split(pat=" ") %}
                 <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">
                     {% if x[0] | trim != "" %}

@@ -35,10 +35,10 @@ function sortTable(table, col, reverse) {
         i;
     reverse = -((+reverse) || -1);
     tr = tr.sort(function (a, b) { // sort rows
-        if (a.cells[col].hasAttribute("data-rating")) {
+        if (a.cells[col].hasAttribute("data-sort-value")) {
             return reverse // `-1 *` if want opposite order
-            * (a.cells[col].getAttribute("data-rating")
-                .localeCompare(b.cells[col].getAttribute("data-rating"), undefined, {numeric: true})
+            * (a.cells[col].getAttribute("data-sort-value")
+                .localeCompare(b.cells[col].getAttribute("data-sort-value"), undefined, {numeric: true})
                );
         }
 
