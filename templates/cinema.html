@@ -4,7 +4,7 @@
 {% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
 
 {% block content %}
-    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/vu-au-cinema.json", format="json") %}
+    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/data/vu-au-cinema.json", format="json") %}
 
     <div class="pb5 mb3">
         <div class="bb b--black-10 mr4 measure w-100 lh-copy">

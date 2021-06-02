@@ -3,7 +3,7 @@
 
 {% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
 {% block content %}
-    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/backup/top-10-films-selon-max.json", format="json") %}
+    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/data/top-10-films-selon-max.json", format="json") %}
         <div class="w100 flex items-center flex-column f5 f4-ns lh-copy">
             <div>
                 <h2 class="mv0 pv3 lh-title bb b--black-10">{{ section.content | striptags | trim }}</h2>

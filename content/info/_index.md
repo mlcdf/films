@@ -3,7 +3,7 @@ title = "Info"
 template = "info.html"
 +++
 
-Les [données](https://github.com/mlcdf/films/tree/backup) sont extraites de [SensCritique](https://senscritique.com) à l'aide de [sc-backup](https://github.com/mlcdf/sc-backup).
+Les [données](https://github.com/mlcdf/films/tree/data) sont extraites de [SensCritique](https://senscritique.com) à l'aide de [sc-backup](https://github.com/mlcdf/sc-backup).
 
 Le site est généré par [Zola](https://getzola.org) puis hébergé chez Netlify. Les sources sont disponibles sur [GitHub](https://github.com/mlcdf/films). 
 
