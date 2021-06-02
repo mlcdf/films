@@ -62,4 +62,4 @@ jobs:
           directory: output
 
       - name: trigger Netlify build hook
-        run: curl -s "${NETLIFY_BUILD_HOOK}"
+        run: curl -s ${{secrets.NETLIFY_BUILD_HOOK}}
