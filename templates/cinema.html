@@ -28,8 +28,8 @@
         <tbody>
         {% for movie in data.entries | reverse %}
             <tr class="db dt-row-l bn-l pv3 pv0-l bt b--black-90">
-                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
-                <td class="db dtc-l pv1 pv3-l pr5 bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
+                <td class="db dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
+                <td class="dib dtc-l pv1 pv3-l pr5-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
                 <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
 
                 {% if movie.rating is defined %}
