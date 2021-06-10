@@ -20,7 +20,7 @@
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">
             <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
-            <th class="tl pb3 pr3 pr5-l pointer">Année de sortie</th>
+            <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
             <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
             <th class="tl pb3 pr3 pointer">Appréciation</th>
             <th class="pb3 pr3 pointer"></th>
@@ -29,7 +29,7 @@
         {% for movie in data.entries | reverse %}
             <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
                 <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
-                <td class="dib dtc-l pv1 pv3-l pr5-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
+                <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year }}</td>
                 <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
 
                 {% if movie.rating is defined %}
@@ -46,9 +46,9 @@
                 </td>
 
                 {% set x = movie.comment | default(value="") | split(pat=" ") %}
-                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 f4-ns">
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 lh-copy">
                     {% if x[0] | trim != "" %}
-                        <div class="dib ph2 br2 ba b--dark-red dark-red" title="vu {{ x[0] | replace(from="x", to="") }} fois au cinéma">{{ x[0] | trim }}</div>
+                        <div class="dib ph2 br2 ba b--dark-red dark-red" title="vu {{ x[0] | replace(from="x", to="") }} fois au cinéma"> {{ x[0] | trim }} </div>
                     {% endif %}
                 </td>
             </tr>

@@ -52,11 +52,9 @@
             {% set cinema = get_section(path="cinema/_index.md") %}
             <a href="{{ cinema.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to="<span aria-hidden='true'>​📽️</span>") | safe}}</a>
 
-            {% set reco = get_section(path="recommandations/_index.md") %}
-            <a href="{{ reco.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ reco.title | replace(from="🥇", to="<span aria-hidden='true'>🥇</span>") | safe }}</a>
+            {% set like = get_section(path="like/_index.md") %}
+            <a href="{{ like.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ like.title | replace(from="💗", to="<span aria-hidden='true'>💗</span>") | safe }}</a>
 
-            {% set top10 = get_section(path="10/_index.md") %}
-            <a href="{{ top10.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ top10.title | replace(from="🥇", to="<span aria-hidden='true'>🥇</span>") | safe }}</a>
         </nav>
     </header>
     {% endblock header %}
@@ -77,7 +75,7 @@
         <table cellspacing="0" class="w-100 js-sort-table">
             <thead class="d-thg-l dn">
                 <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
-                <th class="tl pb3 pr3 pr5-l pointer">Année de sortie</th>
+                <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
                 <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
                 <th class="tl pb3 pr3 pointer">Appréciation</th>
             </thead>
@@ -85,7 +83,7 @@
             {% for movie in data.entries | sort(attribute="title") %}
                 <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
                     <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
-                    <td class="dib dtc-l pv1 pv3-l pr5-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year | default(value="??") }}</td>
+                    <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year | default(value="??") }}</td>
                     <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
 
                     {% if movie.rating is defined %}

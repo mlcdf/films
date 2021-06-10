@@ -1,0 +1,40 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block title %} {{ section.title }} | {{ super() }} {% endblock title %}
+
+{% block content %}
+    {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/data/mlcdf/films-done.json", format="json") %}
+
+    <div class="pb5 mb3 ph3">
+        <div class="bb b--black-10 mr4 measure w-100 lh-copy">
+            <div class="f-subheadline fw6 mb1 lh-solid">{{ data.entries | filter(attribute="favorite", value=true) | length }}</div>
+            <p class="mt0 fw6">{{ section.content | striptags }}</p>
+        </div>
+        <label class="dib pointer pt2 pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
+    </div>
+
+    <table cellspacing="0" class="w-100 js-sort-table">
+        <thead class="d-thg-l dn">
+            <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
+            <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
+            <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
+        </thead>
+        <tbody>
+        {% for movie in data.entries | sort(attribute="title") %}
+            {% if movie.rating is not defined or movie.rating > 7 or movie.rating == 7 and movie.favorite == false %}
+                {% continue %}
+            {% endif %}
+            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
+                <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
+                <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year | default(value="??") }}</td>
+                <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
+
+                <td class="db dtc-l pt2 pb1 pv3-l pr3-l bn bt-l b--black-10 f4">
+                    {{ movie.genres | default(value=["??"]) | join(sep=", ") }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
