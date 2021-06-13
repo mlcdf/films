@@ -7,9 +7,9 @@
     {% set data = load_data(url="https://raw.githubusercontent.com/mlcdf/films/data/mlcdf/films-done.json", format="json") %}
 
     <div class="pb5 mb3 ph3">
-        <div class="bb b--black-10 mr4 measure w-100 lh-copy">
-            <div class="f-subheadline fw6 mb1 lh-solid">{{ data.entries | filter(attribute="favorite", value=true) | length }}</div>
-            <p class="mt0 fw6">{{ section.content | striptags }}</p>
+        <div class="bb b--black-10 mr4 measure-wide fw5 w-100 lh-copy">
+            <div class="f1 mb1 lh-solid pb3">💗 Coups de coeur</div>
+            <p class="mt0">{{ section.content | striptags }}</p>
         </div>
         <label class="dib pointer pt2 pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
     </div>
@@ -19,12 +19,12 @@
             <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
             <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
             <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
-            <th class="tl pb3 pr3 pointer"></th>
         </thead>
         <tbody>
         {% for movie in data.entries | sort(attribute="title") %}
             {% set seven_favorite = movie.rating | default(value=0) == 7 and movie.favorite == false %}
-            {% set height_plus = 7 > movie.rating | default(value=0)%}
+            {% set height_favorite = movie.rating | default(value=0) == 8 and movie.favorite == false %}
+            {% set height_plus = 7 > movie.rating | default(value=0) %}
 
             {% if seven_favorite or height_favorite or height_plus %}
                 {% continue %}
