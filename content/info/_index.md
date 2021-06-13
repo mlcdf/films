@@ -8,3 +8,5 @@ Les [données](https://github.com/mlcdf/films/tree/data) sont extraites de [Sens
 Le site est généré par [Zola](https://getzola.org) puis hébergé chez Netlify. Les sources sont disponibles sur [GitHub](https://github.com/mlcdf/films).
 
 Codé avec les mains par [Maxime Le Conte des Floris](https://www.mlcdf.fr) sous la pluie bordelaise.
+
+Merci à Jérôme et [Nicolas](https://github.com/Nicolas-Constanty) pour leurs retours constructifs.
