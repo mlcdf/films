@@ -52,8 +52,8 @@
             {% set cinema = get_section(path="cinema/_index.md") %}
             <a href="{{ cinema.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ cinema.title | replace(from="​📽️", to="<span aria-hidden='true'>​📽️</span>") | safe}}</a>
 
-            {% set like = get_section(path="like/_index.md") %}
-            <a href="{{ like.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ like.title | replace(from="💗", to="<span aria-hidden='true'>💗</span>") | safe }}</a>
+            {% set love = get_section(path="love/_index.md") %}
+            <a href="{{ love.permalink }}" class="dib pa2 mb3 mb0-l ba br-50 link bw1 near-black dim">{{ love.title | replace(from="💗", to="<span aria-hidden='true'>💗</span>") | safe }}</a>
 
         </nav>
     </header>
