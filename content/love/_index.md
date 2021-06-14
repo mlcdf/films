@@ -3,4 +3,4 @@ title = "💗 Coups de coeur"
 template = "love.html"
 +++
 
-Où des grands classiques côtoient ovnis et plaisirs coupables
+Où se côtoient grands classiques, ovnis et plaisirs coupables
