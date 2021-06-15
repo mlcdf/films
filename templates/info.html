@@ -9,6 +9,7 @@
         <div class="measure-wide w-100">
             <h2 class="mv0 pv3 bb bw1 lh-title">{{ section.title }}</h2>
             <div class="lh-copy">{{ section.content | safe }}<div>
+            La dernière mise à jour  date du {{ now() | date(format="%Y-%d-%m") }}.
         </div>
     </div>
 {% endblock content %}
