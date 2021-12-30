@@ -29,12 +29,19 @@
             {% if seven_favorite or height_favorite or height_plus %}
                 {% continue %}
             {% endif %}
-
-            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
+            {% if movie.review is defined %}
+            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables pointer" data-movie-id="{{ movie.id }}">
+            {% else %}
+            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables" data-movie-id="{{ movie.id }}">
+            {% endif %}
                 <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns lh-copy">{{ macros::title(movie=movie) }}</td>
                 <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10 f5 f4-ns">{{ movie.year | default(value="??") }}</td>
                 <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10 f5 f4-ns"><span class="dn-l">&mdash; </span>{{ movie.authors | join(sep=", ") }}</td>
             </tr>
+            
+            {% if movie.review is defined %}
+                {{ macros::review(movie=movie)}}
+            {% endif %}
         {% endfor %}
         </tbody>
     </table>

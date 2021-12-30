@@ -17,4 +17,24 @@
         <span title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span>
     {% endif %}
 
+    {% if movie.review is defined %}
+        <button class="ml2 dib ph2 pt1 f5 fw6 ba b--black-70 lh-copy pointer b--dashed black-70 grow button-reset bg-inherit"><span style="top:2px">📝</span> Mon avis</span>
+    {% endif %}
+
 {% endmacro title %}
+
+{% macro review(movie) %}
+    <tr class="bn-l pa3 pv0-l bt js-review dn" data-expands-for="{{ movie.id }}">
+        {% set path = movie.id ~ ".jpg" %}
+        <td colspan="1" class="db dtc-l pv1 pv3-l ph3-l">{% set image = resize_image(path=path, width=600, op="fit_width") %}
+            <img src="{{ image.url }}" /></td>
+        <th colspan="2" class="db dtc-l pv1 pv3-l bn v-top f5 f4-ns lh-copy fw4 tl">
+            <h3 class="f5 fw6 lh-title mt0 mb2">Genre :</h3>
+            <div class="mw7">{{ movie.genres | join(sep=", ") }}</div>
+            <h3 class="f5 fw6 lh-title mt4 mb2">Mon avis en quelques mots :</h3>
+            <div class="mw7"><span class="black-50">«</span>&nbsp;{{ movie.review | markdown(inline=true) }}&nbsp;<span class="black-50">»</span></div>
+            
+            <a class="f5 link dim ba b--dotted bw1 ph3 pv2 mb2 dib black mt4" href="{{ movie.wikipedia }}">Wikipédia</a>
+        </td>
+    </tr>
+{% endmacro review %}

@@ -68,3 +68,56 @@ const table = document.querySelector(".js-sort-table");
 if (table) {
     makeSortable(table);
 }
+
+// Review toggle
+const expandables = document.querySelectorAll(".js-expandables");
+expandables.forEach(expandable => {
+    expandable.addEventListener("click", reviewToggle);
+});
+
+function reviewToggle(event) {
+    const target = event.target;
+
+    let id = "";
+    let row = target.parentNode;
+
+    while (true) {
+        if (row.dataset.movieId != null || undefined) {
+            id = row.dataset.movieId;
+            break;
+        }
+        row = row.parentNode;
+    }
+
+    expand(id);
+    toggleFragment(id);
+}
+
+function expand(id) {
+    let reviewNodes = document.querySelectorAll('[data-expands-for="' + id + '"]');
+    reviewNodes.forEach(node => {
+        node.classList.toggle("dn");
+        node.classList.toggle("db");
+        node.classList.toggle("dt-row-l");
+    });
+}
+
+function toggleFragment(id) {
+    if (window.location.hash.includes(id)) {
+        // https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r/5298684#5298684
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+
+    } else {
+        window.location.hash = id
+    }
+}
+
+function loadUrlFragment() {
+    const id = window.location.hash.replace("#", "");
+
+    document.querySelector('[data-movie-id="' + id + '"]').scrollIntoView();
+    expand(id);
+}
+
+
+loadUrlFragment();
