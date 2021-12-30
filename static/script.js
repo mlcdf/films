@@ -89,35 +89,62 @@ function reviewToggle(event) {
         row = row.parentNode;
     }
 
-    expand(id);
+    toggleRow(id);
     toggleFragment(id);
 }
 
-function expand(id) {
-    let reviewNodes = document.querySelectorAll('[data-expands-for="' + id + '"]');
-    reviewNodes.forEach(node => {
-        node.classList.toggle("dn");
-        node.classList.toggle("db");
-        node.classList.toggle("dt-row-l");
-    });
+function toggleRow(id) {
+    let node = document.querySelector('[data-expands-for="' + id + '"]');
+    node.classList.toggle("dn");
+    node.classList.toggle("db");
+    node.classList.toggle("dt-row-l");
 }
 
 function toggleFragment(id) {
     if (window.location.hash.includes(id)) {
         // https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r/5298684#5298684
         history.pushState("", document.title, window.location.pathname + window.location.search);
-
     } else {
-        window.location.hash = id
+        window.location.hash = id;
     }
 }
 
 function loadUrlFragment() {
     const id = window.location.hash.replace("#", "");
+    if (id == "") {
+        return
+    }
+
+    let row = document.querySelector('[data-movie-id="' + id + '"]');
+    if (row == null) {
+        window.location.hash = "";
+        return
+    }
 
     document.querySelector('[data-movie-id="' + id + '"]').scrollIntoView();
-    expand(id);
+    toggleRow(id);
 }
 
+function listenFragmentChanges() {
+    window.addEventListener('hashchange', function () {
+        const id = window.location.hash.replace("#", "");
+        if (id == "") {
+            return
+        }
+
+        let row = document.querySelector('[data-movie-id="' + id + '"]');
+        if (row == null) {
+            let reviewNodes = document.querySelectorAll('[data-expands-for]');
+            reviewNodes.forEach(node => {
+                node.classList.add("dn");
+                node.classList.remove("db", "dt-row-l");
+            });
+
+            window.location.hash = "";
+            return
+        }
+    }, false);
+}
 
 loadUrlFragment();
+listenFragmentChanges();
