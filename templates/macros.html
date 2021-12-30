@@ -31,10 +31,10 @@
         <th colspan="2" class="db dtc-l pv1 pv3-l bn v-top f5 f4-ns lh-copy fw4 tl">
             <h3 class="f5 fw6 lh-title mt0 mb2">Genre :</h3>
             <div class="mw7">{{ movie.genres | join(sep=", ") }}</div>
-            <h3 class="f5 fw6 lh-title mt4 mb2">Mon avis en quelques mots :</h3>
-            <div class="mw7"><span class="black-50">«</span>&nbsp;{{ movie.review | markdown(inline=true) }}&nbsp;<span class="black-50">»</span></div>
+            <h3 class="f5 fw6 lh-title mt4 mb2">Mon commentaire:</h3>
+            <div class="mw7"><p class="mt0"><span class="black-50">«</span>&nbsp;{{ movie.review | markdown(inline=true) | safe }}&nbsp;<span class="black-50">»</span></p></div>
             
-            <a class="f5 link dim ba b--dotted bw1 ph3 pv2 mb2 dib black mt4" href="{{ movie.wikipedia }}">Wikipédia</a>
+            <a class="f5 link dim ba b--dotted bw1 ph3 pv2 mb2 dib black mt3" href="{{ movie.wikipedia }}">Wikipédia</a>
         </td>
     </tr>
 {% endmacro review %}
