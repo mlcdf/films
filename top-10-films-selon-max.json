@@ -1,0 +1,113 @@
+{
+    "entries": [
+        {
+            "id": "434210",
+            "title": "La vie est belle",
+            "original_title": "It's a Wonderful Life",
+            "year": 1946,
+            "authors": [
+                "Frank Capra"
+            ],
+            "rating": 10,
+            "favorite": false
+        },
+        {
+            "id": "370894",
+            "title": "Douze Hommes en colère",
+            "original_title": "12 Angry Men",
+            "year": 1957,
+            "authors": [
+                "Sidney Lumet"
+            ],
+            "rating": 10,
+            "favorite": false
+        },
+        {
+            "id": "388583",
+            "title": "Interstellar",
+            "year": 2014,
+            "authors": [
+                "Christopher Nolan"
+            ],
+            "rating": 10,
+            "favorite": true
+        },
+        {
+            "id": "442615",
+            "title": "L'Empire contre-attaque",
+            "original_title": "Star Wars Episode V: The Empire Strikes Back",
+            "year": 1980,
+            "authors": [
+                "Irvin Kershner"
+            ],
+            "rating": 10,
+            "favorite": true
+        },
+        {
+            "id": "419456",
+            "title": "The Dark Knight - Le Chevalier noir",
+            "original_title": "The Dark Knight",
+            "year": 2008,
+            "authors": [
+                "Christopher Nolan"
+            ],
+            "rating": 10,
+            "favorite": true
+        },
+        {
+            "id": "482710",
+            "title": "Le Lauréat",
+            "original_title": "The Graduate",
+            "year": 1967,
+            "authors": [
+                "Mike Nichols"
+            ],
+            "rating": 10,
+            "favorite": false
+        },
+        {
+            "id": "480435",
+            "title": "Mad Max - Fury Road",
+            "year": 2015,
+            "authors": [
+                "George Miller"
+            ],
+            "rating": 10,
+            "favorite": true
+        },
+        {
+            "id": "430683",
+            "title": "Gladiator",
+            "year": 2000,
+            "authors": [
+                "Ridley Scott"
+            ],
+            "rating": 10,
+            "favorite": false
+        },
+        {
+            "id": "382239",
+            "title": "Matrix",
+            "original_title": "The Matrix",
+            "year": 1999,
+            "authors": [
+                "Lilly Wachowski",
+                "Lana Wachowski"
+            ],
+            "rating": 10,
+            "favorite": false
+        },
+        {
+            "id": "488559",
+            "title": "Bienvenue à Gattaca",
+            "original_title": "Gattaca",
+            "year": 1997,
+            "authors": [
+                "Andrew Niccol"
+            ],
+            "rating": 9,
+            "favorite": true
+        }
+    ],
+    "title": "Top 10 Films          selon Max"
+}

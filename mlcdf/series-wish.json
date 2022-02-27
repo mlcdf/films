@@ -1,0 +1,353 @@
+{
+    "entries": [
+        {
+            "id": "42580368",
+            "title": "Scenes From a Marriage",
+            "year": 2021,
+            "authors": [
+                "Hagai Levi"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "40606797",
+            "title": "I May Destroy You",
+            "year": 2020,
+            "authors": [
+                "Michaela Coel"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "39710589",
+            "title": "No Man's Land",
+            "year": 2020,
+            "authors": [
+                "Maria Feldman",
+                "Amit Cohen",
+                "Eitan Mansuri"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "39659682",
+            "title": "Normal People",
+            "year": 2020,
+            "authors": [
+                "Lenny Abrahamson"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "24786239",
+            "title": "Babylon Berlin",
+            "year": 2017,
+            "authors": [
+                "Achim von Borries",
+                "Tom Tykwer"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "26472646",
+            "title": "Chernobyl",
+            "year": 2019,
+            "authors": [
+                "Craig Mazin"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "31452621",
+            "title": "Devs",
+            "year": 2020,
+            "authors": [
+                "Alex Garland"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "23204662",
+            "title": "The Young Pope",
+            "year": 2016,
+            "authors": [
+                "Paolo Sorrentino"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "22336740",
+            "title": "Fleabag",
+            "year": 2016,
+            "authors": [
+                "Phoebe Waller-Bridge"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "38861759",
+            "title": "Undone",
+            "year": 2019,
+            "authors": [
+                "Kate Purdy",
+                "Raphael Bob-Waksberg"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "32114878",
+            "title": "Pose",
+            "year": 2018,
+            "authors": [
+                "Steven Canals",
+                "Brad Falchuk",
+                "Ryan Murphy"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "149369",
+            "title": "Mad Men",
+            "year": 2007,
+            "authors": [
+                "Matthew Weiner"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "24009587",
+            "title": "The OA",
+            "year": 2016,
+            "authors": [
+                "Zal Batmanglij",
+                "Brit Marling"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "417261",
+            "title": "Planète Terre",
+            "original_title": "Planet Earth",
+            "year": 2006,
+            "authors": [
+                "Alastair Fothergill"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "8461970",
+            "title": "Halt and Catch Fire",
+            "year": 2014,
+            "authors": [
+                "Christopher Cantwell",
+                "Christopher C. Rogers"
+            ],
+            "rating": 6,
+            "favorite": false
+        },
+        {
+            "id": "179528",
+            "title": "Gilmore Girls",
+            "year": 2000,
+            "authors": [
+                "Amy Sherman-Palladino"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "12646050",
+            "title": "La Forêt de l'Étrange",
+            "original_title": "Over The Garden Wall",
+            "year": 2014,
+            "authors": [
+                "Patrick McHale"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "462414",
+            "title": "Lupin III : Une femme nommée Fujiko Mine",
+            "original_title": "Rupan Sansei : Mine Fujiko to iu onna",
+            "year": 2012,
+            "authors": [
+                "Sayo Yamamoto"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "53044",
+            "title": "Les Allumés",
+            "original_title": "Spaced",
+            "year": 1999,
+            "authors": [
+                "Simon Pegg",
+                "Jessica Stevenson",
+                "Edgar Wright"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "142006",
+            "title": "Cowboy Bebop",
+            "year": 1998,
+            "authors": [
+                "Shinichirô Watanabe"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "219411",
+            "title": "Freaks and Geeks",
+            "year": 1999,
+            "authors": [
+                "Paul Feig"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "104926",
+            "title": "Angels in America",
+            "year": 2003,
+            "authors": [
+                "Tony Kushner",
+                "Mike Nichols"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "13025035",
+            "title": "Le Bureau des Légendes",
+            "year": 2015,
+            "authors": [
+                "Eric Rochant"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "38202752",
+            "title": "Notre planète",
+            "original_title": "Our Planet",
+            "year": 2019,
+            "authors": [
+                "Alastair Fothergill",
+                "Keith Scholey"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "271673",
+            "title": "Rome",
+            "year": 2005,
+            "authors": [
+                "Bruno Heller"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "163987",
+            "title": "Six pieds sous terre",
+            "original_title": "Six Feet Under",
+            "year": 2001,
+            "authors": [
+                "Alan Ball"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "392661",
+            "title": "Rubicon",
+            "year": 2010,
+            "authors": [
+                "Jason Horwitch"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "264461",
+            "title": "Jeux de pouvoir",
+            "original_title": "State of Play",
+            "year": 2003,
+            "authors": [
+                "Paul Abbott"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "198281",
+            "title": "Oz",
+            "year": 1997,
+            "authors": [
+                "Tom Fontana"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "12480",
+            "title": "Friday Night Lights",
+            "year": 2006,
+            "authors": [
+                "Peter Berg"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "121905",
+            "title": "Firefly",
+            "year": 2002,
+            "authors": [
+                "Joss Whedon"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "449240",
+            "title": "Justified",
+            "year": 2010,
+            "authors": [
+                "Graham Yost"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "70412",
+            "title": "Treme",
+            "year": 2010,
+            "authors": [
+                "David Simon",
+                "Eric Overmyer"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "396088",
+            "title": "Community",
+            "year": 2009,
+            "authors": [
+                "Dan Harmon"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "375894",
+            "title": "The Hour",
+            "year": 2011,
+            "authors": [
+                "Abi Morgan"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "389848",
+            "title": "Borgen, une femme au pouvoir",
+            "original_title": "Borgen",
+            "year": 2010,
+            "authors": [
+                "Adam Price"
+            ],
+            "favorite": false
+        }
+    ],
+    "category": "series",
+    "filter": "wish",
+    "username": "mlcdf"
+}
