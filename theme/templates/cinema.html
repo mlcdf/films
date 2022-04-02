@@ -1,0 +1,46 @@
+{% import "macros.html" as macros %}
+{% extends "layout.html" %}
+
+{% block title %}📽️ Vu au cinéma | {{ super() }} {% endblock title %}
+
+{% block content %}
+{{ page }}
+    <table cellspacing="0" class="w-100 js-sort-table">
+        <thead class="d-thg-l dn">
+            <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
+            <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
+            <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
+            <th class="tl pb3 pr3 pointer">Appréciation</th>
+            <th class="pb3 pr3 pointer"></th>
+        </thead>
+        <tbody class="f5 f4-ns">
+        {% for movie in DATA_CINEMA.entries | reverse %}
+            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
+                <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy">{{ macros.title(movie) }}</td>
+                <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year }}</td>
+                <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10"><span class="dn-l">&mdash; </span>{{ movie.authors | join(", ") }}</td>
+
+                {% if movie.rating is defined %}
+                    {% set html = macros.rating(movie.rating) %}
+                    {% set value = movie.rating / 2  %}
+                    {% set value = value ~ "/5" %}
+                {% else %}
+                    {% set html = "🤷‍♂️" %}
+                    {% set value = "¯\_(ツ)_/¯" %}
+                {% endif %}
+
+                <td class="db dtc-l pt1 pb1 pv3-l pr3-l bn bt-l b--black-10" title="{{ value }}" data-sort-value='{{ movie.rating | default("")}}'>
+                    {{ html | safe }}
+                </td>
+
+                {% set nb = movie.comment | default("  ") | truncate(3, True, "") | trim %}
+                <td class="db dtc-l pv1 pv3-l pr3 bn bt-l b--black-10 f5 lh-copy">
+                    {% if nb != "" %}
+                        <div class="dib ph2 br2 ba b--dark-red dark-red" title="vu {{ nb | replace("x", "") }} fois au cinéma"> {{ nb | trim }} </div>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

@@ -1,0 +1,84 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {{ SITENAME }} &mdash; {{ AUTHOR }}{% endblock title %}</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <style>
+        body {
+            margin: 0rem;
+            padding: 1rem;
+            font-family:
+                "Space Mono", "Fira Code", "Fira Mono",
+                Menlo, Monaco, /* MacOS */
+                'Segoe UI Mono, Lucida Console', /* Windows */
+                'Fira Mono', /* Firefox OS */
+                'Roboto Mono', 'Noto Mono', /* Google stuff */
+                'Droid Sans Mono', /* Old Google stuff */
+                'Ubuntu Mono', 'DejaVu Sans Mono', 'Liberation Mono', /* Linux */
+                'Courier New', /* MacOS and Windows */
+                monospace; /* Everything else */
+        }
+
+        @media screen and (min-width:60em) {
+            .d-thg-l {
+                display: table-header-group;
+            }
+        }
+
+        .hover-bg-dim:hover, .hover-bg-dim:focus {
+            background-color:  	#ffeded;
+        }
+
+        h1 {
+            word-wrap: break-word;
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+
+    </style>
+</head>
+<body class="bg-washed-red near-black relative h-100 pa0">
+    {% block header %}
+    <header class="pt3 ph3 f4-ns f5">
+        <h1 class="dib mt1 mb0 washed-red bg-near-black pa2 f1-ns">Journal cinématographique</h1>
+
+        <div class="lh-copy mw7">
+            <p class="mb2">Ici sont consignés tous les films que j'ai vu. La dernière mise à jour date du {{ now() | strftime("%d %B %Y") }}.</p>
+            <p class="mv2">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>.</p>
+        </div>
+
+        <div class="pb4 mv3 f4-ns">
+            <p class="mt4 mb3">Choisir une catégorie :</p>
+            <a href="/" class="near-black no-underline grow dib mr4-ns mr3 measure lh-copy ba bw1 pv2 ph3 mb3">
+                <div class="f1²-ns f2 fw6 mb1 lh-solid">{{ DATA_FILMS_DONE.entries | length }}</div>
+                <p class="mt0 mb1 fw6">Tous</p>
+            </a>
+            <a href="/cinema" class="near-black no-underline grow dib mr4-ns mr3 measure lh-copy ba bw1 pv2 ph3 mb3">
+                <div class="f1²-ns f2 fw6 mb1 lh-solid">{{ DATA_CINEMA.entries | length }}</div>
+                <p class="mt0 mb1 fw6">Au cinéma</p>
+            </a>
+            <a href="/love" class="near-black no-underline grow dib mr4-ns mr3 measure lh-copy ba bw1 pv2 ph3 mb3">
+                <div class="f1²-ns f2 fw6 mb1 lh-solid">{{ DATA_FILMS_DONE.entries | selectattr("favorite") | list | length }}</div>
+                <p class="mt0 mb1 fw6">Coups de coeur</p>
+            </a>
+            <label class="db pointer pb2"><input class="mt3 js-show-french-title" type="checkbox" checked> Titres en <span role="img" aria-label="français">🇫🇷</span></label>
+        </div>
+    </header>
+
+    {% endblock header %}
+    
+    <main>
+        {% block content %} {% endblock content %}
+    </main>
+    <script src="/theme/script.js"></script>
+</body>
+</html>

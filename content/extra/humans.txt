@@ -3,10 +3,7 @@ Name: Maxime Le Conte des Floris
 Site: https://mlcdf.fr
 Location: Bordeaux, France
 
-/* SITE */
-Last update: {{ now }}
-
 Standards: HTML5, CSS3, JavaScript
 Components: Tachyons
-Building tools: Zola <https://getzola.org>, sc-backup <https://github.com/mlcdf/sc-backup>
+Building tools: Pelican <https://getpelican.com>, sc-backup <https://github.com/mlcdf/sc-backup>
 Software used during development: Firefox, Visual Studio Code
