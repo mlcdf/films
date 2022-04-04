@@ -1,5 +1,8 @@
-from datetime import datetime
+import copy
 import os
+from datetime import datetime
+from itertools import groupby
+from typing import Any
 
 from pelican.utils import DateFormatter
 
@@ -70,7 +73,7 @@ MARKDOWN = {
     "output_format": "html5",
 }
 
-JINJA_ENVIRONMENT = { "extensions": ["jinja2.ext.loopcontrols"] }
+JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.loopcontrols"]}
 JINJA_GLOBALS = {
     "now": datetime.now,
     "strftime": DateFormatter,
@@ -88,11 +91,23 @@ def aria_hidden(txt: str) -> str:
     )
 
 
-JINJA_FILTERS = {"aria_hidden": aria_hidden}
+def groupby_year(value):
+    def key(v):
+        return v["done_date"].year
+
+    return groupby(sorted(value, key=key, reverse=True), key)
+
+
+JINJA_FILTERS = {
+    "aria_hidden": aria_hidden,
+    "groupby_year": groupby_year
+}
 
 TEMPLATE_PAGES = {
     os.path.join(os.getcwd(), "theme/templates/cinema.html"): "cinema/index.html",
     os.path.join(os.getcwd(), "theme/templates/love.html"): "love/index.html",
+    os.path.join(os.getcwd(), "theme/templates/all.html"): "all/index.html",
+    os.path.join(os.getcwd(), "theme/templates/wish.html"): "wish/index.html",
 }
 
 DATA_PATH = "data"

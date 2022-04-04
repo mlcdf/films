@@ -1,7 +1,7 @@
 {% import "macros.html" as macros %}
 {% extends "layout.html" %}
 
-{% block title %}💗 Coups de coeur | {{ super() }} {% endblock title %}
+{% block title %}Envies | {{ super() }} {% endblock title %}
 
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
@@ -11,28 +11,12 @@
             <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
         </thead>
         <tbody class="f5 f4-ns">
-        {% for movie in DATA_FILMS_DONE.entries | sort(attribute="title") %}
-            {% set seven_favorite = movie.rating | default(0) == 7 and movie.favorite == false %}
-            {% set height_favorite = movie.rating | default(0) == 8 and movie.favorite == false %}
-            {% set height_plus = 7 > movie.rating | default(0) %}
-
-            {% if seven_favorite or height_favorite or height_plus %}
-                {% continue %}
-            {% endif %}
-
-            {% if movie.id in DATA_ADDITIONALS %}
-            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables pointer" data-movie-id="{{ movie.id }}">
-            {% else %}
+        {% for movie in DATA_FILMS_WISH.entries | sort(attribute="title") %}
             <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables" data-movie-id="{{ movie.id }}">
-            {% endif %}
                 <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy">{{ macros.title(movie, movie.id in DATA_ADDITIONALS) }}</td>
                 <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
                 <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10"><span class="dn-l">&mdash; </span>{{ movie.authors | join(", ") }}</td>
             </tr>
-            
-            {% if movie.id in DATA_ADDITIONALS %}
-                {{ macros.review(movie=DATA_ADDITIONALS[movie.id], id=movie.id)}}
-            {% endif %}
         {% endfor %}
         </tbody>
     </table>

@@ -4,6 +4,7 @@ import pathlib
 import json
 import glob
 import os
+from datetime import datetime
 
 from pelican.generators import Generator
 
@@ -69,6 +70,10 @@ class JsonDataGenerator(Generator):
         for file in files:
             name: str = _normalize_filename(file)
             data: Dict = _parse_file(file)
+
+            if "entries" in data:
+                data["entries"] = sorted(data["entries"], key=lambda x: x["done_date"], reverse=True)
+            
             self.context[self.CONTEXT_PREFIX + name] = data
             logger.info(
                 "%s available inside template as '%s'", file, self.CONTEXT_PREFIX + name
@@ -85,6 +90,20 @@ def _parse_file(filepath: str):
     """Parse data from file"""
     with open(filepath, "r") as fd:
         try:
-            return json.load(fd)
+            return json.load(fd, object_hook=_decode_date)
         except ValueError as err:
             raise ValueError("failed to parse %s" % filepath) from err
+
+def _decode_date(dct: Dict) -> Dict:
+    if "done_date" not in dct:
+        dct["done_date"] = datetime(1970, 1, 1)
+        return dct
+
+    if dct["done_date"].endswith("-00-00"):
+        dct["done_date"] = datetime.strptime(dct["done_date"].replace("-00", ""), "%Y")
+    elif dct["done_date"].endswith("-00"):     
+        dct["done_date"] = datetime.strptime(dct["done_date"].replace("-00", ""), "%Y-%m")
+    else:
+        dct["done_date"] = datetime.strptime(dct["done_date"], "%Y-%m-%d")
+
+    return dct
