@@ -1,37 +1,36 @@
 {% import "macros.html" as macros %}
 {% extends "layout.html" %}
 
+{%- macro display_year(current_year, movie_year) -%}
+    {%- if movie_year not in [current_year, current_year + 1, current_year - 1] %}
+        ({{ movie_year | default("??") }})
+    {%- endif -%}
+{%- endmacro -%}
+
 {% block content %}
+{% for year, items in DATA_FILMS_DONE.entries | groupby_year %}
+    {% if year < 2013 %}
+        {% continue %}
+    {% endif %}
+    <h2 class="dib bg-near-black washed-red pv1 ph2 f3 ml3 mv0">{{ year }}</h2>
+    <ul class="list f4 lh-copy ml3-ns pl3 flex flex-row flex-wrap">
+            {% for movie in items %}    
+                <li class="pb3 dib pr3 pb4 w-25-l w-50-m w-100">{{ macros.title(movie, false) }}{{ display_year(year, movie.year) }}
+                    <div>de {{ movie.authors | join(", ") }}</div>
+                    
+                    {% if movie.rating is defined %}
+                    {% set html = macros.rating(movie.rating) %}
+                    {% set value = movie.rating / 2  %}
+                    {% set value = value ~ "/5" %}
+                    {% else %}
+                    {% set html = "¯\_(ツ)_/¯" %}
+                    {% set value = "¯\_(ツ)_/¯" %}
+                    {% endif %}
+                
+                    <div>{{ html }}</div>
+                </li>
 
-<table cellspacing="0" class="w-100 js-sort-table">
-    <thead class="d-thg-l dn">
-        <th class="tl pb3 pl3 pr3-l pointer">Titre</th>
-        <th class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
-        <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
-        <th class="tl pb3 pr3 pointer">Appréciation</th>
-    </thead>
-    <tbody class="f5 f4-ns">
-    {% for movie in DATA_FILMS_DONE.entries | sort(attribute="title") %}
-        <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim">
-            <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy">{{ macros.title(movie=movie) }}</td>
-            <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
-            <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10"><span class="dn-l">&mdash; </span>{{ movie.authors | join(", ") }}</td>
-
-            {% if movie.rating is defined %}
-                {% set html = macros.rating(movie.rating) %}
-                {% set value = movie.rating / 2  %}
-                {% set value = value ~ "/5" %}
-            {% else %}
-                {% set html = "🤷‍♂️" %}
-                {% set value = "¯\_(ツ)_/¯" %}
-            {% endif %}
-
-            <td class="db dtc-l pt1 pb1 pv3-l pr3-l bn bt-l b--black-10" title="{{ value }}" data-sort-value='{{ movie.rating | default("")}}'>
-                {{ html | safe }}
-            </td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+            {% endfor %}
+    </ul>
+    {% endfor %}     
 {% endblock content %}
-

@@ -8,18 +8,16 @@
     {% endif %}
 {%- endmacro -%}
 
-{% macro title(movie, has_review) %}
-    {% if movie.original_title is defined %}
-        <span class="js-title" title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span>
-        <span class="js-original-title dn" title="{{ movie.original_title }}">{{ movie.original_title | truncate(length=50) }}</span>
-    {% else %}
+{%- macro title(movie, has_review) -%}
+    {%- if movie.original_title is defined -%}
+        <span class="js-title" title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span><span class="js-original-title dn" title="{{ movie.original_title }}">{{ movie.original_title | truncate(length=50) }}</span>
+    {%- else -%}
         <span title="{{ movie.title }}">{{ movie.title | truncate(length=50) }}</span>
-    {% endif %}
-    {% if has_review %}
+    {%- endif -%}
+    {%- if has_review -%}
         <button class="ml2 dib ph2 pt1 f5 fw6 ba b--black-70 lh-copy pointer b--dashed black-70 grow button-reset bg-inherit"><span style="top:2px">📝</span> Mon avis</span>
-    {% endif %}
-
-{% endmacro %}
+    {%- endif -%}
+{%- endmacro -%}
 
 {% macro review(movie, id) %}
     <tr class="bn-l pa3 pv0-l bt js-review dn" data-expands-for="{{ id }}">
