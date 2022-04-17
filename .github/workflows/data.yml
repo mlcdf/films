@@ -45,7 +45,7 @@ jobs:
         run: ./sc-backup --collection mlcdf --pretty
 
       - name: backup list 'vu au cinéma'
-        run: ./sc-backup --list https://www.senscritique.com/liste/Vu_au_cinema/363578 --pretty
+        run: ./sc-backup --list https://www.senscritique.com/liste/vu_au_cinema/363578 --pretty
 
       - name: backup list 'top 10 films'
         run: ./sc-backup --list https://www.senscritique.com/liste/Top_10_Films/297529 --pretty
