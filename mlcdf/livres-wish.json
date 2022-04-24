@@ -1,0 +1,263 @@
+{
+    "entries": [
+        {
+            "id": "32871489",
+            "title": "Circé",
+            "original_title": "Circe",
+            "year": 2018,
+            "authors": [
+                "Madeline Miller"
+            ],
+            "favorite": false,
+            "genres": [
+                "Roman"
+            ]
+        },
+        {
+            "id": "11105038",
+            "title": "Le Chant d'Achille",
+            "original_title": "The Song of Achilles",
+            "year": 2011,
+            "authors": [
+                "Madeline Miller"
+            ],
+            "favorite": false,
+            "genres": [
+                "Roman"
+            ]
+        },
+        {
+            "id": "363890",
+            "title": "Le Sorcier de Terremer",
+            "original_title": "A Wizard of Earthsea",
+            "year": 1968,
+            "authors": [
+                "Ursula Le Guin"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "443278",
+            "title": "Le Château de Hurle",
+            "original_title": "Howl's Moving Castle",
+            "authors": [
+                "Diana Wynne Jones"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "8864846",
+            "title": "Les Fiancés de l'hiver - La Passe-Miroir, tome 1",
+            "authors": [
+                "Christelle Dabos"
+            ],
+            "favorite": false,
+            "genres": [
+                "Jeunesse",
+                "Roman"
+            ]
+        },
+        {
+            "id": "35537827",
+            "title": "Ne jamais grandir",
+            "original_title": "Never Grow Up",
+            "year": 2015,
+            "authors": [
+                "Jackie Chan"
+            ],
+            "favorite": false,
+            "genres": [
+                "Biographie",
+                "Autobiographie \u0026Amp; Mémoires"
+            ]
+        },
+        {
+            "id": "32249",
+            "title": "Hypérion",
+            "authors": [
+                "Dan Simmons"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "252800",
+            "title": "Contact",
+            "year": 1985,
+            "authors": [
+                "Carl Sagan"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "21087950",
+            "title": "L'Homme qui mit fin à l’histoire",
+            "original_title": "The Man Who Ended History: A Documentary",
+            "year": 2001,
+            "authors": [
+                "Ken Liu"
+            ],
+            "favorite": false,
+            "genres": [
+                "Roman"
+            ]
+        },
+        {
+            "id": "170859",
+            "title": "Histoire des codes secrets",
+            "original_title": "The cracking code book",
+            "year": 2001,
+            "authors": [
+                "Simon Singh"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "231158",
+            "title": "La Planète des singes",
+            "year": 1963,
+            "authors": [
+                "Pierre Boulle"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "11289379",
+            "title": "Nulle part où se cacher",
+            "original_title": "No Place to Hide",
+            "authors": [
+                "Glenn Greenwald"
+            ],
+            "favorite": false,
+            "genres": [
+                "Essai"
+            ]
+        },
+        {
+            "id": "180048",
+            "title": "Inconnu à cette adresse",
+            "original_title": "Address Unknown",
+            "year": 1938,
+            "authors": [
+                "Kathrine Kressmann Taylor"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "233839",
+            "title": "La Horde du contrevent",
+            "year": 2004,
+            "authors": [
+                "Alain Damasio"
+            ],
+            "favorite": false,
+            "genres": [
+                "Roman",
+                "Science-Fiction",
+                "Fantasy"
+            ]
+        },
+        {
+            "id": "385449",
+            "title": "Les Montagnes hallucinées",
+            "original_title": "At the Mountains of Madness",
+            "year": 1936,
+            "authors": [
+                "H.P. Lovecraft"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "419947",
+            "title": "Le robot qui rêvait",
+            "original_title": "Robot Dreams",
+            "authors": [
+                "Isaac Asimov"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "53892",
+            "title": "L'Échiquier du mal",
+            "original_title": "Carrion Comfort",
+            "year": 1989,
+            "authors": [
+                "Dan Simmons"
+            ],
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Roman"
+            ]
+        },
+        {
+            "id": "105724",
+            "title": "Vingt Mille Lieues sous les mers",
+            "year": 1869,
+            "authors": [
+                "Jules Verne"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "423373",
+            "title": "Le Maître du haut château",
+            "original_title": "The Man in the High Castle",
+            "year": 1962,
+            "authors": [
+                "Philip K. Dick"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "101598",
+            "title": "La Guerre des mondes",
+            "original_title": "War of the Worlds",
+            "authors": [
+                "H. G. Wells"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "42547",
+            "title": "Les Robots - Le Cycle des robots, tome 1",
+            "original_title": "I, Robot",
+            "year": 1950,
+            "authors": [
+                "Isaac Asimov"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "277249",
+            "title": "Chroniques martiennes",
+            "original_title": "The Martian Chronicles",
+            "year": 1950,
+            "authors": [
+                "Ray Bradbury"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "46848",
+            "title": "Ils étaient dix",
+            "original_title": "And Then There Were None",
+            "year": 1939,
+            "authors": [
+                "Agatha Christie"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "2304",
+            "title": "Dune",
+            "year": 1965,
+            "authors": [
+                "Frank Herbert"
+            ],
+            "favorite": false
+        }
+    ],
+    "category": "livres",
+    "filter": "wish",
+    "username": "mlcdf"
+}

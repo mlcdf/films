@@ -1,0 +1,248 @@
+{
+    "entries": [
+        {
+            "id": "43801481",
+            "title": "Le Jardin, Paris",
+            "authors": [
+                "Gaëlle Geniller"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "45243501",
+            "title": "Le Grand Vide",
+            "year": 2021,
+            "authors": [
+                "Léa Murawiec"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "25447718",
+            "title": "Edelweiss",
+            "authors": [
+                "Lucy Mazel",
+                "Cédric Mayen"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "27658666",
+            "title": "La Colère de Fantômas : L'Intégrale",
+            "authors": [
+                "Julie Rocheleau",
+                "Olivier Bocquet"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "10376794",
+            "title": "Mauvais genre",
+            "authors": [
+                "Chloé Cruchaudet"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "34659482",
+            "title": "Moi, ce que j'aime, c'est les monstres, tome 1",
+            "original_title": "My Favorite Thing is Monsters",
+            "year": 2017,
+            "authors": [
+                "Emil Ferris"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "41060293",
+            "title": "La Bombe",
+            "year": 2020,
+            "authors": [
+                "Denis Rodier",
+                "Alcante",
+                "Laurent-Frédéric Bollée"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "442813",
+            "title": "Pilules bleues",
+            "year": 2001,
+            "authors": [
+                "Frederik Peeters"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "225892",
+            "title": "Tout seul",
+            "year": 2008,
+            "authors": [
+                "Christophe Chabouté"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "8178684",
+            "title": "Un printemps à Tchernobyl",
+            "year": 2012,
+            "authors": [
+                "Emmanuel Lepage"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "38786906",
+            "title": "Dans un rayon de soleil",
+            "original_title": "On a Sunbeam",
+            "authors": [
+                "Tillie Walden"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "11034",
+            "title": "Dans mes yeux",
+            "authors": [
+                "Bastien Vivès"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "6154",
+            "title": "L'Incal, intégrale",
+            "authors": [
+                "Jean Giraud (Moebius)",
+                "Alejandro Jodorowsky"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "10228",
+            "title": "L'imparfait du futur - Une épatante aventure de Jules, tome 1",
+            "original_title": "L'imparfait du futur - Jules, tome 1",
+            "authors": [
+                "Émile Bravo"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "365189",
+            "title": "Idées noires : Intégrale",
+            "year": 2001,
+            "authors": [
+                "André Franquin"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "208110",
+            "title": "Quartier lointain",
+            "original_title": "Haruka-na machi e",
+            "year": 1998,
+            "authors": [
+                "Jirō Taniguchi"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "245955",
+            "title": "Transmetropolitan (1997 - 2002)",
+            "year": 1997,
+            "authors": [
+                "Darick Robertson",
+                "Warren Ellis"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "395039",
+            "title": "Le Combat ordinaire : L'Intégrale",
+            "authors": [
+                "Manu Larcenet"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "416174",
+            "title": "Le bleu est une couleur chaude",
+            "authors": [
+                "Jul' Marot"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "35714",
+            "title": "Nausicaä de la vallée du vent, tome 1",
+            "original_title": "Kaze no Tani no Nausicaa",
+            "year": 1982,
+            "authors": [
+                "Hayao Miyazaki"
+            ],
+            "favorite": false,
+            "genres": [
+                "(France)"
+            ]
+        },
+        {
+            "id": "126582",
+            "title": "Gunnm",
+            "original_title": "Ganmu",
+            "year": 1990,
+            "authors": [
+                "Yukito Kishiro"
+            ],
+            "favorite": false
+        },
+        {
+            "id": "413038",
+            "title": "Aldébaran, intégrale",
+            "authors": [
+                "Leo"
+            ],
+            "favorite": false
+        }
+    ],
+    "category": "bd",
+    "filter": "wish",
+    "username": "mlcdf"
+}
