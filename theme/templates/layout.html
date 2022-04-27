@@ -75,10 +75,10 @@
                 <div>[&nbsp;<a href="#content">Aller au contenu</a>&nbsp;]</div>
             </div>
 
-            <h1 class="dib mt1 mb3 washed-red bg-near-black pa2 f1-ns">films.mlcdf.fr</h1>
+            <h1 class="dib mt1 mb3 washed-red bg-near-black pa2 f2-ns">films.mlcdf.fr</h1>
 
             <div>
-                <details class="lh-copy dib">
+                <details class="lh-copy dib f5">
                     <summary class="pointer">À propos</summary>
                     <p class="mw7">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur <a href="https://www.senscritique.com">SensCritique</a>, désormais elles sont ici. :)</p>
                     <p class="mw7">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>. Les sources sont disponibles sur <a href="https://github.com/mlcdf/films">GitHub</a>.</p>
@@ -88,16 +88,22 @@
                 </details>
             </div>
 
-            <ul class="list ttu tracked fw6 pl0 pb4 lh-title" id="menu">
-                <li class="dib mr3"><a class="near-black link dim" href="/">Journal</a></li>|
-                <li class="dib mr3"><a class="near-black link dim" href="/love">Coups de coeur</a></li>|
-                <li class="dib mr3"><a class="near-black link dim" href="/cinema">Vus au cinéma</a></li>|
-                <li class="dib mr3"><a class="near-black link dim" href="/wish">À voir</a></li>|
-                <li class="dib mr3"><a class="near-black link dim" href="/all">Tous les films</a></li>
-                <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
-            </ul>
+            <div id="menu" class="flex flex-row-ns flex-column pb3 mt3 bb mw6">
+                <ul class="list fw6 pl0 ma0 lh-title mw5 w-100">
+                    <li class="mr3 mt1"><a class="near-black link dim" href="/">Journal</a></li>
+                    <li class="mr3 mt1"><a class="near-black link dim" href="/love">Coups de coeur</a></li>
+                    <li class="mr3 mt1"><a class="near-black link dim" href="/cinema">Vus au cinéma</a></li>
+                </ul>
 
-            <label class="db pointer mb4 f5 fw6"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
+                <ul class="list fw6 pl0 ma0 lh-title">
+                    <li class="mr3 mt1"><a class="near-black link dim" href="/wish">À voir</a></li>
+                    <li class="mr3 mt1"><a class="near-black link dim" href="/all">Tous les films</a></li>
+                    <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
+                </ul>
+
+            </div>
+
+            <label class="db pointer f5 pt3 pb4" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
         </div>
 
     </header>
