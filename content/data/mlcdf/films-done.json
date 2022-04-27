@@ -1,6 +1,81 @@
 {
     "entries": [
         {
+            "id": "43443611",
+            "title": "Freaks Out",
+            "year": 2021,
+            "authors": [
+                "Gabriele Mainetti"
+            ],
+            "rating": 7,
+            "done_date": "2022-04-10",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure",
+                "Drame"
+            ]
+        },
+        {
+            "id": "43558610",
+            "title": "En corps",
+            "year": 2022,
+            "authors": [
+                "Cédric Klapisch"
+            ],
+            "rating": 5,
+            "done_date": "2022-04-07",
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique"
+            ]
+        },
+        {
+            "id": "35487026",
+            "title": "The Witch: Part 1. The Subversion",
+            "original_title": "Manyeo",
+            "year": 2018,
+            "authors": [
+                "Park Hoon-Jung"
+            ],
+            "rating": 5,
+            "done_date": "2021-07-02",
+            "favorite": false,
+            "genres": [
+                "(Corée Du Sud).",
+                "Action",
+                "Fantastique"
+            ]
+        },
+        {
+            "id": "468988",
+            "title": "Les Diplômés du dernier rang",
+            "year": 1982,
+            "authors": [
+                "Christian Gion"
+            ],
+            "rating": 2,
+            "done_date": "2016-10-01",
+            "favorite": false,
+            "genres": [
+                "Comédie"
+            ]
+        },
+        {
+            "id": "45417417",
+            "title": "À plein temps",
+            "year": 2021,
+            "authors": [
+                "Éric Gravel"
+            ],
+            "rating": 7,
+            "done_date": "2022-04-03",
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
+        },
+        {
             "id": "40865955",
             "title": "The Green Knight",
             "year": 2021,
@@ -561,23 +636,6 @@
                 "(Brésil).",
                 "Fantastique",
                 "Épouvante-Horreur"
-            ]
-        },
-        {
-            "id": "35487026",
-            "title": "The Witch: Part 1. The Subversion",
-            "original_title": "Manyeo",
-            "year": 2018,
-            "authors": [
-                "Park Hoon-Jung"
-            ],
-            "rating": 6,
-            "done_date": "2021-07-02",
-            "favorite": false,
-            "genres": [
-                "(Corée Du Sud).",
-                "Action",
-                "Fantastique"
             ]
         },
         {
@@ -2746,7 +2804,7 @@
         },
         {
             "id": "365810",
-            "title": "Le Mécano de la Général",
+            "title": "Le Mécano de la Générale",
             "original_title": "The General",
             "year": 1926,
             "authors": [
@@ -4824,8 +4882,8 @@
             "favorite": false,
             "genres": [
                 "Épouvante-Horreur",
-                "Drame",
                 "Science-Fiction",
+                "Drame",
                 "Thriller"
             ]
         },
@@ -6217,8 +6275,8 @@
             "done_date": "2017-02-09",
             "favorite": false,
             "genres": [
-                "Comédie Musicale",
                 "Comédie Dramatique",
+                "Comédie Musicale",
                 "Romance",
                 "Musique"
             ]
@@ -6529,19 +6587,6 @@
                 "Aventure",
                 "Comédie",
                 "Policier"
-            ]
-        },
-        {
-            "id": "468988",
-            "title": "Les Diplômés du dernier rang",
-            "year": 1982,
-            "authors": [
-                "Christian Gion"
-            ],
-            "done_date": "2016-10-01",
-            "favorite": false,
-            "genres": [
-                "Comédie"
             ]
         },
         {
@@ -7716,8 +7761,8 @@
             "favorite": false,
             "genres": [
                 "Drame",
-                "Film Noir",
-                "Thriller"
+                "Thriller",
+                "Film Noir"
             ]
         },
         {
@@ -10051,21 +10096,6 @@
             ]
         },
         {
-            "id": "377309",
-            "title": "American Pie 4",
-            "original_title": "American Reunion",
-            "year": 2012,
-            "authors": [
-                "Jon Hurwitz",
-                "Hayden Schlossberg"
-            ],
-            "rating": 4,
-            "favorite": false,
-            "genres": [
-                "Comédie"
-            ]
-        },
-        {
             "id": "401447",
             "title": "Le Grinch",
             "original_title": "Dr. Seuss' How the Grinch Stole Christmas",
@@ -11275,7 +11305,6 @@
                 "David Yates"
             ],
             "rating": 7,
-            "done_date": "2011-07-00",
             "favorite": false,
             "genres": [
                 "Fantastique",
