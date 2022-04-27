@@ -1,7 +1,7 @@
 {% import "macros.html" as macros %}
 {% extends "layout.html" %}
 
-{% block title %}💗 Coups de coeur | {{ super() }} {% endblock title %}
+{% block title %}Coups de coeur | {{ super() }} {% endblock title %}
 
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
@@ -29,7 +29,7 @@
                 <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
                 <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10"><span class="dn-l">&mdash; </span>{{ movie.authors | join(", ") }}</td>
             </tr>
-            
+
             {% if movie.id in DATA_ADDITIONALS %}
                 {{ macros.review(movie=DATA_ADDITIONALS[movie.id], id=movie.id)}}
             {% endif %}

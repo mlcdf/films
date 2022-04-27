@@ -9,12 +9,32 @@
 
     <title>{% block title %} {{ SITENAME }} &mdash; {{ AUTHOR }}{% endblock title %}</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
     <style>
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.ttf") format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.ttf") format('truetype');
+        }
+
         body {
             margin: 0rem;
             padding: 1rem;
             font-family:
-                "Space Mono", "Fira Code", "Fira Mono",
+                "Space Mono",
                 Menlo, Monaco, /* MacOS */
                 'Segoe UI Mono, Lucida Console', /* Windows */
                 'Fira Mono', /* Firefox OS */
@@ -49,44 +69,42 @@
 <body class="bg-washed-red near-black relative h-100 pa0">
     {% block header %}
     <header class="pt3 ph3 f4-ns f5">
-        <h1 class="dib mt1 mb0 washed-red bg-near-black pa2 f1-ns">Journal cinématographique</h1>
-        
-        <div class="pb4 mv3 lh-copy">
-            <p class="mw7 mb2">Ici sont consignés tous les films que j'ai vu. La dernière mise à jour date du {{ now() | strftime("%d %B %Y") }}.</p>
-            <p class="mw7 mt2 mb4">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>.</p>
+        <div>
+            <div class="pb3 f5 lh-copy flex flex-column flex-row-ns">
+                <div>[&nbsp;<a href="#menu">Aller au menu</a>&nbsp;]&nbsp;</div>
+                <div>[&nbsp;<a href="#content">Aller au contenu</a>&nbsp;]</div>
+            </div>
 
-            <ul class="list ttu tracked fw6 mb3 pb3 pl0 bb b--black-10 dib">
-                <li><a class="near-black link dim" href="/">Journal</a></li>
-                <li><a class="near-black link dim" href="/love">Coups de coeur</a></li>
-                <li><a class="near-black link dim" href="/cinema">vus au cinéma ({{ DATA_CINEMA.entries | length }} films)</a></li>
-                <li><a class="near-black link dim" href="/wish">À voir ({{ DATA_FILMS_WISH.entries | length }} films)</a></li>
-                <li><a class="near-black link dim" href="/all">Tous les films ({{ DATA_FILMS_DONE.entries | length }} films)</a></li>
+            <h1 class="dib mt1 mb3 washed-red bg-near-black pa2 f1-ns">films.mlcdf.fr</h1>
+
+            <div>
+                <details class="lh-copy dib">
+                    <summary class="pointer">À propos</summary>
+                    <p class="mw7">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur <a href="https://www.senscritique.com">SensSritique</a>, désormais elles sont ici. :)</p>
+                    <p class="mw7">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>. Les sources sont disponibles sur <a href="https://github.com/mlcdf/films">GitHub</a>.</p>
+
+
+                    <p> La dernière mise à jour date du {{ now() | strftime("%d %B %Y") }}.</p>
+                </details>
+            </div>
+
+            <ul class="list ttu tracked fw6 pl0 pb4 lh-title" id="menu">
+                <li class="dib mr3"><a class="near-black link dim" href="/">Journal</a></li>|
+                <li class="dib mr3"><a class="near-black link dim" href="/love">Coups de coeur</a></li>|
+                <li class="dib mr3"><a class="near-black link dim" href="/cinema">Vus au cinéma</a></li>|
+                <li class="dib mr3"><a class="near-black link dim" href="/wish">À voir</a></li>|
+                <li class="dib mr3"><a class="near-black link dim" href="/all">Tous les films</a></li>
                 <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
             </ul>
-            <label class="db pointer"><input class="js-show-french-title" type="checkbox" checked> Afficher les titres originaux</label>
-            <!-- <p class="mv2">Choisir une catégorie :</p> -->
-            <!-- <a href="/journal" class="near-black no-underline grow dib mr4-ns mr3 measure lh-title ba bw1 pv2 ph3 mb3">
-                <p class="mv0 f5 fw6">Journal</p>
-                <div class="f1-ns f2 fw6 mb1 lh-solid">201</div>
-            </a>
-            <a href="/love" class="near-black no-underline grow dib mr4-ns mr3 measure lh-title ba bw1 pv2 ph3 mb3">
-                <p class="mv0 f5 fw6">Coups de coeur</p>
-                <div class="f1-ns f2 fw6 mb1 lh-solid">{{ DATA_FILMS_DONE.entries | selectattr("favorite") | list | length }}</div>
-            </a>
-            <a href="/cinema" class="near-black no-underline grow dib mr4-ns mr3 measure lh-title ba bw1 pv2 ph3 mb3">
-                <p class="mv0 f5 fw6">Vu au cinéma depuis le 01/01/2014</p>
-                <div class="f1-ns f2 fw6 mb1 lh-solid">{{ DATA_CINEMA.entries | length }}</div>
-            </a>
-            <a href="/" class="near-black no-underline grow dib mr4-ns mr3 measure lh-title ba bw1 pv2 ph3 mb3">
-                <p class="mv0 f5 fw6">Tous</p>
-                <div class="f1-ns f2 fw6 mb1 lh-solid">{{ DATA_FILMS_DONE.entries | length }}</div>
-            </a> -->
+
+            <label class="db pointer mb4 f5 fw6"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
         </div>
+
     </header>
 
     {% endblock header %}
-    
-    <main>
+
+    <main id="content">
         {% block content %} {% endblock content %}
     </main>
     <script src="/theme/script.js"></script>
