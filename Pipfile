@@ -13,3 +13,6 @@ livereload = "*"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+dev = "invoke livereload"
