@@ -148,7 +148,7 @@ def backup(c):
     output = os.path.join(SETTINGS["PATH"], SETTINGS["DATA_PATH"])
     c.run(f"./sc-backup --collection mlcdf --pretty --output {output}")
     c.run(
-        f"./sc-backup --list https://www.senscritique.com/liste/Vu_au_cinema/363578 --pretty --output {output}"
+        f"./sc-backup --list https://www.senscritique.com/liste/vu_au_cinema/363578 --pretty --output {output}"
     )
 
 
