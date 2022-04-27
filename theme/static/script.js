@@ -1,7 +1,7 @@
 const showFrenchTitle = document.querySelector(".js-show-french-title");
 if (showFrenchTitle) {
     showFrenchTitle.addEventListener("click", function (event) {
-
+        console.log(showFrenchTitle.checked)
         if (showFrenchTitle.checked) {
             showOriginalTitle();
         } else {
@@ -10,21 +10,21 @@ if (showFrenchTitle) {
 
         function showOriginalTitle() {
             document.querySelectorAll(".js-original-title").forEach(function (el) {
-                el.style.display = "none";
+                el.style.display = "inline";
             });
 
             document.querySelectorAll(".js-title").forEach(function (el) {
-                el.style.display = "inline";
+                el.style.display = "none";
             });
         }
 
         function showTitle() {
             document.querySelectorAll(".js-original-title").forEach(function (el) {
-                el.style.display = "inline";
+                el.style.display = "none";
             });
 
             document.querySelectorAll(".js-title").forEach(function (el) {
-                el.style.display = "none";
+                el.style.display = "inline";
             });
         }
     });
@@ -111,7 +111,7 @@ function toggleFragment(id) {
 
 function loadUrlFragment() {
     const id = window.location.hash.replace("#", "");
-    if (id == "") {
+    if (id == "" || id == "menu" || id == "content") {
         return
     }
 
@@ -128,7 +128,7 @@ function loadUrlFragment() {
 function listenFragmentChanges() {
     window.addEventListener('hashchange', function () {
         const id = window.location.hash.replace("#", "");
-        if (id == "") {
+        if (id == "" || id == "menu" || id == "content") {
             return
         }
 
