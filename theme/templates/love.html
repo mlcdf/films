@@ -3,6 +3,8 @@
 
 {% block title %}Coups de coeur | {{ super() }} {% endblock title %}
 
+{% block menu %}{{ macros.menu("love") }}{% endblock menu %}
+
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">

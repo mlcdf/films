@@ -6,6 +6,10 @@
     {% if r is odd %}
         <svg class="near-black v-mid" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
     {% endif %}
+
+    {% for i in range(1, 10 - r, 2) %}
+        <svg class="near-black v-mid" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
+    {% endfor %}
 {%- endmacro -%}
 
 {%- macro title(movie, has_review) -%}
@@ -33,4 +37,21 @@
             <a class="f5 link dim ba b--dotted bw1 ph3 pv2 mb2 dib black mt3" href="{{ movie.wikipedia }}">Wikipédia</a>
         </td>
     </tr>
+{% endmacro %}
+
+
+{% macro menu(current_page) %}
+<div id="menu" class="flex flex-row-ns flex-column pt2 pb3 mt3 bb b--black-10 mw7 bt">
+    <ul class="list fw6 pl0 ma0 lh-title w-50-ns">
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'journal' %} i {% endif %}" href="/">Journal</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'love' %} i {% endif %}" href="/love">Coups de coeur</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'cinema' %} i {% endif %}" href="/cinema">Vus au cinéma</a></li>
+    </ul>
+
+    <ul class="list fw6 pl0 ma0 lh-title">
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'wish' %} i {% endif %}" href="/wish">Envies</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'all' %} i {% endif %}" href="/all">Tous les films</a></li>
+        <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
+    </ul>
+</div>
 {% endmacro %}
