@@ -82,28 +82,25 @@
                     <summary class="pointer">À propos</summary>
                     <p class="mw7">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur <a href="https://www.senscritique.com">SensCritique</a>, désormais elles sont ici. :)</p>
                     <p class="mw7">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>. Les sources sont disponibles sur <a href="https://github.com/mlcdf/films">GitHub</a>.</p>
-
-
+                    
                     <p> La dernière mise à jour date du {{ now() | strftime("%d %B %Y") }}.</p>
+
+                    <h3 class="f5 bt b--black-10 pt3 mb2">Notes :</h3>
+
+                    <ul class="mt2 pl0 mb2 list">
+                        <li>{{ macros.rating(2) }} : il y a rien qui va</li>
+                        <li>{{ macros.rating(4) }} : naze, voire passable</li>
+                        <li>{{ macros.rating(6) }} : quelques bonnes idées</li>
+                        <li>{{ macros.rating(8) }} : du lourd</li>
+                        <li>{{ macros.rating(10) }} : la crème de la crème</li>
+                    </ul>
+
                 </details>
             </div>
 
-            <div id="menu" class="flex flex-row-ns flex-column pb3 mt3 bb mw6">
-                <ul class="list fw6 pl0 ma0 lh-title mw5 w-100">
-                    <li class="mr3 mt1"><a class="near-black link dim" href="/">Journal</a></li>
-                    <li class="mr3 mt1"><a class="near-black link dim" href="/love">Coups de coeur</a></li>
-                    <li class="mr3 mt1"><a class="near-black link dim" href="/cinema">Vus au cinéma</a></li>
-                </ul>
+            {% block menu %}{% endblock menu %}
 
-                <ul class="list fw6 pl0 ma0 lh-title">
-                    <li class="mr3 mt1"><a class="near-black link dim" href="/wish">À voir</a></li>
-                    <li class="mr3 mt1"><a class="near-black link dim" href="/all">Tous les films</a></li>
-                    <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
-                </ul>
-
-            </div>
-
-            <label class="db pointer f5 pt3 pb4" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
+            <label class="dib pointer f5 pt3 pb5" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
         </div>
 
     </header>

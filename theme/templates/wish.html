@@ -3,6 +3,8 @@
 
 {% block title %}Envies | {{ super() }} {% endblock title %}
 
+{% block menu %}{{ macros.menu("wish") }}{% endblock menu %}
+
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">
@@ -11,7 +13,7 @@
             <th class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
         </thead>
         <tbody class="f5 f4-ns">
-        {% for movie in DATA_FILMS_WISH.entries | sort(attribute="title") %}
+        {% for movie in DATA_FILMS_WISH.entries | sort(attribute="year") | reverse %}
             <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables" data-movie-id="{{ movie.id }}">
                 <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy">{{ macros.title(movie, movie.id in DATA_ADDITIONALS) }}</td>
                 <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>

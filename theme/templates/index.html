@@ -7,6 +7,8 @@
     {%- endif -%}
 {%- endmacro -%}
 
+{% block menu %}{{ macros.menu("journal") }}{% endblock menu %}
+
 {% block content %}
 {% for year, items in DATA_FILMS_DONE.entries | groupby_year %}
     {% if year < 2013 %}

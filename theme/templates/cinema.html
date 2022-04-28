@@ -3,6 +3,8 @@
 
 {% block title %}Vu au cinéma | {{ super() }} {% endblock title %}
 
+{% block menu %}{{ macros.menu("cinema") }}{% endblock menu %}
+
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">
