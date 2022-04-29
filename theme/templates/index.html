@@ -17,7 +17,7 @@
     <h2 class="dib bg-near-black washed-red pv1 ph2 f3 ml3 mv0">{{ year }}</h2>
     <ul class="list f4 lh-copy ml3-ns pl3 flex flex-row flex-wrap">
             {% for movie in items %}
-                <li class="pb3 dib pr3 pb4 w-25-l w-50-m w-100">{{ macros.title(movie, false) }}{{ display_year(year, movie.year) }}
+                <li class="pb3 dib pr3 pb4 w-25-l w-50-m w-100">{{ macros.title(movie, false) }} {{ display_year(year, movie.year) }}
                     <div>de {{ movie.authors | join(", ") }}</div>
 
                     {% if movie.rating is defined %}
