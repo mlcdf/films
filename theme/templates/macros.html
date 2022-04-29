@@ -1,4 +1,5 @@
 {%- macro rating(r) -%}
+    <span class="sr-only">{{r}}/10</span><span aria-hidden="true">
     {% for i in range(1, r, 2) %}
         <svg class="near-black v-mid" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
     {% endfor %}
@@ -10,6 +11,7 @@
     {% for i in range(1, 10 - r, 2) %}
         <svg class="near-black v-mid" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
     {% endfor %}
+    </span>
 {%- endmacro -%}
 
 {%- macro title(movie, has_review) -%}
@@ -39,18 +41,18 @@
     </tr>
 {% endmacro %}
 
-
 {% macro menu(current_page) %}
 <div id="menu" class="flex flex-row-ns flex-column pt2 pb3 mt3 bb b--black-10 mw7 bt">
+    <span class="sr-only">Menu :</span>
     <ul class="list fw6 pl0 ma0 lh-title w-50-ns">
-        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'journal' %} i {% endif %}" href="/">Journal</a></li>
-        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'love' %} i {% endif %}" href="/love">Coups de coeur</a></li>
-        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'cinema' %} i {% endif %}" href="/cinema">Vus au cinéma</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'journal' %} i{% endif %}" {% if current_page == 'journal' %} aria-current="true" {% endif %} href="/">Journal</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'love' %} i{% endif %}" {% if current_page == 'love' %} aria-current="true" {% endif %} href="/love">Coups de coeur</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'cinema' %} i{% endif %}" {% if current_page == 'cinema' %} aria-current="true" {% endif %} href="/cinema">Vus au cinéma</a></li>
     </ul>
 
     <ul class="list fw6 pl0 ma0 lh-title">
-        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'wish' %} i {% endif %}" href="/wish">Envies</a></li>
-        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'all' %} i {% endif %}" href="/all">Tous les films</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'wish' %} i{% endif %}" {% if current_page == 'wish' %} aria-current="true" {% endif %} href="/wish">Envies</a></li>
+        <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'all' %} i{% endif %}" {% if current_page == 'all' %} aria-current="true" {% endif %} href="/all">Tous les films</a></li>
         <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->
     </ul>
 </div>
