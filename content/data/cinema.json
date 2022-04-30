@@ -9,7 +9,13 @@
                 "Ben Stiller"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Aventure",
+                "Comédie",
+                "Drame",
+                "Fantastique"
+            ]
         },
         {
             "id": "441146",
@@ -20,7 +26,12 @@
                 "Peter Jackson"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Drame",
+                "Fantasy"
+            ]
         },
         {
             "id": "8398809",
@@ -31,7 +42,12 @@
                 "David O. Russell"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Drame",
+                "Historique"
+            ]
         },
         {
             "id": "8193999",
@@ -42,7 +58,12 @@
                 "George Clooney"
             ],
             "rating": 3,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Comédie Dramatique",
+                "Guerre"
+            ]
         },
         {
             "id": "1301677",
@@ -52,7 +73,12 @@
                 "Spike Jonze"
             ],
             "rating": 9,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Romance",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "395521",
@@ -64,7 +90,12 @@
                 "Joe Russo"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "8447498",
@@ -75,7 +106,12 @@
                 "Neil Burger"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "10597693",
@@ -85,7 +121,10 @@
                 "Philippe de Chauveron"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie"
+            ]
         },
         {
             "id": "8862972",
@@ -96,7 +135,10 @@
                 "Destin Daniel Cretton"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique"
+            ]
         },
         {
             "id": "7936403",
@@ -106,7 +148,12 @@
                 "Gareth Edwards"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "422063",
@@ -116,7 +163,13 @@
                 "Bryan Singer"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Fantastique",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "8195124",
@@ -126,7 +179,12 @@
                 "Doug Liman"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "431883",
@@ -136,7 +194,13 @@
                 "Jonathan Glazer"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Thriller",
+                "Drame",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "406937",
@@ -147,7 +211,13 @@
                 "James Gunn"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction",
+                "Comédie"
+            ]
         },
         {
             "id": "487304",
@@ -159,7 +229,10 @@
                 "Frank Miller"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Film Noir"
+            ]
         },
         {
             "id": "8858435",
@@ -169,7 +242,11 @@
                 "Kristian Levring"
             ],
             "rating": 3,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Western"
+            ]
         },
         {
             "id": "9375203",
@@ -179,7 +256,12 @@
                 "David Fincher"
             ],
             "rating": 9,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Film Noir"
+            ]
         },
         {
             "id": "8470273",
@@ -189,7 +271,12 @@
                 "David Ayer"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame",
+                "Guerre"
+            ]
         },
         {
             "id": "388583",
@@ -200,7 +287,12 @@
             ],
             "rating": 10,
             "comment": "x2",
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Science-Fiction",
+                "Drame",
+                "Aventure"
+            ]
         },
         {
             "id": "463688",
@@ -211,7 +303,11 @@
                 "Francis Lawrence"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "10536888",
@@ -222,7 +318,11 @@
                 "Dan Gilroy"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Film Noir"
+            ]
         },
         {
             "id": "10455927",
@@ -233,7 +333,12 @@
                 "Angelina Jolie"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Guerre",
+                "Drame"
+            ]
         },
         {
             "id": "10625262",
@@ -244,7 +349,13 @@
                 "Morten Tyldum"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Thriller",
+                "Guerre"
+            ]
         },
         {
             "id": "8467708",
@@ -255,7 +366,11 @@
                 "Matthew Vaughn"
             ],
             "rating": 7,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Thriller"
+            ]
         },
         {
             "id": "8829054",
@@ -265,7 +380,11 @@
                 "Clint Eastwood"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Guerre"
+            ]
         },
         {
             "id": "9229287",
@@ -275,7 +394,11 @@
                 "Gilles Paquet-Brenner"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "8468342",
@@ -286,7 +409,11 @@
                 "Daniel Espinosa"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Drame"
+            ]
         },
         {
             "id": "437798",
@@ -297,7 +424,13 @@
                 "Joss Whedon"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction",
+                "Thriller"
+            ]
         },
         {
             "id": "480435",
@@ -308,7 +441,13 @@
             ],
             "rating": 10,
             "comment": "x2",
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction",
+                "Road Movie"
+            ]
         },
         {
             "id": "13412545",
@@ -318,7 +457,10 @@
                 "Diastème"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "13148600",
@@ -328,7 +470,11 @@
                 "Sebastian Schipper"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Drame"
+            ]
         },
         {
             "id": "451324",
@@ -339,7 +485,13 @@
                 "Akira Kurosawa"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Arts Martiaux",
+                "Aventure",
+                "Drame",
+                "Action"
+            ]
         },
         {
             "id": "8349536",
@@ -349,7 +501,11 @@
                 "Christopher McQuarrie"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Thriller"
+            ]
         },
         {
             "id": "10643331",
@@ -359,7 +515,12 @@
                 "Denis Villeneuve"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Policier",
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "10881056",
@@ -369,7 +530,12 @@
                 "M. Night Shyamalan"
             ],
             "rating": 3,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Comédie",
+                "Thriller"
+            ]
         },
         {
             "id": "11387996",
@@ -380,7 +546,12 @@
                 "Ridley Scott"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "8193726",
@@ -391,7 +562,12 @@
                 "Sam Mendes"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Thriller"
+            ]
         },
         {
             "id": "12474631",
@@ -402,7 +578,13 @@
                 "Steven Spielberg"
             ],
             "rating": 9,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Historique",
+                "Thriller"
+            ]
         },
         {
             "id": "8194088",
@@ -414,7 +596,12 @@
             ],
             "rating": 7,
             "comment": "x3",
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "10750147",
@@ -425,7 +612,11 @@
                 "Quentin Tarantino"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Western"
+            ]
         },
         {
             "id": "362143",
@@ -435,7 +626,12 @@
                 "Tim Miller"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Comédie"
+            ]
         },
         {
             "id": "10826923",
@@ -445,7 +641,11 @@
                 "Todd Haynes"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Romance"
+            ]
         },
         {
             "id": "16001303",
@@ -455,7 +655,10 @@
                 "Tom McCarthy"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Thriller"
+            ]
         },
         {
             "id": "11166540",
@@ -465,7 +668,12 @@
                 "Alejandro González Iñárritu"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Drame",
+                "Western"
+            ]
         },
         {
             "id": "15852894",
@@ -475,7 +683,13 @@
                 "Dan Trachtenberg"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Épouvante-Horreur",
+                "Science-Fiction",
+                "Thriller"
+            ]
         },
         {
             "id": "11040752",
@@ -486,7 +700,12 @@
                 "Joe Russo"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "10628741",
@@ -496,7 +715,13 @@
                 "Bryan Singer"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Fantastique",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "8464471",
@@ -506,7 +731,12 @@
                 "Nicolas Winding Refn"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Drame",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "379920",
@@ -517,7 +747,12 @@
                 "Duncan Jones"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Fantasy"
+            ]
         },
         {
             "id": "12986412",
@@ -528,7 +763,12 @@
                 "Na Hong-Jin"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Épouvante-Horreur",
+                "Fantastique"
+            ]
         },
         {
             "id": "12070512",
@@ -539,7 +779,13 @@
                 "Park Chan-Wook"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Romance",
+                "Érotique"
+            ]
         },
         {
             "id": "11361642",
@@ -550,7 +796,12 @@
             ],
             "rating": 6,
             "comment": "x2",
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "11134569",
@@ -561,7 +812,12 @@
                 "Denis Villeneuve"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "11913569",
@@ -571,7 +827,13 @@
                 "Damien Chazelle"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique",
+                "Comédie Musicale",
+                "Romance",
+                "Musique"
+            ]
         },
         {
             "id": "17103116",
@@ -583,7 +845,12 @@
             ],
             "rating": 8,
             "comment": "x2 (dont x1 en IMAX)",
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame",
+                "Guerre"
+            ]
         },
         {
             "id": "11855174",
@@ -593,7 +860,13 @@
                 "Edgar Wright"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Thriller",
+                "Comédie",
+                "Gangster"
+            ]
         },
         {
             "id": "22706624",
@@ -603,7 +876,12 @@
                 "Taylor Sheridan"
             ],
             "rating": 7,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Thriller",
+                "Drame",
+                "Policier"
+            ]
         },
         {
             "id": "7938578",
@@ -613,7 +891,12 @@
                 "Denis Villeneuve"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Drame",
+                "Policier"
+            ]
         },
         {
             "id": "19272978",
@@ -623,7 +906,13 @@
                 "Kathryn Bigelow"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Drame",
+                "Historique",
+                "Thriller"
+            ]
         },
         {
             "id": "472537",
@@ -634,7 +923,14 @@
                 "Adrian Molina"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Aventure",
+                "Comédie",
+                "Fantastique",
+                "Comédie Musicale"
+            ]
         },
         {
             "id": "8277476",
@@ -646,7 +942,12 @@
             ],
             "rating": 8,
             "comment": "x2",
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "19599900",
@@ -657,7 +958,12 @@
                 "Aaron Sorkin"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Policier",
+                "Drame"
+            ]
         },
         {
             "id": "23227814",
@@ -668,7 +974,12 @@
                 "Martin McDonagh"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Comédie",
+                "Policier",
+                "Drame"
+            ]
         },
         {
             "id": "24966007",
@@ -679,7 +990,13 @@
                 "Steven Spielberg"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Historique",
+                "Thriller"
+            ]
         },
         {
             "id": "13051113",
@@ -689,7 +1006,13 @@
                 "Michael Gracey"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Comédie Musicale",
+                "Romance"
+            ]
         },
         {
             "id": "21063455",
@@ -700,7 +1023,12 @@
                 "Guillermo del Toro"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Fantastique",
+                "Romance"
+            ]
         },
         {
             "id": "395362",
@@ -710,7 +1038,12 @@
                 "Ryan Coogler"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "25326072",
@@ -720,7 +1053,11 @@
                 "Laurent Tirard"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Historique"
+            ]
         },
         {
             "id": "19558706",
@@ -730,7 +1067,12 @@
                 "Scott Cooper"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Drame",
+                "Western"
+            ]
         },
         {
             "id": "22059561",
@@ -740,7 +1082,10 @@
                 "Dominique Rocher"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "21752348",
@@ -750,7 +1095,11 @@
                 "Luca Guadagnino"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Romance"
+            ]
         },
         {
             "id": "20242705",
@@ -761,7 +1110,10 @@
                 "Pascal Laugier"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "13489086",
@@ -771,7 +1123,12 @@
                 "Steven Spielberg"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "18431528",
@@ -782,7 +1139,13 @@
                 "Wes Anderson"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Comédie",
+                "Science-Fiction",
+                "Animation"
+            ]
         },
         {
             "id": "19453492",
@@ -792,7 +1155,13 @@
                 "David Leitch"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Comédie",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "9008787",
@@ -803,7 +1172,13 @@
                 "Joe Russo"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Fantasy",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "411987",
@@ -814,7 +1189,12 @@
                 "Isao Takahata"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Drame",
+                "Fantastique"
+            ]
         },
         {
             "id": "16856448",
@@ -824,7 +1204,12 @@
                 "J. A. Bayona"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "35362090",
@@ -834,7 +1219,11 @@
                 "Matt Palmer"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Policier"
+            ]
         },
         {
             "id": "19252731",
@@ -845,7 +1234,10 @@
                 "Nora Twomey"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation"
+            ]
         },
         {
             "id": "32119863",
@@ -855,7 +1247,10 @@
                 "Camille Vidal-Naquet"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "25232189",
@@ -866,7 +1261,11 @@
                 "John Krasinski"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Thriller"
+            ]
         },
         {
             "id": "11074108",
@@ -877,7 +1276,13 @@
                 "Brad Bird"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Action",
+                "Aventure",
+                "Fantastique"
+            ]
         },
         {
             "id": "29306228",
@@ -887,7 +1292,13 @@
                 "Yann Gonzalez"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Épouvante-Horreur",
+                "Romance",
+                "Thriller"
+            ]
         },
         {
             "id": "26804240",
@@ -898,7 +1309,11 @@
                 "Steven Soderbergh"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "23958223",
@@ -908,17 +1323,24 @@
                 "Quentin Dupieux (Mr. Oizo)"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie"
+            ]
         },
         {
             "id": "16838981",
-            "title": "Mission : Impossible - Fallout",
+            "title": "Mission: Impossible - Fallout",
             "year": 2018,
             "authors": [
                 "Christopher McQuarrie"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Thriller"
+            ]
         },
         {
             "id": "27577814",
@@ -929,7 +1351,12 @@
                 "Spike Lee"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Policier",
+                "Biopic"
+            ]
         },
         {
             "id": "16079636",
@@ -940,7 +1367,12 @@
                 "Antoine Fuqua"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Policier",
+                "Thriller"
+            ]
         },
         {
             "id": "17096076",
@@ -951,7 +1383,12 @@
                 "Jacques Audiard"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Western",
+                "Drame",
+                "Policier"
+            ]
         },
         {
             "id": "32108628",
@@ -961,7 +1398,10 @@
                 "Lukas Dhont"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "24222651",
@@ -973,7 +1413,11 @@
             ],
             "rating": 8,
             "comment": "x2",
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Biopic",
+                "Drame"
+            ]
         },
         {
             "id": "29315951",
@@ -984,7 +1428,10 @@
                 "Paweł Pawlikowski"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "32108588",
@@ -994,7 +1441,10 @@
                 "Nadine Labaki"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "10449188",
@@ -1005,7 +1455,11 @@
                 "David Yates"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Fantastique"
+            ]
         },
         {
             "id": "12734097",
@@ -1016,7 +1470,11 @@
                 "David Yates"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Fantastique"
+            ]
         },
         {
             "id": "14954623",
@@ -1029,7 +1487,12 @@
                 "Rodney Rothman"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "13292944",
@@ -1039,7 +1502,10 @@
                 "Gilles Lellouche"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique"
+            ]
         },
         {
             "id": "19161636",
@@ -1050,7 +1516,12 @@
                 "Alexandre Astier"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Aventure",
+                "Comédie"
+            ]
         },
         {
             "id": "28822859",
@@ -1061,7 +1532,12 @@
                 "Peter Farrelly"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Biopic",
+                "Road Movie"
+            ]
         },
         {
             "id": "26421066",
@@ -1071,7 +1547,12 @@
                 "Adam McKay"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Biopic",
+                "Comédie",
+                "Drame"
+            ]
         },
         {
             "id": "9978877",
@@ -1081,7 +1562,11 @@
                 "Robert Rodriguez"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "24182360",
@@ -1091,7 +1576,13 @@
                 "Antonin Baudry (Abel Lanzac)"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame",
+                "Thriller",
+                "Guerre"
+            ]
         },
         {
             "id": "12707583",
@@ -1102,7 +1593,12 @@
                 "Ryan Fleck"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "422876",
@@ -1113,7 +1609,13 @@
                 "Steven Spielberg"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Historique",
+                "Guerre"
+            ]
         },
         {
             "id": "33812459",
@@ -1123,7 +1625,12 @@
                 "Hugo Gélin"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Romantique",
+                "Comédie",
+                "Fantastique"
+            ]
         },
         {
             "id": "12707585",
@@ -1134,7 +1641,13 @@
                 "Joe Russo"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Fantasy",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "35815954",
@@ -1144,7 +1657,12 @@
                 "Jim Jarmusch"
             ],
             "rating": 3,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Épouvante-Horreur",
+                "Fantastique"
+            ]
         },
         {
             "id": "25357970",
@@ -1155,7 +1673,12 @@
                 "Bong Joon-Ho"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Comédie"
+            ]
         },
         {
             "id": "26144468",
@@ -1165,7 +1688,11 @@
                 "Quentin Tarantino"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Comédie"
+            ]
         },
         {
             "id": "35478769",
@@ -1175,7 +1702,12 @@
                 "Ari Aster"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Épouvante-Horreur",
+                "Thriller"
+            ]
         },
         {
             "id": "21268963",
@@ -1185,7 +1717,13 @@
                 "James Gray"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Aventure",
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "27059297",
@@ -1195,7 +1733,12 @@
                 "Todd Phillips"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "36462569",
@@ -1206,7 +1749,13 @@
                 "Rian Johnson"
             ],
             "rating": 7,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Comédie",
+                "Policier",
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "32120152",
@@ -1217,7 +1766,12 @@
                 "James Mangold"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Sport"
+            ]
         },
         {
             "id": "8277496",
@@ -1228,7 +1782,12 @@
                 "J.J. Abrams"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "35614110",
@@ -1239,7 +1798,11 @@
                 "Greta Gerwig"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Romance"
+            ]
         },
         {
             "id": "35350284",
@@ -1249,7 +1812,12 @@
                 "Céline Sciamma"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Historique",
+                "Romance"
+            ]
         },
         {
             "id": "35286461",
@@ -1260,7 +1828,11 @@
             ],
             "rating": 9,
             "comment": "x2",
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame",
+                "Guerre"
+            ]
         },
         {
             "id": "38918801",
@@ -1271,7 +1843,12 @@
             ],
             "rating": 8,
             "comment": "x2",
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Science-Fiction",
+                "Thriller"
+            ]
         },
         {
             "id": "39636164",
@@ -1281,7 +1858,10 @@
                 "Florian Zeller"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Drame"
+            ]
         },
         {
             "id": "39705124",
@@ -1292,7 +1872,10 @@
                 "Thomas Vinterberg"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique"
+            ]
         },
         {
             "id": "35487026",
@@ -1302,8 +1885,13 @@
             "authors": [
                 "Park Hoon-Jung"
             ],
-            "rating": 6,
-            "favorite": false
+            "rating": 5,
+            "favorite": false,
+            "genres": [
+                "(Corée Du Sud).",
+                "Action",
+                "Fantastique"
+            ]
         },
         {
             "id": "41081476",
@@ -1313,7 +1901,11 @@
                 "Joe Begos"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "43804707",
@@ -1324,7 +1916,12 @@
                 "Kapel Furman"
             ],
             "rating": 2,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "(Brésil).",
+                "Fantastique",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "8959148",
@@ -1335,7 +1932,12 @@
                 "Paul Grau"
             ],
             "rating": 1,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "(Espagne).",
+                "Action",
+                "Thriller"
+            ]
         },
         {
             "id": "38155033",
@@ -1346,7 +1948,13 @@
                 "John Krasinski"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Épouvante-Horreur",
+                "Science-Fiction",
+                "Thriller"
+            ]
         },
         {
             "id": "37783625",
@@ -1357,7 +1965,13 @@
                 "Dominic Cooke"
             ],
             "rating": 5,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Biopic",
+                "Historique"
+            ]
         },
         {
             "id": "25242368",
@@ -1367,7 +1981,12 @@
                 "Paul Verhoeven"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame",
+                "Historique"
+            ]
         },
         {
             "id": "40252959",
@@ -1377,7 +1996,12 @@
                 "Julia Ducournau"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Épouvante-Horreur"
+            ]
         },
         {
             "id": "12808927",
@@ -1387,7 +2011,11 @@
                 "Nicolas Bedos"
             ],
             "rating": 4,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Aventure"
+            ]
         },
         {
             "id": "40362781",
@@ -1397,7 +2025,11 @@
                 "Yann Gozlan"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller"
+            ]
         },
         {
             "id": "24698928",
@@ -1408,7 +2040,11 @@
             ],
             "rating": 8,
             "comment": "x2",
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Drame"
+            ]
         },
         {
             "id": "40270657",
@@ -1418,7 +2054,11 @@
                 "Cédric Jimenez"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Thriller"
+            ]
         },
         {
             "id": "17954661",
@@ -1428,7 +2068,12 @@
                 "Alexandre Astier"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Comédie",
+                "Fantastique"
+            ]
         },
         {
             "id": "38920317",
@@ -1438,7 +2083,13 @@
                 "Edgar Wright"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Épouvante-Horreur",
+                "Drame",
+                "Fantastique"
+            ]
         },
         {
             "id": "42078832",
@@ -1448,7 +2099,11 @@
                 "Jacques Audiard"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Romance"
+            ]
         },
         {
             "id": "39757614",
@@ -1459,7 +2114,11 @@
                 "Ridley Scott"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Historique"
+            ]
         },
         {
             "id": "494347",
@@ -1469,7 +2128,11 @@
                 "Steven Spielberg"
             ],
             "rating": 9,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "44887435",
@@ -1480,7 +2143,11 @@
                 "Vincent Munier"
             ],
             "rating": 8,
-            "favorite": true
+            "favorite": true,
+            "genres": [
+                "Nature",
+                "Animalier"
+            ]
         },
         {
             "id": "39721493",
@@ -1491,7 +2158,11 @@
                 "Lana Wachowski"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "29038749",
@@ -1502,7 +2173,13 @@
                 "Mamoru Hosoda"
             ],
             "rating": 7,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Aventure",
+                "Drame",
+                "Science-Fiction"
+            ]
         },
         {
             "id": "40650811",
@@ -1512,7 +2189,11 @@
                 "Paul Thomas Anderson"
             ],
             "rating": 6,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique",
+                "Romance"
+            ]
         },
         {
             "id": "30475754",
@@ -1522,7 +2203,68 @@
                 "Guillermo del Toro"
             ],
             "rating": 8,
-            "favorite": false
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Thriller",
+                "Film Noir"
+            ]
+        },
+        {
+            "id": "430683",
+            "title": "Gladiator",
+            "year": 2000,
+            "authors": [
+                "Ridley Scott"
+            ],
+            "rating": 10,
+            "favorite": false,
+            "genres": [
+                "Péplum",
+                "Aventure",
+                "Drame"
+            ]
+        },
+        {
+            "id": "45417417",
+            "title": "À plein temps",
+            "year": 2021,
+            "authors": [
+                "Éric Gravel"
+            ],
+            "rating": 7,
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ]
+        },
+        {
+            "id": "43558610",
+            "title": "En corps",
+            "year": 2022,
+            "authors": [
+                "Cédric Klapisch"
+            ],
+            "rating": 5,
+            "favorite": false,
+            "genres": [
+                "Comédie Dramatique"
+            ]
+        },
+        {
+            "id": "43443611",
+            "title": "Freaks Out",
+            "year": 2021,
+            "authors": [
+                "Gabriele Mainetti"
+            ],
+            "rating": 7,
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure",
+                "Drame"
+            ]
         }
     ],
     "title": "Vu au cinema",
