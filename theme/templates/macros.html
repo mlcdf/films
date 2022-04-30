@@ -35,7 +35,7 @@
             <div class="mw7">{{ movie.genres | join(", ") }}</div>
             <h3 class="f5 fw6 lh-title mt4 mb2">Mon commentaire<span class="sans-serif">&thinsp;</span>:</h3>
             <div class="mw7"><p class="mt0"><span class="black-50">«</span>&nbsp;{{ movie.review | safe }}&nbsp;<span class="black-50">»</span></p></div>
-            
+
             <a class="f5 link dim ba b--dotted bw1 ph3 pv2 mb2 dib black mt3" href="{{ movie.wikipedia }}">Wikipédia</a>
         </td>
     </tr>
@@ -44,13 +44,10 @@
 {% macro menu(current_page) %}
 <div id="menu" class="flex flex-row-ns flex-column pt2 pb3 mt3 bb b--black-10 mw7 bt">
     <span class="sr-only">Menu :</span>
-    <ul class="list fw6 pl0 ma0 lh-title w-50-ns">
+    <ul class="list fw6 f5 pl0 ma0 lh-title">
         <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'journal' %} i{% endif %}" {% if current_page == 'journal' %} aria-current="true" {% endif %} href="/">Journal</a></li>
         <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'love' %} i{% endif %}" {% if current_page == 'love' %} aria-current="true" {% endif %} href="/love">Coups de coeur</a></li>
         <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'cinema' %} i{% endif %}" {% if current_page == 'cinema' %} aria-current="true" {% endif %} href="/cinema">Vus au cinéma</a></li>
-    </ul>
-
-    <ul class="list fw6 pl0 ma0 lh-title">
         <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'wish' %} i{% endif %}" {% if current_page == 'wish' %} aria-current="true" {% endif %} href="/wish">Envies</a></li>
         <li class="mr3 mt1"><a class="near-black link dim {% if current_page == 'all' %} i{% endif %}" {% if current_page == 'all' %} aria-current="true" {% endif %} href="/all">Tous les films</a></li>
         <!-- <li><a class="near-black link dim" href="/">Statistiques</a></li> -->

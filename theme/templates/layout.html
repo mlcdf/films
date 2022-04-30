@@ -63,13 +63,13 @@
             -ms-hyphens: auto;
             hyphens: auto;
         }
-        
+
         /* Stolen here: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034 */
         .sr-only {
             border: 0 !important;
             clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
             -webkit-clip-path: inset(50%) !important;
-                clip-path: inset(50%) !important;  /* 2 */
+            clip-path: inset(50%) !important;  /* 2 */
             height: 1px !important;
             margin: -1px !important;
             overflow: hidden !important;
@@ -97,8 +97,8 @@
                     <summary class="pointer" aria-label="À propos de ce site">À propos</summary>
                     <p class="mw7">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur <a href="https://www.senscritique.com">SensCritique</a>, désormais elles sont ici. :)</p>
                     <p class="mw7">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>. Les sources sont disponibles sur <a href="https://github.com/mlcdf/films">GitHub</a>.</p>
-                    
-                    <p>Denrière mis à jour le {{ now() | strftime("%d %B %Y") }}.</p>
+
+                    <p>Dernière mise à jour le {{ now() | strftime("%d %B %Y") }}.</p>
 
                     <h3 class="f5 bt b--black-10 pt3 mb2" aria-label="Grille de notation">Notes :</h3>
 
