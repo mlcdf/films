@@ -50,9 +50,6 @@ jobs:
       - name: backup list 'top 10 films'
         run: ./sc-backup --list https://www.senscritique.com/liste/Top_10_Films/297529 --pretty
 
-      - name: override data
-        run: ./override.py output/mlcdf/films-done.json -i
-
       - name: init repo and commit backups
         run: |
           cd output
