@@ -1,6 +1,49 @@
 {
     "entries": [
         {
+            "id": "13370077",
+            "title": "Top Gun: Maverick",
+            "year": 2022,
+            "authors": [
+                "Joseph Kosinski"
+            ],
+            "rating": 7,
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame"
+            ]
+        },
+        {
+            "id": "44466744",
+            "title": "Coupez !",
+            "year": 2022,
+            "authors": [
+                "Michel Hazanavicius"
+            ],
+            "rating": 7,
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Épouvante-Horreur"
+            ]
+        },
+        {
+            "id": "23302273",
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "year": 2022,
+            "authors": [
+                "Sam Raimi"
+            ],
+            "rating": 6,
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure",
+                "Épouvante-Horreur"
+            ]
+        },
+        {
             "id": "43443611",
             "title": "Freaks Out",
             "year": 2021,
