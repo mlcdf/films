@@ -8,6 +8,7 @@
                 "Joseph Kosinski"
             ],
             "rating": 7,
+            "done_date": "2022-05-25",
             "favorite": false,
             "genres": [
                 "Action",
@@ -22,10 +23,27 @@
                 "Michel Hazanavicius"
             ],
             "rating": 7,
+            "done_date": "2022-05-22",
             "favorite": false,
             "genres": [
                 "Comédie",
                 "Épouvante-Horreur"
+            ]
+        },
+        {
+            "id": "16719697",
+            "title": "Baywatch : Alerte à Malibu",
+            "original_title": "Baywatch",
+            "year": 2017,
+            "authors": [
+                "Seth Gordon"
+            ],
+            "rating": 4,
+            "done_date": "2022-05-21",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Comédie"
             ]
         },
         {
@@ -36,6 +54,7 @@
                 "Sam Raimi"
             ],
             "rating": 6,
+            "done_date": "2022-05-15",
             "favorite": false,
             "genres": [
                 "Fantastique",
