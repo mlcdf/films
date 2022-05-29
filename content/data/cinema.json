@@ -2308,6 +2308,21 @@
                 "Action",
                 "Drame"
             ]
+        },
+        {
+            "id": "44752367",
+            "title": "Les Crimes du futur",
+            "year": 2022,
+            "authors": [
+                "David Cronenberg"
+            ],
+            "rating": 6,
+            "favorite": false,
+            "genres": [
+                "Science-fiction",
+                "Épouvante-Horreur",
+                "Drame"
+            ]
         }
     ],
     "title": "Vu au cinema",

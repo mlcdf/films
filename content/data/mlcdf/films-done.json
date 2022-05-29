@@ -1,6 +1,22 @@
 {
     "entries": [
         {
+            "id": "44752367",
+            "title": "Les Crimes du futur",
+            "year": 2022,
+            "authors": [
+                "David Cronenberg"
+            ],
+            "rating": 6,
+            "done_date": "2022-05-28",
+            "favorite": false,
+            "genres": [
+                "Science-fiction",
+                "Épouvante-Horreur",
+                "Drame"
+            ]
+        },
+        {
             "id": "13370077",
             "title": "Top Gun: Maverick",
             "year": 2022,
