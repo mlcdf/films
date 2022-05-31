@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block title %}Journal cinématographique {{ super() }}{% endblock title %}
-{% block h1 %}Journal cinématographique{% endblock h1 %}
+{% block h1 %}Journal cinématographique<sup>*</sup>{% endblock h1 %}
 
 {% block menu %}{{ macros.menu("journal") }}{% endblock menu %}
 
@@ -14,6 +14,9 @@
     <div></div>
     <span class="dib f6 ttu tracked fw7 mb3 washed-red bg-near-black pa2">Mis à jour le : {{ now() | strftime("%d/%m/%y") }}</span>
     <div></div>
+
+    <p class="f6 f5-ns"><sup>*</sup>Liste non exhaustive ; il manque un bon paquet de (re)visionnages de Matrix, Mad Max Fury Road et plusieurs autres de mes films préférés.</p>
+
     <!-- <p class="f5-ns f6">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur SensCritique, désormais elles sont ici. :)</p> -->
 
     <div class="cf pb3">
