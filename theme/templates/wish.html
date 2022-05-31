@@ -1,9 +1,17 @@
 {% import "macros.html" as macros %}
 {% extends "layout.html" %}
 
-{% block title %}Envies | {{ super() }} {% endblock title %}
+{% block title %}Films à voir {{ super() }}{% endblock title %}
+{% block h1 %}Films à voir{% endblock h1 %}
 
 {% block menu %}{{ macros.menu("wish") }}{% endblock menu %}
+
+{% block header %}
+<div class="lh-copy f5 mw7 bb b--black-10">
+    <span class="dib f6 ttu tracked fw7 mt2 mb3 washed-red bg-near-black pa2">Auteur : {{ AUTHOR }}</span>
+    <p>À chaque fois que l'on me recommande un film, il atterrit ici !</p>
+</div>
+{% endblock header %}
 
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">

@@ -1,9 +1,17 @@
 {% import "macros.html" as macros %}
 {% extends "layout.html" %}
 
-{% block title %}Coups de coeur | {{ super() }} {% endblock title %}
+{% block title %}Coups de cœur filmiques {{ super() }}{% endblock title %}
+{% block h1 %}Coups de cœur filmiques{% endblock h1 %}
 
 {% block menu %}{{ macros.menu("love") }}{% endblock menu %}
+
+{% block header %}
+<div class="lh-copy f5 mw7 bb b--black-10">
+    <span class="dib f6 ttu tracked fw7 mt2 mb3 washed-red bg-near-black pa2">Auteur : {{ AUTHOR }}</span>
+    <p>Ici se côtoient chefs d'oeuvre et plaisir coupables.</p>
+</div>
+{% endblock header %}
 
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
@@ -13,7 +21,7 @@
             <th scope="col" class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
         </thead>
         <tbody class="f5 f4-ns">
-        {% for movie in DATA_FILMS_DONE.entries | sort(attribute="title") %}
+        {% for movie in DATA_JOURNAL.entries | unique(attribute="id") | list | sort(attribute="title") %}
             {% set seven_favorite = movie.rating | default(0) == 7 and movie.favorite == false %}
             {% set height_favorite = movie.rating | default(0) == 8 and movie.favorite == false %}
             {% set height_plus = 7 > movie.rating | default(0) %}

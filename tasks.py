@@ -131,42 +131,6 @@ def livereload(c):
     server.serve(host=CONFIG["host"], port=CONFIG["port"], root=CONFIG["deploy_path"])
 
 
-@task
-def backup(c):
-    version = "v0.0.12"
-
-    try:
-        result = c.run("./sc-backup --version", hide=True)
-    except exceptions.UnexpectedExit:
-        install_sc_backup(version)
-    else:
-        if result.exited == 127 or version not in result.stdout:
-            install_sc_backup(version)
-
-    c.run("chmod +x sc-backup")
-
-    output = os.path.join(SETTINGS["PATH"], SETTINGS["DATA_PATH"])
-    c.run(f"./sc-backup --collection mlcdf --pretty --output {output}")
-    c.run(
-        f"./sc-backup --list https://www.senscritique.com/liste/vu_au_cinema/363578 --pretty --output {output}"
-    )
-
-
-def install_sc_backup(version):
-    def arch() -> str:
-        if platform.machine() == "x86_64":
-            return "amd64"
-        if "arm" in platform.machine():
-            if "64" in platform.architecture()[0]:
-                return "arm64"
-            else:
-                return "arm"
-        raise NotImplementedError()
-
-    url = f"https://github.com/mlcdf/sc-backup/releases/download/{version}/sc-backup-{version}-{platform.system().lower()}-{arch()}"
-    urllib.request.urlretrieve(url, "sc-backup")
-
-
 def pelican_run(cmd):
     cmd += " " + program.core.remainder  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))

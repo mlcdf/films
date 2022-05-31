@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% block title %} {{ SITENAME }} &mdash; {{ AUTHOR }}{% endblock title %}</title>
+    <title>{% block title %} &mdash; {{ AUTHOR }}{% endblock title %}</title>
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}//tachyons.min.css"/>
 
     <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -79,48 +79,31 @@
             white-space: nowrap !important;            /* 3 */
         }
 
+        @media screen and (min-width:30em) {
+            .f18-ns {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body class="bg-washed-red near-black relative h-100 pa0">
-    {% block header %}
     <header class="pt3 ph3 f4-ns f5">
         <div>
-            <div class="pb3 f5 lh-copy flex flex-column flex-row-ns">
+            <!-- <div class="pb3 f5 lh-copy flex flex-column flex-row-ns">
                 <div>[&nbsp;<a href="#menu">Aller au menu</a>&nbsp;]&nbsp;</div>
                 <div>[&nbsp;<a href="#content">Aller au contenu</a>&nbsp;]</div>
-            </div>
-
-            <h1 class="dib mt1 mb3 washed-red bg-near-black pa2 f2-ns">films.mlcdf.fr</h1>
-
-            <div>
-                <details class="lh-copy dib f5">
-                    <summary class="pointer" aria-label="À propos de ce site">À propos</summary>
-                    <p class="mw7">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur <a href="https://www.senscritique.com">SensCritique</a>, désormais elles sont ici. :)</p>
-                    <p class="mw7">Conçu et <a href="/humans.txt">développé</a> par <a href="https://www.mlcdf.fr">Maxime Le Conte des Floris</a>. Les sources sont disponibles sur <a href="https://github.com/mlcdf/films">GitHub</a>.</p>
-
-                    <p>Dernière mise à jour le {{ now() | strftime("%d %B %Y") }}.</p>
-
-                    <h3 class="f5 bt b--black-10 pt3 mb2" aria-label="Grille de notation">Notes :</h3>
-
-                    <ul class="mt2 pl0 mb2 list">
-                        <li>{{ macros.rating(2) }} : il y a rien qui va</li>
-                        <li>{{ macros.rating(4) }} : naze, voire passable</li>
-                        <li>{{ macros.rating(6) }} : quelques bonnes idées</li>
-                        <li>{{ macros.rating(8) }} : du lourd</li>
-                        <li>{{ macros.rating(10) }} : la crème de la crème</li>
-                    </ul>
-
-                </details>
-            </div>
+            </div> -->
 
             {% block menu %}{% endblock menu %}
 
-            <label class="dib pointer f5 pt3 pb5" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
+            <h1 class="dib mv0 washed-red bg-near-black pa2 f1-ns">{% block h1 %}{% endblock h1 %}</h1>
+            <div></div>
+            {% block header %}{% endblock header %}
+
+            <label class="dib pointer f5-ns f6 pt3 pb5" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
         </div>
 
     </header>
-
-    {% endblock header %}
 
     <main id="content">
         {% block content %} {% endblock content %}

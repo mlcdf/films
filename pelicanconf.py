@@ -91,9 +91,7 @@ JINJA_FILTERS = {
 }
 
 TEMPLATE_PAGES = {
-    os.path.join(os.getcwd(), "theme/templates/cinema.html"): "cinema/index.html",
     os.path.join(os.getcwd(), "theme/templates/love.html"): "love/index.html",
-    os.path.join(os.getcwd(), "theme/templates/all.html"): "all/index.html",
     os.path.join(os.getcwd(), "theme/templates/wish.html"): "wish/index.html",
 }
 
