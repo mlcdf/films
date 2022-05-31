@@ -19,20 +19,23 @@
             "revu": false
         },
         {
-            "id": "13370077",
+            "id": "427935",
             "title": "Night and Day",
-            "year": 2022,
+            "original_title": "Knight and Day",
+            "year": 2010,
             "authors": [
-                "Joseph Kosinski"
+                "James Mangold"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2022-05-25",
             "favorite": false,
             "genres": [
-                "Action"
+                "Action",
+                "Com\u00e9die",
+                "Romance"
             ],
             "cinema": false,
-            "revu": true
+            "revu": false
         },
         {
             "id": "13370077",
@@ -13728,7 +13731,7 @@
             "authors": [
                 "James Mangold"
             ],
-            "rating": 5,
+            "rating": 6,
             "favorite": false,
             "genres": [
                 "Action",
