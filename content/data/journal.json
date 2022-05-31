@@ -938,7 +938,7 @@
                 "Historique",
                 "Thriller"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -4347,7 +4347,7 @@
                 "Drame",
                 "Thriller"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -6178,7 +6178,7 @@
                 "Fantastique",
                 "Science-Fiction"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -6196,7 +6196,7 @@
                 "Thriller",
                 "Catastrophe"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -12522,7 +12522,7 @@
                 "Aventure",
                 "Science-Fiction"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
