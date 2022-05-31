@@ -10,8 +10,10 @@
     <title>{% block title %} &mdash; {{ AUTHOR }}{% endblock title %}</title>
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}//tachyons.min.css"/>
 
-    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/{{ THEME_STATIC_DIR }}/SpaceMono-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <style>
         @font-face {
@@ -19,7 +21,7 @@
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.ttf") format('truetype');
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Regular.woff2") format('woff2');
         }
 
         @font-face {
@@ -27,7 +29,21 @@
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.ttf") format('truetype');
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Bold.woff2") format('woff2');
+        }
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-Italic.woff2") format('woff2');
+        }
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("/{{ THEME_STATIC_DIR }}/SpaceMono-BoldItalic.woff2") format('woff2');
         }
 
         body {
