@@ -4278,7 +4278,7 @@
                 "Drame"
             ],
             "cinema": true,
-            "revu": false
+            "revu": true
         },
         {
             "id": "382239",
@@ -5933,7 +5933,7 @@
                 "Science-Fiction"
             ],
             "cinema": true,
-            "revu": false
+            "revu": true
         },
         {
             "id": "11199962",
