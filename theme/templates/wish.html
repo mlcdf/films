@@ -18,16 +18,16 @@
 {% block content %}
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">
-            <th scope="col" class="tl pb3 pl3 pr3-l pointer">Titre</th>
-            <th scope="col" class="tl pb3 pr3 pr4-l pointer">Année de sortie</th>
-            <th scope="col" class="tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
+            <th scope="col" class="bb b--near-black tl pb3 pl3 pr3-l pointer">Titre</th>
+            <th scope="col" class="bb b--near-black tl pb3 pr3 pr4-l pointer">Année de sortie</th>
+            <th scope="col" class="bb b--near-black tl pb3 pr3 pointer">Réalisateur/trice(s)</th>
         </thead>
         <tbody class="f5 f4-ns">
         {% for movie in DATA_FILMS_WISH.entries | sort(attribute="year") | reverse %}
-            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-90 bg-animate hover-bg-dim js-expandables" data-movie-id="{{ movie.id }}">
-                <td class="db dtc-l pv1 pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy">{{ macros.title(movie, movie.id in DATA_ADDITIONALS) }}</td>
-                <td class="dib dtc-l pv1 pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
-                <td class="di dtc-l pv1 pv3-l pr3-l bn bt-l b--black-10"><span class="dn-l">&mdash; </span>{{ movie.authors | join(", ") }}</td>
+            <tr class="db dt-row-l bn-l pa3 pv0-l bt b--black-10 bg-animate hover-bg-dim js-expandables" data-movie-id="{{ movie.id }}">
+                <td class="dib dtc-l pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy b normal-l ttu ttn-l tracked tracked-normal-ns">{{ macros.title(movie, False) }}</td>
+                <td class="db dtc-l pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
+                <td class="db dtc-l pv3-l pr3-l bn bt-l b--black-10">{{ movie.authors | join(", ") }}</td>
             </tr>
         {% endfor %}
         </tbody>
