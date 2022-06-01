@@ -514,7 +514,7 @@
                 "Science-Fiction"
             ],
             "cinema": true,
-            "revu": false
+            "revu": true
         },
         {
             "id": "39757614",
@@ -5456,7 +5456,7 @@
             "authors": [
                 "Isao Takahata"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2017-06-05",
             "favorite": false,
             "genres": [
@@ -5933,7 +5933,7 @@
                 "Aventure",
                 "Science-Fiction"
             ],
-            "cinema": true,
+            "cinema": false,
             "revu": true
         },
         {
@@ -6030,7 +6030,7 @@
             "authors": [
                 "J.J. Abrams"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2015-12-16",
             "favorite": false,
             "genres": [
@@ -6047,7 +6047,7 @@
             "authors": [
                 "J.J. Abrams"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2015-12-22",
             "favorite": false,
             "genres": [
@@ -6064,7 +6064,7 @@
             "authors": [
                 "J.J. Abrams"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2016-01-16",
             "favorite": false,
             "genres": [
@@ -6119,7 +6119,7 @@
                 "Lee Unkrich",
                 "Adrian Molina"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2017-12-08",
             "favorite": false,
             "genres": [
@@ -7091,7 +7091,7 @@
             "authors": [
                 "Francis Ford Coppola"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2017-03-26",
             "favorite": false,
             "genres": [
@@ -7131,20 +7131,6 @@
                 "Animation",
                 "Com\u00e9die"
             ],
-            "cinema": false,
-            "revu": false
-        },
-        {
-            "id": "427822",
-            "title": "The Cat Piano",
-            "year": 2009,
-            "authors": [
-                "Ari Gibson",
-                "Eddie White"
-            ],
-            "rating": 8,
-            "done_date": "2017-03-00",
-            "favorite": false,
             "cinema": false,
             "revu": false
         },
@@ -7811,7 +7797,7 @@
             "authors": [
                 "Alfred Hitchcock"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2016-08-18",
             "favorite": false,
             "genres": [
