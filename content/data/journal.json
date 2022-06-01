@@ -717,7 +717,7 @@
             "authors": [
                 "Nicolas Bedos"
             ],
-            "rating": 4,
+            "rating": 2,
             "done_date": "2021-09-10",
             "favorite": false,
             "genres": [
@@ -1749,7 +1749,7 @@
             "authors": [
                 "Camille Vidal-Naquet"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2018-06-30",
             "favorite": false,
             "genres": [
@@ -1908,7 +1908,7 @@
             "authors": [
                 "Frank Darabont"
             ],
-            "rating": 6,
+            "rating": 5,
             "done_date": "2018-10-09",
             "favorite": false,
             "genres": [
@@ -3018,7 +3018,7 @@
             "authors": [
                 "J.J. Abrams"
             ],
-            "rating": 4,
+            "rating": 3,
             "done_date": "2019-12-26",
             "favorite": false,
             "genres": [
@@ -3181,7 +3181,7 @@
             "authors": [
                 "Christopher Nolan"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2020-09-16",
             "favorite": false,
             "genres": [
@@ -3199,7 +3199,7 @@
             "authors": [
                 "Christopher Nolan"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2020-09-13",
             "favorite": false,
             "genres": [
@@ -3274,7 +3274,7 @@
             "authors": [
                 "J\u00e9r\u00e9my Clapin"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2020-05-24",
             "favorite": false,
             "genres": [
@@ -3494,7 +3494,7 @@
             "authors": [
                 "Mamoru Hosoda"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2020-04-00",
             "favorite": false,
             "genres": [
@@ -3949,7 +3949,7 @@
             "authors": [
                 "John Lee Hancock"
             ],
-            "rating": 3,
+            "rating": 2,
             "done_date": "2019-11-01",
             "favorite": false,
             "genres": [
@@ -4057,7 +4057,7 @@
             "authors": [
                 "Lynne Ramsay"
             ],
-            "rating": 6,
+            "rating": 5,
             "done_date": "2019-08-00",
             "favorite": false,
             "genres": [
@@ -4125,7 +4125,7 @@
             "authors": [
                 "Tony Scott"
             ],
-            "rating": 5,
+            "rating": 4,
             "done_date": "2019-08-16",
             "favorite": false,
             "genres": [
@@ -4215,7 +4215,7 @@
             "authors": [
                 "Rob Letterman"
             ],
-            "rating": 3,
+            "rating": 2,
             "done_date": "2019-07-21",
             "favorite": false,
             "genres": [
@@ -4479,7 +4479,7 @@
                 "Anna Boden",
                 "Ryan Fleck"
             ],
-            "rating": 5,
+            "rating": 4,
             "done_date": "2019-03-07",
             "favorite": false,
             "genres": [
@@ -4589,7 +4589,7 @@
             "authors": [
                 "Steven Spielberg"
             ],
-            "rating": 6,
+            "rating": 5,
             "done_date": "2019-02-02",
             "favorite": false,
             "genres": [
@@ -5363,7 +5363,7 @@
             "authors": [
                 "Yann Gonzalez"
             ],
-            "rating": 6,
+            "rating": 5,
             "done_date": "2018-07-08",
             "favorite": false,
             "genres": [
@@ -5616,7 +5616,7 @@
                 "Anthony Russo",
                 "Joe Russo"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2018-05-08",
             "favorite": false,
             "genres": [
@@ -6809,7 +6809,7 @@
             "authors": [
                 "Hayao Miyazaki"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2016-02-20",
             "favorite": false,
             "genres": [
@@ -7109,7 +7109,7 @@
             "authors": [
                 "Blake Edwards"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2017-03-25",
             "favorite": false,
             "genres": [
@@ -7439,7 +7439,7 @@
                 "Rich Moore",
                 "Jared Bush"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2017-01-08",
             "favorite": false,
             "genres": [
@@ -8417,7 +8417,7 @@
             "authors": [
                 "Hayao Miyazaki"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2016-02-21",
             "favorite": false,
             "genres": [
@@ -9162,7 +9162,7 @@
             "authors": [
                 "Martin Scorsese"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2016-01-29",
             "favorite": false,
             "genres": [
@@ -9974,7 +9974,7 @@
             "authors": [
                 "Robert Zemeckis"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2015-06-09",
             "favorite": false,
             "genres": [
@@ -10222,7 +10222,7 @@
             "authors": [
                 "Louis Leterrier"
             ],
-            "rating": 5,
+            "rating": 4,
             "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
