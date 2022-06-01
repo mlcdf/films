@@ -274,8 +274,8 @@
             "done_date": "2022-02-17",
             "favorite": false,
             "genres": [
-                "Romance",
-                "Science-fiction"
+                "Science-fiction",
+                "Romance"
             ],
             "cinema": true,
             "revu": true
@@ -403,8 +403,7 @@
             "done_date": "2021-12-22",
             "favorite": true,
             "genres": [
-                "Nature",
-                "Animalier"
+                "Documentaire"
             ],
             "cinema": true,
             "revu": false
@@ -969,7 +968,6 @@
             "done_date": "2018-03-18",
             "favorite": true,
             "genres": [
-                "Drame",
                 "Romance"
             ],
             "cinema": true,
@@ -1021,7 +1019,6 @@
             "rating": 7,
             "favorite": true,
             "genres": [
-                "Com\u00e9die",
                 "Science-Fiction",
                 "Aventure"
             ],
@@ -1040,8 +1037,8 @@
             "done_date": "2014-09-30",
             "favorite": true,
             "genres": [
-                "Drame",
-                "Guerre"
+                "Guerre",
+                "Drame"
             ],
             "cinema": false,
             "revu": false
@@ -1094,7 +1091,6 @@
             "favorite": true,
             "genres": [
                 "Policier",
-                "Drame",
                 "Western"
             ],
             "cinema": false,
@@ -1181,7 +1177,6 @@
             "done_date": "2016-02-11",
             "favorite": true,
             "genres": [
-                "Drame",
                 "Romance"
             ],
             "cinema": true,
@@ -1198,9 +1193,7 @@
             "done_date": "2019-08-23",
             "favorite": true,
             "genres": [
-                "Drame",
-                "\u00c9pouvante-Horreur",
-                "Thriller"
+                "\u00c9pouvante-Horreur"
             ],
             "cinema": true,
             "revu": false
@@ -1216,8 +1209,6 @@
             "rating": 8,
             "favorite": true,
             "genres": [
-                "Aventure",
-                "Drame",
                 "Western"
             ],
             "cinema": false,
@@ -1252,7 +1243,6 @@
             "favorite": true,
             "genres": [
                 "Thriller",
-                "Drame",
                 "Policier"
             ],
             "cinema": false,
@@ -1269,9 +1259,8 @@
             "done_date": "2017-09-01",
             "favorite": true,
             "genres": [
-                "Thriller",
-                "Drame",
-                "Policier"
+                "Policier",
+                "Thriller"
             ],
             "cinema": true,
             "revu": false
@@ -1322,9 +1311,8 @@
             "done_date": "2019-12-14",
             "favorite": true,
             "genres": [
-                "Com\u00e9die",
                 "Policier",
-                "Drame",
+                "Com\u00e9die",
                 "Thriller"
             ],
             "cinema": true,
@@ -1415,9 +1403,8 @@
             "done_date": "2018-01-00",
             "favorite": true,
             "genres": [
-                "Com\u00e9die",
                 "Policier",
-                "Drame"
+                "Com\u00e9die"
             ],
             "cinema": true,
             "revu": false
@@ -1433,7 +1420,6 @@
             "done_date": "2017-02-20",
             "favorite": true,
             "genres": [
-                "Drame",
                 "Romance",
                 "Guerre"
             ],
@@ -1468,6 +1454,7 @@
             "done_date": "2016-04-08",
             "favorite": true,
             "genres": [
+                "Super-héros",
                 "Action",
                 "Fantastique"
             ],
@@ -1502,9 +1489,9 @@
             "done_date": "2017-06-03",
             "favorite": true,
             "genres": [
-                "Action",
+                "Science-Fiction",
                 "Guerre",
-                "Science-Fiction"
+                "Action"
             ],
             "cinema": false,
             "revu": false
@@ -1556,8 +1543,7 @@
             "done_date": "2017-10-11",
             "favorite": true,
             "genres": [
-                "Com\u00e9die",
-                "Drame"
+                "Com\u00e9die Dramatique"
             ],
             "cinema": false,
             "revu": false
@@ -1576,9 +1562,8 @@
             "done_date": "2018-12-13",
             "favorite": true,
             "genres": [
-                "Action",
-                "Aventure",
-                "Science-Fiction"
+                "Animation",
+                "Super-héros"
             ],
             "cinema": true,
             "revu": false
@@ -1610,8 +1595,6 @@
             "done_date": "2020-01-10",
             "favorite": true,
             "genres": [
-                "Drame",
-                "Historique",
                 "Romance"
             ],
             "cinema": true,
@@ -2170,7 +2153,7 @@
             "done_date": "2018-10-29",
             "favorite": true,
             "genres": [
-                "Drame"
+                "Romance"
             ],
             "cinema": true,
             "revu": false
@@ -2220,9 +2203,8 @@
             "done_date": "2018-08-26",
             "favorite": true,
             "genres": [
-                "Drame",
                 "Com\u00e9die",
-                "Romance"
+                "Drame"
             ],
             "cinema": false,
             "revu": false
@@ -2362,8 +2344,8 @@
             "done_date": "2017-06-21",
             "favorite": true,
             "genres": [
-                "Thriller",
-                "\u00c9pouvante-Horreur"
+                "\u00c9pouvante-Horreur",
+                "Thriller"
             ],
             "cinema": false,
             "revu": false
@@ -2380,10 +2362,11 @@
             "done_date": "2014-10-07",
             "favorite": true,
             "genres": [
-                "Drame",
-                "Thriller",
+                "Mystère",
+                "Film Noir",
                 "Romance",
-                "Film Noir"
+                "Thriller",
+                "Drame"
             ],
             "cinema": false,
             "revu": false
@@ -2400,10 +2383,7 @@
             "done_date": "2016-11-05",
             "favorite": true,
             "genres": [
-                "Drame",
-                "Thriller",
-                "Romance",
-                "\u00c9rotique"
+                "Thriller"
             ],
             "cinema": true,
             "revu": false
@@ -2456,9 +2436,9 @@
             "done_date": "2014-00-00",
             "favorite": true,
             "genres": [
-                "Drame",
                 "Science-Fiction",
                 "Thriller",
+                "Drame",
                 "Action"
             ],
             "cinema": false,
@@ -2581,8 +2561,8 @@
             "favorite": true,
             "genres": [
                 "Com\u00e9die",
-                "Fantastique",
-                "Romance"
+                "Romance",
+                "Fantastique"
             ],
             "cinema": false,
             "revu": false
@@ -2672,7 +2652,6 @@
             "done_date": "2015-06-19",
             "favorite": true,
             "genres": [
-                "Aventure",
                 "Fantasy"
             ],
             "cinema": false,
@@ -2773,8 +2752,8 @@
             "rating": 8,
             "favorite": true,
             "genres": [
-                "Drame",
-                "Science-Fiction"
+                "Science-Fiction",
+                "Drame"
             ],
             "cinema": false,
             "revu": false
@@ -2846,9 +2825,7 @@
             "done_date": "2011-06-00",
             "favorite": true,
             "genres": [
-                "Action",
-                "Aventure",
-                "Science-Fiction"
+                "Super-héros"
             ],
             "cinema": false,
             "revu": false
@@ -3185,9 +3162,7 @@
             "done_date": "2020-09-16",
             "favorite": false,
             "genres": [
-                "Action",
-                "Science-Fiction",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": true,
             "revu": true
@@ -3203,9 +3178,7 @@
             "done_date": "2020-09-13",
             "favorite": false,
             "genres": [
-                "Action",
-                "Science-Fiction",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": true,
             "revu": false
@@ -3401,11 +3374,9 @@
             "rating": 9,
             "favorite": false,
             "genres": [
-                "Muet",
-                "Action",
-                "Aventure",
                 "Com\u00e9die",
-                "Drame",
+                "Aventure",
+                "Muet",
                 "Guerre",
                 "Western"
             ],
@@ -3916,9 +3887,9 @@
             "done_date": "2019-12-15",
             "favorite": true,
             "genres": [
+                "Action",
                 "Biopic",
-                "Drame",
-                "Sport"
+                "Drame"
             ],
             "cinema": true,
             "revu": false
@@ -3990,7 +3961,6 @@
             "done_date": "2019-09-23",
             "favorite": true,
             "genres": [
-                "Action",
                 "Com\u00e9die",
                 "Drame"
             ],
@@ -4183,7 +4153,7 @@
             "done_date": "2019-07-27",
             "favorite": true,
             "genres": [
-                "Science-Fiction",
+                "Comédie",
                 "Romance",
                 "Musique"
             ],
@@ -4256,9 +4226,7 @@
             "done_date": "2019-06-16",
             "favorite": false,
             "genres": [
-                "Drame",
-                "Thriller",
-                "Com\u00e9die"
+                "Thriller"
             ],
             "cinema": true,
             "revu": false
@@ -4293,9 +4261,8 @@
             "rating": 10,
             "favorite": false,
             "genres": [
-                "Action",
                 "Science-Fiction",
-                "Arts Martiaux"
+                "Action"
             ],
             "cinema": false,
             "revu": false
@@ -5040,8 +5007,7 @@
             "done_date": "2018-08-01",
             "favorite": true,
             "genres": [
-                "Action",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": true,
             "revu": false
@@ -5066,7 +5032,7 @@
         },
         {
             "id": "480435",
-            "title": "Mad Max - Fury Road",
+            "title": "Mad Max: Fury Road",
             "year": 2015,
             "authors": [
                 "George Miller"
@@ -5083,7 +5049,7 @@
         },
         {
             "id": "480435",
-            "title": "Mad Max - Fury Road",
+            "title": "Mad Max: Fury Road",
             "year": 2015,
             "authors": [
                 "George Miller"
@@ -5147,9 +5113,7 @@
             "done_date": "2016-02-24",
             "favorite": true,
             "genres": [
-                "Animation",
-                "Aventure",
-                "Fantasy"
+                "Animation"
             ],
             "cinema": false,
             "revu": false
@@ -5388,9 +5352,7 @@
             "favorite": false,
             "genres": [
                 "Animation",
-                "Action",
-                "Aventure",
-                "Fantastique"
+                "Super-héros"
             ],
             "cinema": true,
             "revu": false
@@ -5695,8 +5657,8 @@
             "done_date": "2016-02-22",
             "favorite": false,
             "genres": [
-                "Action",
-                "Science-Fiction"
+                "Science-Fiction",
+                "Thriller"
             ],
             "cinema": false,
             "revu": false
@@ -5732,7 +5694,6 @@
             "done_date": "2018-01-30",
             "favorite": false,
             "genres": [
-                "Policier",
                 "Drame"
             ],
             "cinema": false,
@@ -6085,9 +6046,9 @@
             "done_date": "2017-12-16",
             "favorite": true,
             "genres": [
+                "Science-Fiction",
                 "Action",
-                "Aventure",
-                "Science-Fiction"
+                "Aventure"
             ],
             "cinema": true,
             "revu": false
@@ -6104,9 +6065,9 @@
             "done_date": "2017-12-23",
             "favorite": true,
             "genres": [
+                "Science-Fiction",
                 "Action",
-                "Aventure",
-                "Science-Fiction"
+                "Aventure"
             ],
             "cinema": true,
             "revu": true
@@ -6831,9 +6792,7 @@
             "done_date": "2017-10-08",
             "favorite": false,
             "genres": [
-                "Science-Fiction",
-                "Drame",
-                "Policier"
+                "Science-Fiction"
             ],
             "cinema": true,
             "revu": false
@@ -6850,9 +6809,9 @@
             "done_date": "2017-09-03",
             "favorite": false,
             "genres": [
-                "Thriller",
+                "Film Noir",
                 "Policier",
-                "Film Noir"
+                "Thriller"
             ],
             "cinema": false,
             "revu": false
@@ -7019,9 +6978,7 @@
             "favorite": true,
             "genres": [
                 "Animation",
-                "Action",
-                "Aventure",
-                "Fantastique"
+                "Super-héros"
             ],
             "cinema": false,
             "revu": false
@@ -7551,9 +7508,7 @@
             "done_date": "2016-12-26",
             "favorite": false,
             "genres": [
-                "Science-Fiction",
-                "Drame",
-                "Thriller"
+                "Science-Fiction"
             ],
             "cinema": true,
             "revu": false
@@ -7570,8 +7525,7 @@
             "done_date": "2015-06-18",
             "favorite": false,
             "genres": [
-                "Action",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": false,
             "revu": false
@@ -7766,8 +7720,7 @@
             "done_date": "2016-09-03",
             "favorite": true,
             "genres": [
-                "Thriller",
-                "Drame"
+                "Espionnage"
             ],
             "cinema": false,
             "revu": false
@@ -7873,8 +7826,8 @@
             "rating": 9,
             "favorite": false,
             "genres": [
-                "Action",
-                "Aventure"
+                "Aventure",
+                "Action"
             ],
             "cinema": false,
             "revu": false
@@ -8403,8 +8356,7 @@
             "favorite": false,
             "genres": [
                 "Science-Fiction",
-                "Film Noir",
-                "Thriller"
+                "Film Noir"
             ],
             "cinema": false,
             "revu": false
@@ -9201,9 +9153,8 @@
             "rating": 10,
             "favorite": true,
             "genres": [
-                "Action",
-                "Policier",
-                "Thriller"
+                "Super-héros",
+                "Policier"
             ],
             "cinema": false,
             "revu": false
@@ -9392,8 +9343,7 @@
             "done_date": "2015-08-17",
             "favorite": true,
             "genres": [
-                "Action",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": true,
             "revu": false
@@ -9627,9 +9577,7 @@
             "done_date": "2015-08-22",
             "favorite": true,
             "genres": [
-                "Portrait",
-                "Politique",
-                "Soci\u00e9t\u00e9"
+                "Documentaire"
             ],
             "cinema": false,
             "revu": false
@@ -9773,8 +9721,7 @@
             "done_date": "2015-07-01",
             "favorite": false,
             "genres": [
-                "Action",
-                "Thriller"
+                "Action"
             ],
             "cinema": false,
             "revu": false
@@ -9791,7 +9738,6 @@
             "done_date": "2015-07-01",
             "favorite": false,
             "genres": [
-                "Action",
                 "Thriller"
             ],
             "cinema": false,
@@ -9808,8 +9754,7 @@
             "done_date": "2015-06-28",
             "favorite": false,
             "genres": [
-                "Action",
-                "Thriller"
+                "Espionnage"
             ],
             "cinema": false,
             "revu": false
@@ -10354,8 +10299,8 @@
             "done_date": "2014-04-06",
             "favorite": false,
             "genres": [
-                "Fantastique",
-                "Film Noir"
+                "Film Noir",
+                "Fantastique"
             ],
             "cinema": false,
             "revu": false
@@ -10407,7 +10352,7 @@
             ],
             "rating": 8,
             "done_date": "2015-04-07",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Policier",
                 "Drame",
@@ -10594,7 +10539,8 @@
             "done_date": "2015-01-16",
             "favorite": true,
             "genres": [
-                "Science-Fiction"
+                "Science-Fiction",
+                "Romance"
             ],
             "cinema": false,
             "revu": false
@@ -11592,7 +11538,7 @@
             ],
             "rating": 8,
             "done_date": "2014-11-08",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Policier",
                 "Thriller"
@@ -11832,9 +11778,9 @@
             "done_date": "2014-07-19",
             "favorite": true,
             "genres": [
+                "Science-Fiction",
                 "Action",
-                "Aventure",
-                "Science-Fiction"
+                "Aventure"
             ],
             "cinema": true,
             "revu": false
@@ -11996,10 +11942,8 @@
             "done_date": "2014-09-21",
             "favorite": true,
             "genres": [
-                "Drame",
-                "Romance",
                 "Science-Fiction",
-                "Thriller"
+                "Romance"
             ],
             "cinema": false,
             "revu": false
