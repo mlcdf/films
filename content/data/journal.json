@@ -1,6 +1,39 @@
 {
     "entries": [
         {
+            "id": "13370077",
+            "title": "Top Gun: Maverick",
+            "year": 2022,
+            "authors": [
+                "Joseph Kosinski"
+            ],
+            "rating": 7,
+            "done_date": "2022-06-05",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": true
+        },
+        {
+            "id": "42318798",
+            "title": "Pleasure",
+            "year": 2021,
+            "authors": [
+                "Ninja Thyberg"
+            ],
+            "rating": 7,
+            "done_date": "2022-06-02",
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "44752367",
             "title": "Les Crimes du futur",
             "original_title": "Crimes of the Future",
@@ -10276,6 +10309,7 @@
                 "Shane Black"
             ],
             "rating": 7,
+            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Action",
@@ -13066,6 +13100,7 @@
                 "Kathryn Bigelow"
             ],
             "rating": 8,
+            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Drame",
@@ -14334,6 +14369,7 @@
                 "Terry Jones"
             ],
             "done_date": "2016-07-01",
+            "rating": 6,
             "favorite": false,
             "genres": [
                 "Aventure",
