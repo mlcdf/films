@@ -4008,7 +4008,6 @@
                 "Denis Villeneuve"
             ],
             "rating": 6,
-            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Policier",
@@ -10011,7 +10010,7 @@
                 "Aventure",
                 "Fantastique"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -10226,7 +10225,7 @@
                 "Science-Fiction",
                 "Thriller"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
@@ -13848,7 +13847,7 @@
                 "Drame",
                 "Romance"
             ],
-            "cinema": false,
+            "cinema": true,
             "revu": false
         },
         {
