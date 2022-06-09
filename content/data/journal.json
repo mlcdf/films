@@ -45,7 +45,7 @@
             "done_date": "2022-05-28",
             "favorite": false,
             "genres": [
-                "Science-fiction",
+                "Science-Fiction",
                 "\u00c9pouvante-Horreur",
                 "Drame"
             ],
@@ -307,7 +307,7 @@
             "done_date": "2022-02-17",
             "favorite": false,
             "genres": [
-                "Science-fiction",
+                "Science-Fiction",
                 "Romance"
             ],
             "cinema": true,
@@ -3920,8 +3920,8 @@
             "done_date": "2019-12-15",
             "favorite": true,
             "genres": [
-                "Action",
                 "Biopic",
+                "Action",
                 "Drame"
             ],
             "cinema": true,
@@ -5055,9 +5055,9 @@
             "done_date": "2011-00-00",
             "favorite": true,
             "genres": [
+                "Science-Fiction",
                 "Action",
-                "Thriller",
-                "Science-Fiction"
+                "Thriller"
             ],
             "cinema": false,
             "revu": false
@@ -5073,6 +5073,7 @@
             "done_date": "2015-05-14",
             "favorite": true,
             "genres": [
+                "Action",
                 "Science-Fiction",
                 "Road Movie"
             ],
@@ -5090,6 +5091,7 @@
             "done_date": "2015-05-19",
             "favorite": true,
             "genres": [
+                "Action",
                 "Science-Fiction",
                 "Road Movie"
             ],
@@ -8667,7 +8669,6 @@
             "authors": [
                 "Justin Lin"
             ],
-            "done_date": "2013-00-00",
             "rating": 4,
             "favorite": false,
             "genres": [
@@ -8988,7 +8989,6 @@
                 "David O. Russell"
             ],
             "rating": 6,
-            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Com\u00e9die Dramatique",
@@ -9185,6 +9185,7 @@
             "rating": 10,
             "favorite": true,
             "genres": [
+                "Action",
                 "Super-héros",
                 "Policier"
             ],
@@ -10021,7 +10022,6 @@
                 "J.J. Abrams"
             ],
             "rating": 6,
-            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Action",
@@ -10200,7 +10200,6 @@
                 "Louis Leterrier"
             ],
             "rating": 4,
-            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Policier",
@@ -14613,7 +14612,6 @@
             "authors": [
                 "Jon M. Chu"
             ],
-            "done_date": "2013-00-00",
             "rating": 4,
             "favorite": false,
             "genres": [
@@ -14883,7 +14881,6 @@
                 "Juan Solanas"
             ],
             "rating": 6,
-            "done_date": "2013-00-00",
             "favorite": false,
             "genres": [
                 "Drame",
