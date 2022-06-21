@@ -1,6 +1,62 @@
 {
     "entries": [
         {
+            "id": "39766681",
+            "title": "A Good Woman",
+            "original_title": "A Good Woman Is Hard to Find",
+            "year": 2019,
+            "authors": [
+                "Abner Pastoll"
+            ],
+            "rating": 7,
+            "done_date": "2022-06-21",
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Thriller",
+                "Drame"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "17988573",
+            "title": "Jurassic World - Le Monde d'après",
+            "original_title": "Jurassic World: Dominion",
+            "year": 2022,
+            "authors": [
+                "Colin Trevorrow"
+            ],
+            "rating": 1,
+            "done_date": "2022-06-20",
+            "favorite": false,
+            "genres": [
+                "Aventure",
+                "Science-Fiction",
+                "Action"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "23302273",
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "year": 2022,
+            "authors": [
+                "Sam Raimi"
+            ],
+            "rating": 6,
+            "done_date": "2022-06-19",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure",
+                "\u00c9pouvante-Horreur"
+            ],
+            "cinema": true,
+            "revu": true
+        },
+        {
             "id": "13370077",
             "title": "Top Gun: Maverick",
             "year": 2022,
