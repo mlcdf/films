@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "27659266",
+            "title": "The King's Man - Première Mission",
+            "original_title": "The King's Man",
+            "year": 2021,
+            "authors": [
+                "Matthew Vaughn"
+            ],
+            "rating": 1,
+            "done_date": "2022-06-24",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "39766681",
             "title": "A Good Woman",
             "original_title": "A Good Woman Is Hard to Find",
