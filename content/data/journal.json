@@ -1,6 +1,27 @@
 {
     "entries": [
         {
+            "id": "411899",
+            "title": "Mulholland Drive",
+            "original_title": "Mulholland Dr.",
+            "year": 2001,
+            "authors": [
+                "David Lynch"
+            ],
+            "rating": 8,
+            "done_date": "2022-07-03",
+            "favorite": true,
+            "genres": [
+                "Mystère",
+                "Film Noir",
+                "Romance",
+                "Thriller",
+                "Drame"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "42246758",
             "title": "Incroyable mais vrai",
             "year": 2022,
