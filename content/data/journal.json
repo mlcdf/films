@@ -1,6 +1,22 @@
 {
     "entries": [
         {
+            "id": "8466396",
+            "title": "The Batman",
+            "year": 2022,
+            "authors": [
+                "Matt Reeves"
+            ],
+            "rating": 8,
+            "done_date": "2022-07-10",
+            "favorite": false,
+            "genres": [
+                "Action"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "42224027",
             "title": "Decision to Leave",
             "original_title": "Heeojil Gyeolsim",
@@ -366,6 +382,22 @@
             "favorite": false,
             "genres": [
                 "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "8466396",
+            "title": "The Batman",
+            "year": 2022,
+            "authors": [
+                "Matt Reeves"
+            ],
+            "rating": 8,
+            "done_date": "2022-03-00",
+            "favorite": false,
+            "genres": [
+                "Action"
             ],
             "cinema": true,
             "revu": false
