@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "471803",
+            "title": "Le Seigneur des Anneaux - Les Deux Tours",
+            "original_title": "The Lord of the Rings: The Two Towers",
+            "year": 2002,
+            "authors": [
+                "Peter Jackson"
+            ],
+            "rating": 9,
+            "done_date": "2022-08-10",
+            "favorite": false,
+            "genres": [
+                "Fantasy",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "387452",
             "title": "Le Seigneur des Anneaux - La Communaut\u00e9 de l'anneau",
             "original_title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -8,11 +26,12 @@
             "authors": [
                 "Peter Jackson"
             ],
-            "rating": 9,
+            "rating": 10,
             "done_date": "2022-08-07",
             "favorite": true,
             "genres": [
-                "Fantasy"
+                "Fantasy",
+                "Aventure"
             ],
             "cinema": false,
             "revu": true
