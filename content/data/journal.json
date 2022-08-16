@@ -1,6 +1,23 @@
 {
     "entries": [
         {
+            "id": "39750873",
+            "title": "Thor: Love and Thunder",
+            "year": 2022,
+            "authors": [
+                "Taika Waititi"
+            ],
+            "rating": 4,
+            "done_date": "2022-08-15",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "471803",
             "title": "Le Seigneur des Anneaux - Les Deux Tours",
             "original_title": "The Lord of the Rings: The Two Towers",
