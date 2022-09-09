@@ -1,13 +1,30 @@
 {
     "entries": [
         {
+            "id": "45395176",
+            "title": "La Nuit du 12",
+            "year": 2022,
+            "authors": [
+                "Dominik Moll"
+            ],
+            "rating": 8,
+            "done_date": "2022-09-06",
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "439638",
             "title": "Top Gun",
             "year": 1986,
             "authors": [
                 "Tony Scott"
             ],
-            "rating": 7,
+            "rating": 8,
             "done_date": "2022-09-04",
             "favorite": false,
             "genres": [
@@ -26,7 +43,7 @@
                 "Dan Kwan",
                 "Daniel Scheinert"
             ],
-            "rating": 8,
+            "rating": 7,
             "done_date": "2022-09-03",
             "favorite": false,
             "genres": [
