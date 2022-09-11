@@ -1,6 +1,23 @@
 {
     "entries": [
         {
+            "id": "13370077",
+            "title": "Top Gun: Maverick",
+            "year": 2022,
+            "authors": [
+                "Joseph Kosinski"
+            ],
+            "rating": 8,
+            "done_date": "2022-09-09",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": true
+        },
+        {
             "id": "45395176",
             "title": "La Nuit du 12",
             "year": 2022,
@@ -330,7 +347,7 @@
             "authors": [
                 "Joseph Kosinski"
             ],
-            "rating": 7,
+            "rating": 8,
             "done_date": "2022-06-05",
             "favorite": false,
             "genres": [
@@ -401,7 +418,7 @@
             "authors": [
                 "Joseph Kosinski"
             ],
-            "rating": 7,
+            "rating": 8,
             "done_date": "2022-05-25",
             "favorite": false,
             "genres": [
