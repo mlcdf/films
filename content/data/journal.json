@@ -107,6 +107,60 @@
             "revu": false
         },
         {
+            "id": "477607",
+            "title": "Harry Potter et le Prisonnier d'Azkaban",
+            "original_title": "Harry Potter and the Prisoner of Azkaban",
+            "year": 2004,
+            "authors": [
+                "Alfonso Cuar\u00f3n"
+            ],
+            "rating": 8,
+            "done_date": "2022-08-28",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "435375",
+            "title": "Harry Potter et la Chambre des secrets",
+            "original_title": "Harry Potter and the Chamber of Secrets",
+            "year": 2002,
+            "authors": [
+                "Chris Columbus"
+            ],
+            "rating": 7,
+            "done_date": "2022-08-27",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "447682",
+            "title": "Harry Potter \u00e0 l'\u00e9cole des sorciers",
+            "original_title": "Harry Potter and the Sorcerer's Stone",
+            "year": 2001,
+            "authors": [
+                "Chris Columbus"
+            ],
+            "rating": 6,
+            "done_date": "2022-08-26",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "45284502",
             "title": "Vesper Chronicles",
             "original_title": "Vesper",
@@ -158,7 +212,7 @@
                 "Aventure"
             ],
             "cinema": false,
-            "revu": false
+            "revu": true
         },
         {
             "id": "39750873",
