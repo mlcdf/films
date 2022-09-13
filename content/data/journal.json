@@ -1,6 +1,23 @@
 {
     "entries": [
         {
+            "id": "44116018",
+            "title": "Les Cinq Diables",
+            "year": 2022,
+            "authors": [
+                "Léa Mysius"
+            ],
+            "rating": 6,
+            "done_date": "2022-09-12",
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Fantastique"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "13370077",
             "title": "Top Gun: Maverick",
             "year": 2022,
