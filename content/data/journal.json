@@ -1,6 +1,61 @@
 {
     "entries": [
         {
+            "id": "450676",
+            "title": "Avatar - La Voie de l'eau",
+            "original_title": "Avatar: The Way of Water",
+            "year": 2022,
+            "authors": [
+                "James Cameron"
+            ],
+            "rating": 7,
+            "done_date": "2022-12-25",
+            "favorite": false,
+            "genres": [
+                "Science-Fiction",
+                "Action",
+                "Fantastique"
+            ],
+            "cinema": true,
+            "imax": true,
+            "revu": false
+        },
+        {
+            "id": "40718083",
+            "title": "Antoinette dans les Cévennes",
+            "year": 2020,
+            "authors": [
+                "Caroline Vignal"
+            ],
+            "rating": 7,
+            "done_date": "2022-12-24",
+            "favorite": false,
+            "genres": [
+                "Comédie"
+            ],
+            "cinema": false,
+            "imax": false,
+            "revu": false
+        },
+        {
+            "id": "45419364",
+            "title": "Fumer fait tousser",
+            "year": 2022,
+            "authors": [
+                "Quentin Dupieux"
+            ],
+            "rating": 6,
+            "done_date": "2022-12-12",
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Fantastique"
+            ],
+            "cinema": true,
+            "imax": false,
+            "revu": false
+        },
+        {
             "id": "410801",
             "title": "L'Étrange Histoire de Benjamin Button",
             "original_title": "The Curious Case of Benjamin Button",
