@@ -1,6 +1,42 @@
 {
     "entries": [
         {
+            "id": "8469275",
+            "title": "Pinocchio",
+            "original_title": "Guillermo del Toro's Pinocchio",
+            "year": 2022,
+            "authors": [
+                "Guillermo del Toro"
+            ],
+            "rating": 7,
+            "done_date": "2022-12-31",
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Fantastique"
+            ],
+            "cinema": false,
+            "imax": false,
+            "revu": false
+        },
+        {
+            "id": "370575",
+            "title": "Les Tontons flingueurs",
+            "year": 1963,
+            "authors": [
+                "Georges Lautner"
+            ],
+            "rating": 8,
+            "done_date": "2022-12-31",
+            "favorite": true,
+            "genres": [
+                "Comédie"
+            ],
+            "cinema": false,
+            "imax": false,
+            "revu": false
+        },
+        {
             "id": "450676",
             "title": "Avatar - La Voie de l'eau",
             "original_title": "Avatar: The Way of Water",
