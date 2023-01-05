@@ -92,6 +92,96 @@
             "revu": false
         },
         {
+            "id": "453930",
+            "title": "Harry Potter et les reliques de la mort - 2ème partie",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+            "year": 2011,
+            "authors": [
+                "David Yates"
+            ],
+            "rating": 6,
+            "done_date": "2022-11-21",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "482419",
+            "title": "Harry Potter et les reliques de la mort - 1ère partie",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+            "year": 2010,
+            "authors": [
+                "David Yates"
+            ],
+            "rating": 7,
+            "done_date": "2022-11-21",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "405455",
+            "title": "Harry Potter et le prince de sang-mêlé",
+            "original_title": "Harry Potter and the Half-Blood Prince",
+            "year": 2009,
+            "authors": [
+                "David Yates"
+            ],
+            "rating": 7,
+            "done_date": "2022-11-20",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "465898",
+            "title": "Harry Potter et l'ordre du phénix",
+            "original_title": "Harry Potter and the Order of the Phoenix",
+            "year": 2007,
+            "authors": [
+                "David Yates"
+            ],
+            "rating": 7,
+            "done_date": "2022-11-20",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "459448",
+            "title": "Harry Potter et la coupe de feu",
+            "original_title": "Harry Potter and the Goblet of Fire",
+            "year": 2005,
+            "authors": [
+                "Mike Newell"
+            ],
+            "rating": 7,
+            "done_date": "2022-11-19",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "410801",
             "title": "L'Étrange Histoire de Benjamin Button",
             "original_title": "The Curious Case of Benjamin Button",
@@ -222,7 +312,7 @@
             ],
             "rating": 8,
             "done_date": "2022-09-09",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Action",
                 "Drame"
@@ -616,7 +706,7 @@
             ],
             "rating": 8,
             "done_date": "2022-06-05",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Action",
                 "Drame"
@@ -687,7 +777,7 @@
             ],
             "rating": 8,
             "done_date": "2022-05-25",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Action",
                 "Drame"
