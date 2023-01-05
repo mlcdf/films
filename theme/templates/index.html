@@ -4,67 +4,115 @@
 {% block description %}{{ super() }} Ici sont consignés tous les films qu'il a vu depuis fin 2013.{% endblock description %}
 
 {% block title %}Journal cinématographique {{ super() }}{% endblock title %}
-{% block h1 %}Journal cinématographique<sup>*</sup>{% endblock h1 %}
 
 {% block menu %}{{ macros.menu("journal") }}{% endblock menu %}
 
-{% block header %}
-<div class="lh-copy mw7 flex flex-column">
-    <span class="dib f6 ttu tracked fw7 mt2 washed-red bg-near-black pv1 ph2 mr-auto">Depuis : fin 2013</span>
+{% block content %}
+<style>
+    @media screen and (min-device-width: 1200px) {
+        .container {
+            display: grid;
+            grid-template-areas: 
+            "left-sidebar main";
+            align-items: start;
+            column-gap: 60px;
+        }
+        .sidebar {
+            top: 60px;
+            bottom: 0;
+            height: 100%;
+            align-self: start;
+        }
+
+        .sidebar-left {
+            grid-area: left-sidebar;    
+        }
+
+        .main {
+            grid-area: main;
+            place-self: center;
+        }
+    }
+</style>
+
+<div class="container mw9 ml-auto mr-auto">
+
+<div class="sidebar sidebar-left pt5 ph3 f5-ns f6">
+    <h1 class="dib mv0 washed-red bg-near-black pa2 pb3 f1-ns">Journal cinématographique</h1>
     <div></div>
-    <span class="dib f6 ttu tracked fw7 washed-red bg-near-black pv1 ph2 mr-auto">Auteur : {{ AUTHOR }}</span>
-    <div></div>
-    <span class="dib f6 ttu tracked fw7 mb3 washed-red bg-near-black pv1 ph2 mr-auto">Mis à jour le : {{ now() | strftime("%d/%m/%y") }}</span>
-    <div></div>
 
-    <p class="f6 f5-ns"><sup>*</sup>Liste non exhaustive ; il manque un bon paquet de (re)visionnages de Matrix, Mad Max Fury Road et autres de mes coups de cœur.</p>
+    <div class="lh-copy mw7 flex flex-column">
+        <span class="dib f6 ttu tracked fw7 mt2 washed-red bg-near-black pv1 ph2 mr-auto">Auteur : {{ AUTHOR }}</span>
+        <div></div>
+        <span class="dib f6 ttu tracked fw7 mb3 washed-red bg-near-black pv1 ph2 mr-auto">Mis à jour le : {{ now() | strftime("%d/%m/%Y ") }}</span>
+        <div></div>
 
-    <!-- <p class="f5-ns f6">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur SensCritique, désormais elles sont ici. :)</p> -->
+        <!-- <p class="f6 f5-ns"><sup>*</sup>Liste non exhaustive ; il manque un bon paquet de (re)visionnages de Matrix, Mad Max Fury Road et autres de mes coups de cœur.</p> -->
 
-    <h3 class="f5-ns f6 mb0 ttu tracked">Quelques statistiques</h3>
+        <p class="mb0">Depuis fin 2013, je tiens une liste de tous les films que je vois. Auparavant les données étaient sur SensCritique, désormais elles sont ici. :)</p>
 
-    <div class="cf pb3">
-        <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
-            <dd class="f6 f5-ns fw4 ml0">Entrées dans le journal</dd>
-            <dd class="f3 f2-ns fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("done_date.year", ">=", 2013) | list | length }}</dd>
-        </dl>
-        <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
-            <dd class="f6 f5-ns fw4 ml0">Films différents</dd>
-            <dd class="f3 f2-ns fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("done_date.year", ">=", 2013) | unique(attribute="id") | list | length }}</dd>
-        </dl>
-        <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
-            <dd class="f6 f5-ns fw4 ml0">Séances de cinéma</dd>
-            <dd class="f3 f2-ns fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("cinema") | list | length }}</dd>
-        </dl>
+        <p>Depuis l'été 2022, sont également consignés ici les revisionnages.</p>
+
+        <h3 class="f5-ns f6 mb0 ttu tracked">Quelques chiffres</h3>
+
+        <div class="cf pb3">
+            <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
+                <dd class="fw4 ml0">Entrées dans le journal</dd>
+                <dd class="f3 fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("done_date.year", ">=", 2013) | list | length }}</dd>
+            </dl>
+            <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
+                <dd class="fw4 ml0">Films différents</dd>
+                <dd class="f3 fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("done_date.year", ">=", 2013) | unique(attribute="id") | list | length }}</dd>
+            </dl>
+            <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
+                <dd class="fw4 ml0">Séances de cinéma</dd>
+                <dd class="f3 fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("cinema") | list | length }}</dd>
+            </dl>
+        </div>
+
+        <h3 class="f5-ns f6 pt0 mb2 ttu tracked" aria-label="Barème de notation">Barème</h3>
+
+        <ul class="mt2 pl0 mb0 list f5-ns f6 pb3">
+            <li>{{ macros.rating(2) }} : y a rien qui va</li>
+            <li>{{ macros.rating(4) }} : naze, voire passable</li>
+            <li>{{ macros.rating(6) }} : quelques bonnes idées</li>
+            <li>{{ macros.rating(8) }} : du lourd</li>
+            <li>{{ macros.rating(10) }} : la crème de la crème</li>
+        </ul>       
+    </ul>
+        </ul>       
     </div>
 
-    <h3 class="f5-ns f6 pt0 mb2 ttu tracked" aria-label="Barème de notation">Barème</h3>
-
-    <ul class="mt2 pl0 mb0 list f5-ns bb f6 b--black-10 pb3">
-        <li>{{ macros.rating(2) }} : y a rien qui va</li>
-        <li>{{ macros.rating(4) }} : naze, voire passable</li>
-        <li>{{ macros.rating(6) }} : quelques bonnes idées</li>
-        <li>{{ macros.rating(8) }} : du lourd</li>
-        <li>{{ macros.rating(10) }} : la crème de la crème</li>
-    </ul>
+    <div class="ba b--dashed bw1 mt5" style="position: sticky; top: 60px;">
+        <div class="pa3 bt-0 br-0 bl-0  b--dashed bw1">
+            <label class="dib pointer f5-ns f6" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
+        </div>
+        <div class="pa3">
+            <div>Par année :</div>
+            <ul class="list pl0 mb0">
+                {% for year in range(2013, now().year) | reverse %}
+                <li class="dib mb2"><a href="#{{ year }}" class="link">{{ year }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
-{% endblock header %}
 
-{% block content %}
+<div class="main pt5">
 {% for year, items in DATA_JOURNAL.entries | groupby_year %}
     {% if year < 2013 %}
         {% continue %}
     {% endif %}
-    <h2 class="dib bg-near-black washed-red pv1 ph2 f4 f3-ns ml3 mv0 tracked">{{ year }}</h2>
-    <ul class="list lh-copy pl3 flex flex-row flex-wrap f5 f4-ns">
+    <h2 class="dib bg-near-black washed-red pv1 ph2 f4 f3-ns ml3 mv0 tracked" id="{{ year }}">{{ year }}</h2>
+    <ul class="list lh-copy pl3 flex flex-row flex-wrap f5">
             {% for movie in items %}
-                <li class="pb3 dib pr3 pb4 w-33-l w-50-m w-100">
+                <li class="pb3 dib pr3 pb4 w-100">
                     <div class="ttu fw6" style="letter-spacing: 1px;">{{ macros.title(movie, false) }}
                         <span class="pb1 f5 normal">
                             <span class="o-50">(</span>{{ movie.year }}<span class="o-50">)</span>
                         </span>
                     </div>
-                    <div class="f5 f18-ns" >de {{ movie.authors | join(", ") }}</div>
+                    <div class="f5" >de {{ movie.authors | join(", ") }}</div>
 
 
                     {% if movie.rating is defined %}
@@ -83,4 +131,7 @@
     </ul>
     {% endfor %}
     <div class="fade"></div>
+</div>
+
+</div>
 {% endblock content %}

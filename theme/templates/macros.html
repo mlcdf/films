@@ -42,7 +42,7 @@
 {% endmacro %}
 
 {% macro menu(current_page) %}
-<div id="menu" class="flex flex-row-ns flex-column pb4-ns pb3 mw7 ttu tracked">
+<div id="menu" class="flex flex-row-ns flex-column pb3 mw7 ttu tracked mw9 ml-auto mr-auto ph3">
     <span class="sr-only">Menu :</span>
     <ul class="list fw6 f5 pl0 ma0 lh-title">
         <li class="dib-ns mr2"><a class="near-black link dim {% if current_page == 'journal' %} i{% endif %}" {% if current_page == 'journal' %} aria-current="true" {% endif %} href="/">Journal</a></li><span class="dn dib-ns" aria-hidden="true">·</span>
@@ -56,10 +56,15 @@
 
 {% macro tags(movie) %}
     {% if movie.cinema and movie.revu %}
-        <span class="ml2 f6 b ph1 ba b--near-black b--dashed i">revu au ciné</span>
+        <span class="ml2 f6 b ph2 ba b--near-black bw1 b--dashed i">revu au ciné</span>
     {% elif movie.cinema %}
-        <span class="ml2 f6 b ph1 ba b--near-black b--dashed i">vu au ciné</span>
+        <span class="ml2 f6 b ph2 ba b--near-black bw1 b--dashed i">vu au ciné</span>
     {% elif movie.revu %}
-        <span class="ml2 f6 b ph1 ba b--near-black b--dashed i">revu</span>
+        <span class="ml2 f6 b ph2 ba b--near-black bw1 b--dashed i">revu</span>
     {% endif %}
+{% endmacro %}
+
+
+{% macro original_titles() %}
+<label class="dib pointer f5-ns f6 pt3 pb5" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
 {% endmacro %}

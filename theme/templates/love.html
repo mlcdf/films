@@ -4,18 +4,21 @@
 {% block description %}{{ super() }} Ici sont consignés tous ses coups de cœur filmiques.{% endblock description %}
 
 {% block title %}Coups de cœur filmiques {{ super() }}{% endblock title %}
-{% block h1 %}Coups de cœur filmiques{% endblock h1 %}
 
 {% block menu %}{{ macros.menu("love") }}{% endblock menu %}
 
-{% block header %}
-<div class="lh-copy f5 mw7 bb b--black-10">
-    <span class="dib f6 ttu tracked fw7 mt2 mb3 washed-red bg-near-black pv1 ph2">Auteur : {{ AUTHOR }}</span>
-    <p>Ici se côtoient chefs d'oeuvre et plaisir coupables.</p>
-</div>
-{% endblock header %}
-
 {% block content %}
+    <div class="mw9 ml-auto mr-auto pt5 pa3">
+        <h1 class="dib mv0 washed-red bg-near-black pa2 f1-ns">Coups de cœur filmiques</h1>
+        <div></div>
+
+        <div class="lh-copy f5 mw7 bb bw1">
+            <span class="dib f6 ttu tracked fw7 mt2 mb3 washed-red bg-near-black pv1 ph2">Auteur : {{ AUTHOR }}</span>
+            <p>Ici se côtoient chefs d'oeuvre et plaisir coupables.</p>
+        </div>
+        {{ macros.original_titles() }}
+    </div>
+
     <table cellspacing="0" class="w-100 js-sort-table">
         <thead class="d-thg-l dn">
             <th scope="col" class="bb b--near-black tl pb3 pl3 pr3-l pointer">Titre</th>

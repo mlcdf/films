@@ -117,27 +117,19 @@
     </style>
 </head>
 <body class="bg-washed-red near-black relative h-100 pa0">
-    <header class="pt3 ph3 f4-ns f5">
-        <div>
-            <!-- <div class="pb3 f5 lh-copy flex flex-column flex-row-ns">
-                <div>[&nbsp;<a href="#menu">Aller au menu</a>&nbsp;]&nbsp;</div>
-                <div>[&nbsp;<a href="#content">Aller au contenu</a>&nbsp;]</div>
-            </div> -->
+    <header class="pt3 ph3 f4-ns f5 bg-washed-red">
 
-            {% block menu %}{% endblock menu %}
+        <!-- <div class="pb3 f5 lh-copy flex flex-column flex-row-ns">
+            <div>[&nbsp;<a href="#menu">Aller au menu</a>&nbsp;]&nbsp;</div>
+            <div>[&nbsp;<a href="#content">Aller au contenu</a>&nbsp;]</div>
+        </div> -->
 
-            <h1 class="dib mv0 washed-red bg-near-black pa2 f1-ns">{% block h1 %}{% endblock h1 %}</h1>
-            <div></div>
-            {% block header %}{% endblock header %}
-
-            <label class="dib pointer f5-ns f6 pt3 pb5" style="margin-left: auto;"><input class="js-show-french-title" type="checkbox"> Afficher les titres originaux</label>
-        </div>
-
+        {% block menu %}{% endblock menu %}
     </header>
 
     <main id="content">
         {% block content %} {% endblock content %}
     </main>
-    <script src="/theme/script.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/script.js"></script>
 </body>
 </html>
