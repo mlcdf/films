@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "39750335",
+            "title": "Babylon",
+            "year": 2022,
+            "authors": [
+                "Damien Chazelle"
+            ],
+            "rating": 8,
+            "done_date": "2023-01-25",
+            "favorite": false,
+            "genres": [
+                "Comédie dramatique",
+                "Historique"
+            ],
+            "cinema": true,
+            "imax": false,
+            "revu": false
+        },
+        {
             "id": "41075361",
             "title": "Spider-Man: Far From Home",
             "year": 2019,
