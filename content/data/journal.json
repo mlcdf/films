@@ -1,6 +1,23 @@
 {
     "entries": [
         {
+            "id": "45177319",
+            "title": "Tirailleurs",
+            "year": 2023,
+            "authors": [
+                "Mathieu Vadepied"
+            ],
+            "rating": 6,
+            "done_date": "2023-01-31",
+            "favorite": false,
+            "genres": [
+                "Historique", "Guerre", "Drame"
+            ],
+            "cinema": true,
+            "imax": false,
+            "revu": false
+        },
+        {
             "id": "401962",
             "title": "Le Chat Potté",
             "original_title": "Puss in Boots",
