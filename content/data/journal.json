@@ -39,25 +39,6 @@
             "revu": false
         },
         {
-            "id": "11528908",
-            "title": "Le Chat potté 2 - La dernière quête",
-            "original_title": "Puss in Boots: The Last Wish",
-            "year": 2022,
-            "authors": [
-                "Joel Crawford",
-                "Januel Mercado"
-            ],
-            "rating": 7,
-            "done_date": "2023-02-05",
-            "favorite": false,
-            "genres": [
-                "Animation"
-            ],
-            "cinema": true,
-            "imax": false,
-            "revu": false
-        },
-        {
             "id": "37673848",
             "title": "Spider-Man: No Way Home",
             "year": 2021,
