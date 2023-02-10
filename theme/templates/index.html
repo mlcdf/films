@@ -68,6 +68,10 @@
                 <dd class="fw4 ml0">Séances de cinéma</dd>
                 <dd class="f3 fw6 ml0">{{ DATA_JOURNAL.entries | selectattr("cinema") | list | length }}</dd>
             </dl>
+            <dl class="mt3 fl fn-l mb0 w-50 dib-l w-auto-l lh-title mr5-l">
+                <dd class="fw4 ml0">Moyenne des notes</dd>
+                <dd class="f3 fw6 ml0">{% set mean = DATA_JOURNAL.entries | selectattr("cinema") | sum(attribute="rating") / DATA_JOURNAL.entries | selectattr("cinema") | list | length / 2 %}{{ "%.1f" | format(mean) }} </dd>
+            </dl>
         </div>
 
         <h3 class="f5-ns f6 pt0 mb2 ttu tracked" aria-label="Barème de notation">Barème</h3>

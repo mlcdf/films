@@ -1,0 +1,101 @@
+{% import "macros.html" as macros %}
+{% extends "layout.html" %}
+
+{% block description %}{{ super() }} Ici sont consignés tous les films qu'il a vu depuis fin 2013.{% endblock description %}
+
+{% block title %}Journal cinématographique {{ super() }}{% endblock title %}
+
+{% block menu %}{{ macros.menu("journal") }}{% endblock menu %}
+
+{% block content %}
+<div class="container mw9 ml-auto mr-auto">
+
+<div class="pt5 ph3 f5-ns f6">
+    <h1 class="dib mv0 washed-red bg-near-black pa2 f1-ns">Stats</h1>
+    <div></div>
+
+    <div class="lh-copy flex flex-column">
+        <div class="f6 ttu tracked fw7 mt2 washed-red bg-near-black pv1 ph2">Journal</div>
+
+
+        <h2 class="fw7 mb0 dib">Répartition par </h2>
+        <select name="filter" class="dib measure-narrow">
+            <option value="rating" selected>note</option>
+            <option value="year">année de sortie</option>
+        </select>
+        <div id="js-over-the-year"></div>
+    </div>
+</div>
+
+</div>
+
+<script src="/theme/graph.js" type="module"></script>
+<!-- <script type="module">
+    import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.1/+esm";
+    
+    const data = await fetch("/data/journal.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+       return data.entries
+    });
+
+    class GroupBy {
+        
+    }
+
+    const draw = function(x) {
+        const plot = Plot.plot({
+            x: {
+                tickFormat: i => i > 1900 ? new Date(Date.UTC(i, 0, 0)).toLocaleString("fr-FR", { year: "numeric"}) : i,
+                line: true,
+                // labelAnchor: "left",
+                labelOffset: "40",
+                transform: x => x / 2,
+            },
+            y: {
+                // labelOffset: "-100px",
+                label: "↑ Count"
+            },
+            marks: [
+                Plot.rectY(
+                    data, 
+                    Plot.binX(
+                        { y: "count" }, 
+                        {
+                            x: x,
+                            thresholds: 100,
+                        }
+                    )
+                )
+            ], 
+            marginLeft: "60",
+            marginBottom: "60",
+            marginTop: "60",
+            width: 1504,
+            style: {
+                background: "#ffdfdf",
+                color: "black",
+                fontSize: "16px",
+                fontFamily: "\"Space Mono\"",
+            }
+        })
+
+        document.getElementById("js-over-the-year").textContent = '';
+
+        document.getElementById("js-over-the-year").append(
+            // Plot.barY(data, {x: "rating", y : "year"}).plot()
+            plot
+        );
+    };
+  
+    document.querySelector("select").addEventListener("change", e => {
+        console.log(e.target.value)
+        draw(e.target.value);
+    })
+
+    draw("year")
+      
+    </script> -->
+{% endblock content %}
