@@ -1,6 +1,39 @@
 {
     "entries": [
         {
+            "id": "17872831",
+            "title": "Split",
+            "year": 2016,
+            "authors": [
+                "M. Night Shyamalan"
+            ],
+            "rating": 6,
+            "done_date": "2023-02-14",
+            "favorite": false,
+            "genres": [
+                "Thriller",
+                "Épouvante-Horreur"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "402466",
+            "title": "Persona",
+            "year": 1966,
+            "authors": [
+                "Ingmar Bergman"
+            ],
+            "rating": 8,
+            "done_date": "2023-02-13",
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "389335",
             "title": "OSS 117 - Le Caire, nid d'espions",
             "year": 2006,
