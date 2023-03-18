@@ -1,32 +1,6 @@
 {
     "entries": [
         {
-            "id": "397833",
-            "title": "Malveillance",
-            "original_title": "Mientras duermes",
-            "year": 2011,
-            "authors": [
-                "Jaume Balagueró"
-            ],
-            "favorite": false,
-            "genres": [
-                "Thriller",
-                "Épouvante-Horreur"
-            ]
-        },
-        {
-            "id": "38747312",
-            "title": "After Blue (Paradis sale)",
-            "year": 2021,
-            "authors": [
-                "Bertrand Mandico"
-            ],
-            "favorite": false,
-            "genres": [
-                "Science-Fiction"
-            ]
-        },
-        {
             "id": "40634236",
             "title": "Nos âmes d'enfants",
             "original_title": "C'mon C'mon",
@@ -112,20 +86,6 @@
             "year": 1986,
             "authors": [
                 "Jean-Jacques Annaud"
-            ],
-            "favorite": false,
-            "genres": [
-                "Policier",
-                "Drame",
-                "Thriller"
-            ]
-        },
-        {
-            "id": "378929",
-            "title": "Tirez sur le pianiste",
-            "year": 1960,
-            "authors": [
-                "François Truffaut"
             ],
             "favorite": false,
             "genres": [
@@ -415,20 +375,6 @@
             ]
         },
         {
-            "id": "43808471",
-            "title": "Moxie",
-            "year": 2021,
-            "authors": [
-                "Amy Poehler"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie",
-                "Drame",
-                "Musique"
-            ]
-        },
-        {
             "id": "42372324",
             "title": "Un pays qui se tient sage",
             "year": 2020,
@@ -654,20 +600,6 @@
             ]
         },
         {
-            "id": "38551049",
-            "title": "Dolemite Is My Name",
-            "year": 2019,
-            "authors": [
-                "Craig Brewer"
-            ],
-            "favorite": false,
-            "genres": [
-                "Biopic",
-                "Comédie",
-                "Drame"
-            ]
-        },
-        {
             "id": "26672216",
             "title": "A Taxi Driver",
             "original_title": "Taeksi Woonjunsa",
@@ -744,19 +676,6 @@
             "favorite": false,
             "genres": [
                 "Comédie Dramatique"
-            ]
-        },
-        {
-            "id": "28592667",
-            "title": "Les Hirondelles de Kaboul",
-            "year": 2019,
-            "authors": [
-                "Zabou Breitman",
-                "Eléa Gobbé-Mévellec"
-            ],
-            "favorite": false,
-            "genres": [
-                "Animation"
             ]
         },
         {
@@ -1121,18 +1040,6 @@
             ]
         },
         {
-            "id": "446549",
-            "title": "Mysterious Skin",
-            "year": 2004,
-            "authors": [
-                "Gregg Araki"
-            ],
-            "favorite": false,
-            "genres": [
-                "Drame"
-            ]
-        },
-        {
             "id": "25287846",
             "title": "1985",
             "year": 2018,
@@ -1335,19 +1242,6 @@
             ]
         },
         {
-            "id": "29706132",
-            "title": "Three Identical Strangers",
-            "year": 2018,
-            "authors": [
-                "Tim Wardle"
-            ],
-            "favorite": false,
-            "genres": [
-                "Biopic",
-                "Drame"
-            ]
-        },
-        {
             "id": "398815",
             "title": "Obsession",
             "year": 1976,
@@ -1397,20 +1291,6 @@
             "favorite": false,
             "genres": [
                 "Policier",
-                "Drame",
-                "Thriller"
-            ]
-        },
-        {
-            "id": "29056152",
-            "title": "Le Passé Recomposé",
-            "original_title": "The Tale",
-            "year": 2018,
-            "authors": [
-                "Jennifer Fox"
-            ],
-            "favorite": false,
-            "genres": [
                 "Drame",
                 "Thriller"
             ]
@@ -1622,16 +1502,6 @@
                 "Policier",
                 "Drame"
             ]
-        },
-        {
-            "id": "372818",
-            "title": "Andreï Roublev",
-            "original_title": "Andrey Rublyov",
-            "year": 1966,
-            "authors": [
-                "Andreï Tarkovski"
-            ],
-            "favorite": false
         },
         {
             "id": "23854223",
@@ -1934,18 +1804,6 @@
             "genres": [
                 "Drame",
                 "Western"
-            ]
-        },
-        {
-            "id": "24890691",
-            "title": "The Square",
-            "year": 2017,
-            "authors": [
-                "Ruben Östlund"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie Dramatique"
             ]
         },
         {
@@ -2292,18 +2150,6 @@
             ]
         },
         {
-            "id": "487415",
-            "title": "Stardust Memories",
-            "year": 1980,
-            "authors": [
-                "Woody Allen"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie Dramatique"
-            ]
-        },
-        {
             "id": "429730",
             "title": "Le Verdict",
             "original_title": "The Verdict",
@@ -2441,20 +2287,6 @@
             "favorite": false,
             "genres": [
                 "Péplum"
-            ]
-        },
-        {
-            "id": "366853",
-            "title": "Quand Harry rencontre Sally...",
-            "original_title": "When Harry Met Sally",
-            "year": 1989,
-            "authors": [
-                "Rob Reiner"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie Romantique",
-                "Drame"
             ]
         },
         {
@@ -3026,19 +2858,6 @@
             ]
         },
         {
-            "id": "374737",
-            "title": "Les Quatre Cents Coups",
-            "year": 1959,
-            "authors": [
-                "François Truffaut"
-            ],
-            "favorite": false,
-            "genres": [
-                "Policier",
-                "Drame"
-            ]
-        },
-        {
             "id": "385235",
             "title": "La Nuit du chasseur",
             "original_title": "The Night of the Hunter",
@@ -3127,18 +2946,6 @@
             "year": 2012,
             "authors": [
                 "Thomas Vinterberg"
-            ],
-            "favorite": false,
-            "genres": [
-                "Drame"
-            ]
-        },
-        {
-            "id": "402466",
-            "title": "Persona",
-            "year": 1966,
-            "authors": [
-                "Ingmar Bergman"
             ],
             "favorite": false,
             "genres": [
@@ -3435,19 +3242,6 @@
             "genres": [
                 "Biopic",
                 "Western"
-            ]
-        },
-        {
-            "id": "420341",
-            "title": "New York, New York",
-            "year": 1977,
-            "authors": [
-                "Martin Scorsese"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie Dramatique",
-                "Musique"
             ]
         },
         {
@@ -4302,18 +4096,6 @@
             ]
         },
         {
-            "id": "461545",
-            "title": "L'Auberge espagnole",
-            "year": 2002,
-            "authors": [
-                "Cédric Klapisch"
-            ],
-            "favorite": false,
-            "genres": [
-                "Comédie Romantique"
-            ]
-        },
-        {
             "id": "444876",
             "title": "Philadelphia",
             "year": 1993,
@@ -4543,22 +4325,6 @@
             ]
         },
         {
-            "id": "8462756",
-            "title": "Why Don't You Play in Hell?",
-            "original_title": "Jigoku de naze warui",
-            "year": 2013,
-            "authors": [
-                "Sion Sono"
-            ],
-            "favorite": false,
-            "genres": [
-                "(Japon).",
-                "Action",
-                "Comédie",
-                "Drame"
-            ]
-        },
-        {
             "id": "11177756",
             "title": "The Tribe",
             "original_title": "Plemya",
@@ -4704,22 +4470,6 @@
                 "Historique",
                 "Action",
                 "Guerre"
-            ]
-        },
-        {
-            "id": "454343",
-            "title": "Abyss",
-            "original_title": "The Abyss",
-            "year": 1989,
-            "authors": [
-                "James Cameron"
-            ],
-            "favorite": false,
-            "genres": [
-                "Aventure",
-                "Drame",
-                "Thriller",
-                "Science-Fiction"
             ]
         },
         {
@@ -4995,18 +4745,6 @@
                 "Drame",
                 "Science-Fiction",
                 "Thriller"
-            ]
-        },
-        {
-            "id": "11177867",
-            "title": "It Follows",
-            "year": 2014,
-            "authors": [
-                "David Robert Mitchell"
-            ],
-            "favorite": false,
-            "genres": [
-                "Épouvante-Horreur"
             ]
         },
         {
