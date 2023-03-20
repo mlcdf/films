@@ -39,7 +39,7 @@ PAGE_URL = "{slug}"
 
 INDEX_SAVE_AS = "index.html"
 
-STATIC_PATHS = ["extra", "images"]
+STATIC_PATHS = ["extra", "images", "data"]
 
 EXTRA_PATH_METADATA = {
     "extra/humans.txt": {"path": "humans.txt"},
@@ -93,6 +93,7 @@ JINJA_FILTERS = {
 TEMPLATE_PAGES = {
     os.path.join(os.getcwd(), "theme/templates/love.html"): "love/index.html",
     os.path.join(os.getcwd(), "theme/templates/wish.html"): "wish/index.html",
+    os.path.join(os.getcwd(), "theme/templates/stats.html"): "stats/index.html",
 }
 
 DATA_PATH = "data"
