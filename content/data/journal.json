@@ -1,6 +1,58 @@
 {
     "entries": [
         {
+            "id": "39579219",
+            "title": "John Wick - Chapitre 4",
+            "original_title": "John Wick: Chapter 4",
+            "year": 2023,
+            "authors": [
+                "Chad Stahelski"
+            ],
+            "rating": 6,
+            "done_date": "2023-03-26",
+            "favorite": false,
+            "genres": [
+                "Action"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "460015",
+            "title": "La Mouche",
+            "original_title": "The Fly",
+            "year": 1986,
+            "authors": [
+                "David Cronenberg"
+            ],
+            "rating": 8,
+            "done_date": "2023-03-25",
+            "favorite": false,
+            "genres": [
+                "Science-fiction",
+                "Épouvante-Horreur"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "44887435",
+            "title": "La Panth\u00e8re des neiges",
+            "year": 2021,
+            "authors": [
+                "Marie Amiguet",
+                "Vincent Munier"
+            ],
+            "rating": 8,
+            "done_date": "2023-03-25",
+            "favorite": true,
+            "genres": [
+                "Documentaire"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
             "id": "17872831",
             "title": "Split",
             "year": 2016,
@@ -100,7 +152,9 @@
             "done_date": "2023-01-31",
             "favorite": false,
             "genres": [
-                "Historique", "Guerre", "Drame"
+                "Historique",
+                "Guerre",
+                "Drame"
             ],
             "cinema": true,
             "imax": false,
