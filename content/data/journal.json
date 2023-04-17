@@ -2,8 +2,44 @@
     "entries": [
         {
             "id": "52905395",
+            "title": "Le Parrain",
+            "original_title": "The Godfather",
+            "year": 1972,
+            "authors": [
+                "Francis Ford Coppola"
+            ],
+            "rating": 8,
+            "done_date": "2023-04-15",
+            "favorite": false,
+            "genres": [
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "45538332",
+            "title": "Suzume",
+            "original_title": "Suzume no tojimari",
+            "year": 2022,
+            "authors": [
+                "Makoto Shinkai"
+            ],
+            "rating": 7,
+            "done_date": "2023-04-14",
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Aventure",
+                "Fantastique",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "52905395",
             "title": "Je verrai toujours vos visages",
-            "original_title": "John Wick: Chapter 4",
             "year": 2022,
             "authors": [
                 "Jeanne Herry"
