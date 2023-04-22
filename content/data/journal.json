@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "19482731",
+            "title": "Bumblebee",
+            "year": 2018,
+            "authors": [
+                "Travis Knight"
+            ],
+            "rating": 5,
+            "done_date": "2023-04-23",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-fiction"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "52905395",
             "title": "Le Parrain",
             "original_title": "The Godfather",
