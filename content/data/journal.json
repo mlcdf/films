@@ -1,6 +1,23 @@
 {
     "entries": [
-                {
+        {
+            "id": "20328161",
+            "title": "Charlie's Angels",
+            "year": 2019,
+            "authors": [
+                "Elizabeth Banks"
+            ],
+            "rating": 4,
+            "done_date": "2023-04-24",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Comédie"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "17236869",
             "title": "Donjons & Dragons - L'Honneur des voleurs",
             "original_title": "Dungeons & Dragons: Honor Among Thieves",
@@ -10,7 +27,7 @@
                 "Jonathan Goldstein"
             ],
             "rating": 7,
-            "done_date": "2023-04-24",
+            "done_date": "2023-04-23",
             "favorite": false,
             "genres": [
                 "Aventure",
@@ -27,8 +44,8 @@
             "authors": [
                 "Dexter Fletcher"
             ],
-            "rating": 3,
-            "done_date": "2023-04-24",
+            "rating": 2,
+            "done_date": "2023-04-23",
             "favorite": false,
             "genres": [
                 "Action"
@@ -44,7 +61,7 @@
                 "Travis Knight"
             ],
             "rating": 5,
-            "done_date": "2023-04-23",
+            "done_date": "2023-04-22",
             "favorite": false,
             "genres": [
                 "Action",
