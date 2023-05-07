@@ -1,6 +1,62 @@
 {
     "entries": [
         {
+            "id": "381744",
+            "title": "Waterworld",
+            "year": 1995,
+            "authors": [
+                "Kevin Reynolds"
+            ],
+            "rating": 8,
+            "done_date": "2023-05-06",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Aventure",
+                "Science-Fiction"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "21727461",
+            "title": "Your Name.",
+            "original_title": "Kimi no na wa.",
+            "year": 2016,
+            "authors": [
+                "Makoto Shinkai"
+            ],
+            "rating": 8,
+            "done_date": "2023-05-06",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Drame",
+                "Fantastique",
+                "Romance"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "490077",
+            "title": "Les Dents de la mer",
+            "original_title": "Jaws",
+            "year": 1975,
+            "authors": [
+                "Steven Spielberg"
+            ],
+            "rating": 8,
+            "done_date": "2023-04-06",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Thriller"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "20328161",
             "title": "Charlie's Angels",
             "year": 2019,
