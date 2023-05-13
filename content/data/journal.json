@@ -1,6 +1,46 @@
 {
     "entries": [
         {
+            "id": "14954623",
+            "title": "Spider-Man - New Generation",
+            "original_title": "Spider-Man: Into the Spider-Verse",
+            "year": 2018,
+            "authors": [
+                "Bob Persichetti",
+                "Peter Ramsey",
+                "Rodney Rothman"
+            ],
+            "rating": 8,
+            "done_date": "2023-05-13",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Super-héros"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "11867538",
+            "title": "Les Gardiens de la galaxie Vol. 3",
+            "original_title": "Guardians of the Galaxy Vol. 3",
+            "year": 2023,
+            "authors": [
+                "James Gunn"
+            ],
+            "rating": 7,
+            "done_date": "2023-05-08",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Science-Fiction",
+                "Comédie",
+                "Aventure"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "381744",
             "title": "Waterworld",
             "year": 1995,
