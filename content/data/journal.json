@@ -1,6 +1,25 @@
 {
     "entries": [
         {
+            "id": "38465583",
+            "title": "Spider-Man: Across the Spider-Verse",
+            "year": 2023,
+            "authors": [
+                "Joaquim Dos Santos",
+                "Kemp Powers",
+                "Justin K. Thompson"
+            ],
+            "rating": 9,
+            "done_date": "2023-06-04",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Super-héros"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "14954623",
             "title": "Spider-Man - New Generation",
             "original_title": "Spider-Man: Into the Spider-Verse",
