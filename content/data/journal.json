@@ -1,6 +1,42 @@
 {
     "entries": [
         {
+            "id": "44894528",
+            "title": "Asteroid City",
+            "year": 2023,
+            "authors": [
+                "Wes Anderson"
+            ],
+            "rating": 5,
+            "done_date": "2023-07-05",
+            "favorite": true,
+            "genres": [
+                "Comédie dramatique",
+                "Science-fiction"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "38465583",
+            "title": "Spider-Man: Across the Spider-Verse",
+            "year": 2023,
+            "authors": [
+                "Joaquim Dos Santos",
+                "Kemp Powers",
+                "Justin K. Thompson"
+            ],
+            "rating": 9,
+            "done_date": "2023-07-03",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Super-héros"
+            ],
+            "cinema": true,
+            "revu": true
+        },
+        {
             "id": "38465583",
             "title": "Spider-Man: Across the Spider-Verse",
             "year": 2023,
