@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "47352007",
+            "title": "Nimona",
+            "year": 2023,
+            "authors": [
+                "Nick Bruno",
+                "Troy Quane"
+            ],
+            "rating": 7,
+            "done_date": "2023-07-08",
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Fantastique"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "44894528",
             "title": "Asteroid City",
             "year": 2023,
@@ -9,7 +27,7 @@
             ],
             "rating": 5,
             "done_date": "2023-07-05",
-            "favorite": true,
+            "favorite": false,
             "genres": [
                 "Comédie dramatique",
                 "Science-fiction"
