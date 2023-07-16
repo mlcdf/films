@@ -6,8 +6,11 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-# If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = ''
+# Allows to build for both staging and prod
+SITEURL = os.environ.get("SITEURL", SITEURL)
+if "http" not in SITEURL:
+    raise Exception("Missing protocol in SITEURL (http:// or https://)")
+
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'

@@ -13,3 +13,5 @@ livereload = "*"
 
 [scripts]
 dev = "invoke livereload"
+publish = "pelican --settings publishconf.py --delete-output-directory"
+test = "printenv"
