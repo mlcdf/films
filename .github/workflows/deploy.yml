@@ -1,0 +1,54 @@
+name: "Deploy to OVHcloud"
+
+on:
+  workflow_dispatch:
+
+  push:
+
+env:
+  LANG: "fr_FR.UTF-8"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://films.mlcdf.fr
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+
+      - name: Install OS dependencies
+        run: sudo apt-get update && DEBIAN_FRONTEND=noninteractive sudo apt-get install -y locales ssh-client sshpass rsync --no-install-recommends
+
+      - name: Set locale fr_FR.UTF-8
+        run: |
+            sudo locale-gen fr_FR.UTF-8
+            sudo update-locale LANG=fr_FR.UTF-8
+
+      - name: Install pipenv
+        run: python3 -m pip --no-cache-dir install pipenv
+
+      - name: Install Python dependencies
+        run: pipenv install --system --deploy --ignore-pipfile --clear
+
+      - name: Build
+        env:
+          SITEURL: https://films.mlcdf.fr
+        run: |
+          echo "Building ${SITEURL}"
+          pipenv run publish
+
+      - name: Deploy
+        env:
+          SUBDOMAIN: films.mlcdf.fr
+          OVH_HOSTING_DOMAIN: ${{ secrets.OVH_HOSTING_DOMAIN }}
+          OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
+          OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
+        run: |
+          echo "Deploying"
+          sshpass -p "$OVH_HOSTING_PASSWORD" rsync -av -e "ssh -o StrictHostKeyChecking=no" output/ $OVH_HOSTING_USER@$OVH_HOSTING_DOMAIN:/home/$OVH_HOSTING_USER/$SUBDOMAIN
