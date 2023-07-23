@@ -1,6 +1,41 @@
 {
     "entries": [
         {
+            "id": "16910804",
+            "title": "Barbie",
+            "year": 2023,
+            "authors": [
+                "Greta Gerwig"
+            ],
+            "rating": 6,
+            "done_date": "2023-07-22",
+            "favorite": false,
+            "genres": [
+                "Comédie"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "16910804",
+            "title": "Mission: Impossible - Dead Reckoning Part One",
+            "original_title": "Mission: Impossible - Dead Reckoning Partie 1",
+            "year": 2023,
+            "authors": [
+                "Christopher McQuarrie"
+            ],
+            "rating": 8,
+            "done_date": "2023-07-17",
+            "favorite": false,
+            "genres": [
+                "Action",
+                "Thriller"
+            ],
+            "cinema": true,
+            "revu": false,
+            "imax": true
+        },
+        {
             "id": "47352007",
             "title": "Nimona",
             "year": 2023,
