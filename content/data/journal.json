@@ -1,6 +1,60 @@
 {
     "entries": [
         {
+            "id": "443242",
+            "title": "Kingdom of Heaven",
+            "year": 2005,
+            "authors": [
+                "Ridley Scott"
+            ],
+            "rating": 8,
+            "done_date": "2023-08-10",
+            "favorite": false,
+            "genres": [
+                "Péplum",
+                "Aventure"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "38465583",
+            "title": "Spider-Man: Across the Spider-Verse",
+            "year": 2023,
+            "authors": [
+                "Joaquim Dos Santos",
+                "Kemp Powers",
+                "Justin K. Thompson"
+            ],
+            "rating": 9,
+            "done_date": "2023-08-08",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Super-héros"
+            ],
+            "cinema": false,
+            "revu": true
+        },
+        {
+            "id": "40714186",
+            "title": "Les Bad Guys",
+            "original_title": "The Bad Guys",
+            "year": 2022,
+            "authors": [
+                "Pierre Perifel"
+            ],
+            "rating": 7,
+            "done_date": "2023-08-07",
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Comédie"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "16910804",
             "title": "Barbie",
             "year": 2023,
@@ -5569,7 +5623,7 @@
             "favorite": false,
             "done_date": "2022-03-13",
             "genres": [
-                "P\u00e9plum",
+                "Péplum",
                 "Aventure",
                 "Drame"
             ],
@@ -6537,7 +6591,7 @@
                 "Historique",
                 "Romance",
                 "Guerre",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -7929,7 +7983,7 @@
             "genres": [
                 "Aventure",
                 "Drame",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -8034,7 +8088,7 @@
                 "Action",
                 "Fantastique",
                 "Guerre",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -9448,7 +9502,7 @@
             "favorite": false,
             "genres": [
                 "Historique",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -13576,7 +13630,7 @@
                 "Comédie",
                 "Fantasy",
                 "Comédie Musicale",
-                "P\u00e9plum",
+                "Péplum",
                 "Romance"
             ],
             "cinema": false,
@@ -13729,7 +13783,7 @@
                 "Drame",
                 "Historique",
                 "Comédie Musicale",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -15631,7 +15685,7 @@
                 "Action",
                 "Aventure",
                 "Fantasy",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -16163,7 +16217,7 @@
                 "Action",
                 "Aventure",
                 "Fantastique",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
@@ -16811,7 +16865,7 @@
                 "Action",
                 "Aventure",
                 "Fantasy",
-                "P\u00e9plum"
+                "Péplum"
             ],
             "cinema": false,
             "revu": false
