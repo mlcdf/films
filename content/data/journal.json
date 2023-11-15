@@ -1,6 +1,126 @@
 {
     "entries": [
         {
+            "id": "46685795",
+            "title": "Le Règne animal",
+            "year": 2023,
+            "authors": [
+                "Thomas Cailley"
+            ],
+            "rating": 7,
+            "done_date": "2023-11-12",
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Aventure",
+                "Science-Fiction"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "44859204",
+            "title": "Second Tour",
+            "year": 2023,
+            "authors": [
+                "Albert Dupontel"
+            ],
+            "rating": 7,
+            "done_date": "2023-11-10",
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Comédie"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "1358731",
+            "title": "Nasty Hunter",
+            "year": 1989,
+            "authors": [
+                "H. Tjut Djalil"
+            ],
+            "rating": 2,
+            "done_date": "2023-10-14",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Action"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "52566494",
+            "title": "The Leech",
+            "year": 2022,
+            "authors": [
+                "Eric Pennycoff"
+            ],
+            "rating": 5,
+            "done_date": "2023-10-14",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Comédie"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "55534368",
+            "title": "Malum",
+            "year": 2023,
+            "authors": [
+                "Anthony DiBlasi"
+            ],
+            "rating": 3,
+            "done_date": "2023-10-14",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "53557243",
+            "title": "In My Mother's Skin",
+            "year": 2023,
+            "authors": [
+                "Kenneth Dagatan"
+            ],
+            "rating": 2,
+            "done_date": "2023-10-14",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "59829877",
+            "title": "We Are Zombies",
+            "year": 2023,
+            "authors": [
+                "François Simard",
+                "Anouk Whissell",
+                "Yoann-Karl Whissell"
+            ],
+            "rating": 6,
+            "done_date": "2023-10-14",
+            "favorite": false,
+            "genres": [
+                "Épouvante-Horreur",
+                "Comédie"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "443242",
             "title": "Kingdom of Heaven",
             "year": 2005,
