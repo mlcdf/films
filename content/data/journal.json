@@ -2,12 +2,30 @@
     "entries": [
         {
             "id": "46685795",
+            "title": "Les Trois Mousquetaires - D'Artagnan",
+            "year": 2023,
+            "authors": [
+                "Martin Bourboulon"
+            ],
+            "rating": 7,
+            "done_date": "2023-11-18",
+            "favorite": false,
+            "genres": [
+                "Drame",
+                "Aventure",
+                "Historique"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "46685795",
             "title": "Le Règne animal",
             "year": 2023,
             "authors": [
                 "Thomas Cailley"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2023-11-12",
             "favorite": false,
             "genres": [
