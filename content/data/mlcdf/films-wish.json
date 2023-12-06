@@ -135,21 +135,6 @@
             ]
         },
         {
-            "id": "18059028",
-            "title": "Le Peuple Loup",
-            "original_title": "Wolfwalkers",
-            "year": 2020,
-            "authors": [
-                "Tomm Moore",
-                "Ross Stewart"
-            ],
-            "favorite": false,
-            "genres": [
-                "Fantastique",
-                "Aventure"
-            ]
-        },
-        {
             "id": "43201972",
             "title": "Julie (en 12 chapitres)",
             "original_title": "Verdens verste menneske",
@@ -4443,20 +4428,6 @@
             ]
         },
         {
-            "id": "443242",
-            "title": "Kingdom of Heaven",
-            "year": 2005,
-            "authors": [
-                "Ridley Scott"
-            ],
-            "favorite": false,
-            "genres": [
-                "Action",
-                "Aventure",
-                "Historique"
-            ]
-        },
-        {
             "id": "382869",
             "title": "Braveheart",
             "year": 1995,
@@ -5158,20 +5129,6 @@
             "favorite": false,
             "genres": [
                 "Thriller"
-            ]
-        },
-        {
-            "id": "408443",
-            "title": "Le Parrain",
-            "original_title": "The Godfather",
-            "year": 1972,
-            "authors": [
-                "Francis Ford Coppola"
-            ],
-            "favorite": false,
-            "genres": [
-                "Policier",
-                "Drame"
             ]
         },
         {
