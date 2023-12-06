@@ -19,6 +19,45 @@
             "revu": false
         },
         {
+            "id": "38002340",
+            "title": "Trois mille ans à t'attendre",
+            "original_title": "Three Thousand Years of Longing",
+            "year": 2022,
+            "authors": [
+                "George Miller"
+            ],
+            "rating": 7,
+            "done_date": "2023-11-13",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Romance",
+                "Drame"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
+            "id": "18059028",
+            "title": "Le Peuple Loup",
+            "original_title": "Wolfwalkers",
+            "year": 2020,
+            "authors": [
+                "Tomm Moore",
+                "Ross Stewart"
+            ],
+            "rating": 7,
+            "done_date": "2023-11-13",
+            "favorite": false,
+            "genres": [
+                "Fantastique",
+                "Aventure",
+                "Animation"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "46685795",
             "title": "Le Règne animal",
             "year": 2023,
