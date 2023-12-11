@@ -1,13 +1,33 @@
 {
     "entries": [
         {
+            "id": "28406348",
+            "title": "Le Garçon et le Héron",
+            "original_title": "Kimitachi wa dô ikiru ka",
+            "year": 2023,
+            "authors": [
+                "Hayao Miyazaki"
+            ],
+            "rating": 6,
+            "done_date": "2023-12-11",
+            "favorite": false,
+            "genres": [
+                "Animation",
+                "Aventure",
+                "Drame",
+                "Fantastique"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "46685795",
             "title": "Les Trois Mousquetaires - D'Artagnan",
             "year": 2023,
             "authors": [
                 "Martin Bourboulon"
             ],
-            "rating": 7,
+            "rating": 6,
             "done_date": "2023-11-18",
             "favorite": false,
             "genres": [
