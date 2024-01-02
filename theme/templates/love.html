@@ -27,7 +27,7 @@
             <th scope="col" class="bb b--near-black tl pb3 pr3 pointer">Genre</th>
         </thead>
         <tbody class="f5 f4-ns">
-        {% for movie in DATA_JOURNAL.entries | unique(attribute="id") | list | sort(attribute="title") %}
+        {% for movie in DATA_JOURNAL.entries | unique(attribute="id") | list | sort(attribute="year") | reverse %}
             {% set height_not_favorite = movie.rating | default(0) == 8 and movie.favorite == false %}
             {% set seven_or_less = 8 > movie.rating | default(0) %}
 
@@ -39,7 +39,7 @@
                 <td class="dib dtc-l pl3-l pv3-l pr3-l bn bt-l b--black-10 lh-copy b normal-l ttu ttn-l tracked tracked-normal-ns">{{ macros.title(movie, False) }}</td>
                 <td class="db dtc-l pv3-l pr4-l bn bt-l b--black-10">{{ movie.year | default("??") }}</td>
                 <td class="db dtc-l pv3-l pr3-l bn bt-l b--black-10">{{ movie.authors | join(", ") }}</td>
-                <td class="db dtc-l pv3-l pr3-l bn bt-l b--black-10">{{ movie.genres[0] }} </td>
+                <td class="db dtc-l pv3-l pr3-l bn bt-l b--black-10">{{ movie.genres[0] }}</td>
             </tr>
 
         {% endfor %}

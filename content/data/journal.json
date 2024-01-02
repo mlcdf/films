@@ -1,6 +1,23 @@
 {
     "entries": [
         {
+            "id": "38908170",
+            "title": "Mars Express",
+            "year": 2023,
+            "authors": [
+                "Jérémie Périn"
+            ],
+            "rating": 8,
+            "done_date": "2023-12-27",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Science-Fiction"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "28406348",
             "title": "Le Garçon et le Héron",
             "original_title": "Kimitachi wa dô ikiru ka",
@@ -223,7 +240,7 @@
                 "Kemp Powers",
                 "Justin K. Thompson"
             ],
-            "rating": 9,
+            "rating": 10,
             "done_date": "2023-08-08",
             "favorite": true,
             "genres": [
@@ -330,7 +347,7 @@
                 "Kemp Powers",
                 "Justin K. Thompson"
             ],
-            "rating": 9,
+            "rating": 10,
             "done_date": "2023-07-03",
             "favorite": true,
             "genres": [
@@ -349,7 +366,7 @@
                 "Kemp Powers",
                 "Justin K. Thompson"
             ],
-            "rating": 9,
+            "rating": 10,
             "done_date": "2023-06-11",
             "favorite": true,
             "genres": [
@@ -368,7 +385,7 @@
                 "Kemp Powers",
                 "Justin K. Thompson"
             ],
-            "rating": 9,
+            "rating": 10,
             "done_date": "2023-06-04",
             "favorite": true,
             "genres": [
@@ -546,7 +563,7 @@
             "revu": false
         },
         {
-            "id": "52905395",
+            "id": "408443",
             "title": "Le Parrain",
             "original_title": "The Godfather",
             "year": 1972,
@@ -591,7 +608,7 @@
             ],
             "rating": 8,
             "done_date": "2023-04-02",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Drame"
             ],
@@ -2684,7 +2701,7 @@
             ],
             "rating": 8,
             "done_date": "2020-01-02",
-            "favorite": true,
+            "favorite": false,
             "genres": [
                 "Drame",
                 "Romance"
