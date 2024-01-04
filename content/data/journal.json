@@ -1,6 +1,25 @@
 {
     "entries": [
         {
+            "id": "43670694",
+            "title": "Buzz l'Éclair",
+            "original_title": "Lightyear",
+            "year": 2022,
+            "authors": [
+                "Angus MacLane"
+            ],
+            "rating": 5,
+            "done_date": "2024-01-04",
+            "favorite": true,
+            "genres": [
+                "Animation",
+                "Science-Fiction",
+                "Jeunesse"
+            ],
+            "cinema": false,
+            "revu": false
+        },
+        {
             "id": "38908170",
             "title": "Mars Express",
             "year": 2023,
