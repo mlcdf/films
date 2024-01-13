@@ -1,6 +1,41 @@
 {
     "entries": [
         {
+            "id": "44324179",
+            "title": "The Fabelmans",
+            "year": 2023,
+            "authors": [
+                "Steven Spielberg"
+            ],
+            "rating": 7,
+            "done_date": "2024-01-13",
+            "favorite": false,
+            "genres": [
+                "Biopic",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "391814",
+            "title": "L'Arm\u00e9e des 12 singes",
+            "original_title": "Twelve Monkeys",
+            "year": 1995,
+            "authors": [
+                "Terry Gilliam"
+            ],
+            "rating": 9,
+            "done_date": "2024-01-11",
+            "favorite": true,
+            "genres": [
+                "Science-Fiction",
+                "Romance"
+            ],
+            "cinema": true,
+            "revu": true
+        },
+        {
             "id": "28406348",
             "title": "Le Garçon et le Héron",
             "original_title": "Kimitachi wa dô ikiru ka",
