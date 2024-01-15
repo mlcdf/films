@@ -9,13 +9,32 @@
             ],
             "rating": 8,
             "done_date": "2024-01-15",
-            "favorite": false,
+            "favorite": true,
             "genres": [
                 "Policier",
                 "Drame",
                 "Thriller"
             ],
             "cinema": true,
+            "revu": false
+        },
+        {
+            "id": "45236974",
+            "title": "Certains l'aiment chaud !",
+            "original_title": "Some Like It Hot",
+            "year": 1959,
+            "authors": [
+                "Billy Wilder"
+            ],
+            "rating": 8,
+            "done_date": "2024-01-14",
+            "favorite": false,
+            "genres": [
+                "Comédie",
+                "Romance",
+                "Gangster"
+            ],
+            "cinema": false,
             "revu": false
         },
         {
