@@ -1,6 +1,24 @@
 {
     "entries": [
         {
+            "id": "45236974",
+            "title": "Anatomie d'une chute",
+            "year": 2023,
+            "authors": [
+                "Justine Triet"
+            ],
+            "rating": 8,
+            "done_date": "2024-01-15",
+            "favorite": false,
+            "genres": [
+                "Policier",
+                "Drame",
+                "Thriller"
+            ],
+            "cinema": true,
+            "revu": false
+        },
+        {
             "id": "44324179",
             "title": "The Fabelmans",
             "year": 2023,
