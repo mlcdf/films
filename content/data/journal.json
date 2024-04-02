@@ -1,6 +1,63 @@
 {
     "entries": [
         {
+            "id": "45424060",
+            "title": "Dune - Deuxième partie",
+            "original_title": "Dune: Part Two",
+            "year": 2024,
+            "authors": [
+                "Denis Villeneuve"
+            ],
+            "rating": 9,
+            "done_date": "2024-03-27",
+            "favorite": true,
+            "genres": [
+                "Science-Fiction",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": true,
+            "imax": true
+        },
+        {
+            "id": "45424060",
+            "title": "Dune - Deuxième partie",
+            "original_title": "Dune: Part Two",
+            "year": 2024,
+            "authors": [
+                "Denis Villeneuve"
+            ],
+            "rating": 9,
+            "done_date": "2024-03-09",
+            "favorite": true,
+            "genres": [
+                "Science-Fiction",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": true,
+            "imax": true
+        },
+        {
+            "id": "45424060",
+            "title": "Dune - Deuxième partie",
+            "original_title": "Dune: Part Two",
+            "year": 2024,
+            "authors": [
+                "Denis Villeneuve"
+            ],
+            "rating": 9,
+            "done_date": "2024-02-28",
+            "favorite": true,
+            "genres": [
+                "Science-Fiction",
+                "Drame"
+            ],
+            "cinema": true,
+            "revu": false,
+            "imax": true
+        },
+        {
             "id": "45236974",
             "title": "Anatomie d'une chute",
             "year": 2023,
